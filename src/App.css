@@ -1,4 +1,6 @@
 body {
-  background-color: rgb(255, 255, 255);
+  /* add colors from separate file */
   font-family: Helvetica Neue;
+  width: 100vw;
+  overflow-x: hidden;
 }

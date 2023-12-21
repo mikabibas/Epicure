@@ -1,8 +1,16 @@
+.burger-menu {
+  display: flex;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 62px;
+}
+
+.navbar {
+  display: flex;
 }
 
 .navbar .menu-items {
@@ -59,7 +67,6 @@
 .nav-container .hamburger-lines .line {
   display: block;
   height: 2px;
-  width: 100%;
   border-radius: 10px;
   background: #0e2431;
 }
@@ -82,7 +89,6 @@
   padding-top: 60px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   height: 100vh;
-  width: 100%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;

@@ -1,13 +1,10 @@
-#restaurantsChefs-container {
-  width: 100%;
+.footer-container {
   flex-shrink: 0;
-  margin: 0;
-  background: #fff;
 }
 
-#text2-container {
-  height: 68px;
-  width: 108px;
+.text-container {
+  height: 146px;
+  width: 128px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -16,7 +13,6 @@
 }
 
 h3 {
-  color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
