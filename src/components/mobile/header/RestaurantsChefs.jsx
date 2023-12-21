@@ -1,5 +1,4 @@
-import "../../styles/restaurantsChefs.css";
-
+import "../../../styles/header/restaurantsChefs.css";
 const RestaurantsChefs = () => {
   return (
     <div id="text2-container">

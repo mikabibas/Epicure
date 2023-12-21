@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../../styles/header/burgerMenu.css";
 import Footer from "../Footer";
-import RestaurantsChefs from "../RestaurantsChefs";
+import RestaurantsChefs from "./RestaurantsChefs";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

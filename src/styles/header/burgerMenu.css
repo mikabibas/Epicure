@@ -109,7 +109,7 @@
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(5px, -1px);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -117,7 +117,7 @@
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(5px, 1px);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .logo {
