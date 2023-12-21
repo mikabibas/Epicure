@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../../styles/header/burgerMenu.css";
+import "../../../styles/header/burgerMenu.scss";
 import Footer from "../Footer";
 import RestaurantsChefs from "./RestaurantsChefs";
 
