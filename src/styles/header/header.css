@@ -1,0 +1,6 @@
+#header-container {
+  width: 375px;
+  height: 46px;
+  flex-shrink: 0;
+  background: #fff;
+}

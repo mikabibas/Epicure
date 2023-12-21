@@ -1,12 +1,13 @@
-#footer-container {
+#restaurantsChefs-container {
   width: 100%;
   flex-shrink: 0;
+  margin: 0;
   background: #fff;
 }
 
-#text-container {
-  height: 146px;
-  width: 128px;
+#text2-container {
+  height: 68px;
+  width: 108px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
