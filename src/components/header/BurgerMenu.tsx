@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../../../styles/header/burgerMenu.scss";
+import "../../styles/header/burgerMenu.scss";
 import Footer from "../Footer";
 import RestaurantsChefs from "./RestaurantsChefs";
 
-const BurgerMenu = () => {
+const BurgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

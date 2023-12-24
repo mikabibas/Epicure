@@ -1,4 +1,4 @@
-import "../../../styles/header/restaurantsChefs.scss";
+import "../../styles/header/restaurantsChefs.scss";
 
 const RestaurantsChefs = () => {
   return (

@@ -1,0 +1,20 @@
+.search-header {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.headerLogo {
+  width: 32.934px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.input {
+  display: block;
+}
