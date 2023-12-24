@@ -1,5 +1,5 @@
 import logo from "../../assets/images/logo.png";
-import "../../styles/header/search.scss";
+import "../../styles/header/header.scss";
 
 const Logo = () => {
   return (
