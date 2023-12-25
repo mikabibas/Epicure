@@ -2,7 +2,7 @@ import {
   CONTACT_US,
   PRIVACY_POLICY,
   TERM_OF_USE,
-} from "../constants/variables";
+} from "../constants/_variables";
 import "../styles/footer.scss";
 
 const Footer = () => {

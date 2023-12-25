@@ -1,9 +1,23 @@
+@import "../../constants/dimensions";
+
 .header-container {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   flex-shrink: 0;
+  @include mobile {
+    background-color: lightyellow;
+  }
+  @include tablet {
+    background-color: lightblue;
+  }
+  @include desktop {
+    background-color: lightcoral;
+  }
+  @include large-desktop {
+    background-color: lightgreen;
+  }
 }
 
 .navbar-header {
@@ -12,7 +26,7 @@
   gap: 20px;
 }
 
-img {
+.search-icon {
   width: 20px;
   height: 20px;
 }
@@ -24,30 +38,34 @@ img {
 }
 
 .input-search-field-container {
+  display: flex;
   width: 334px;
   height: 30px;
   padding: 6px 12px;
+  margin: 0 auto;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
   border-radius: 4px;
   border: 0.5px solid #000;
   outline: none;
+  transition: transform 0.5s ease-in-out;
 
-  :focus {
+  &:focus {
     outline: none;
   }
 }
 
 .input-field {
   border: none;
+  width: 250px;
+  margin-left: 20px;
 
-  ::placeholder {
-    color: grey;
-    opacity: 0.9;
+  &::placeholder {
+    color: lightgrey;
   }
 }
 
-.header-navbar-container {
-  border: 2px solid red;
+.search-container {
+  display: flex;
 }
