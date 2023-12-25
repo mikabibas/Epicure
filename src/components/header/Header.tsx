@@ -5,15 +5,16 @@ import { useState } from "react";
 import SearchIcon from "../../assets/images/searchIcon.svg";
 import Cart from "../../assets/images/cart.svg";
 import Profile from "../../assets/images/profile.svg";
+import { PLACEHOLDER_SERACH_INPUT } from "../../constants/variables";
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
+    setIsSearchOpen((prevState) => !prevState);
   };
   return (
-    <div className="headerNavbarContainer">
+    <div className="header-navbar-container">
       <div className="header-container">
         <BurgerMenu />
         <div>{isSearchOpen ? "Search" : <Logo />}</div>
@@ -23,11 +24,15 @@ const Header = () => {
           <img src={Cart} alt="" />
         </div>
       </div>
-      <div className={isSearchOpen ? "inputSearchFieldContainer" : ""}>
+      <div className={isSearchOpen ? "input-search-field-container" : ""}>
         {isSearchOpen && (
           <div>
             <img src={SearchIcon} alt="" />{" "}
-            <input className="inputField" type="text" />
+            <input
+              className="input-field"
+              type="text"
+              placeholder={PLACEHOLDER_SERACH_INPUT}
+            />
           </div>
         )}
       </div>
