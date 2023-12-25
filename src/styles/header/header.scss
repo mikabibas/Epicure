@@ -1,9 +1,53 @@
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   flex-shrink: 0;
-  background: #fff;
-  border: 1px solid red;
+}
+
+.navbar-header {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-logo {
+  width: 32.934px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.input-search-field-container {
+  width: 334px;
+  height: 30px;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 0.5px solid #000;
+  outline: none;
+
+  :focus {
+    outline: none;
+  }
+}
+
+.input-field {
+  border: none;
+
+  ::placeholder {
+    color: grey;
+    opacity: 0.9;
+  }
+}
+
+.header-navbar-container {
+  border: 2px solid red;
 }

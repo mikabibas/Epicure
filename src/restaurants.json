@@ -1,0 +1,124 @@
+{
+  "top_restaurants": [
+    {
+      "name": "Carmel Market Grill",
+      "location": "Carmel Market, Tel Aviv",
+      "dishes": [
+        "Grilled Lamb Chops",
+        "Hummus Platter",
+        "Shawarma Wrap",
+        "Seafood Skewers",
+        "Falafel Salad",
+        "Sabich Sandwich"
+      ]
+    },
+    {
+      "name": "Shila - Shuk HaCarmel",
+      "location": "Shuk HaCarmel, Tel Aviv",
+      "dishes": [
+        "Stuffed Eggplant",
+        "Lamb Kebabs",
+        "Meat Siniya",
+        "Shakshuka",
+        "Malabi Dessert",
+        "Pita and Hummus"
+      ]
+    },
+    {
+      "name": "M25",
+      "location": "25 HaArba'a St, Tel Aviv",
+      "dishes": [
+        "Tomahawk Steak",
+        "Truffle Risotto",
+        "Tuna Tartare",
+        "Chicken Liver Pate",
+        "Chocolate Fondant",
+        "M25 Burger"
+      ]
+    },
+    {
+      "name": "Ouzeria",
+      "location": "Shabazi St, Neve Tzedek, Tel Aviv",
+      "dishes": [
+        "Octopus Salad",
+        "Moussaka",
+        "Taramasalata",
+        "Saganaki Cheese",
+        "Greek Salad",
+        "Baklava"
+      ]
+    },
+    {
+      "name": "Taizu",
+      "location": "HaArba'a St, Tel Aviv",
+      "dishes": [
+        "Pad Thai",
+        "Green Curry",
+        "Peking Duck Pancakes",
+        "Crispy Spring Rolls",
+        "Beef Bulgogi",
+        "Mango Sticky Rice"
+      ]
+    },
+    {
+      "name": "Port Said",
+      "location": "Har Sinai St, Tel Aviv",
+      "dishes": [
+        "Grilled Eggplant Salad",
+        "Kebab Sandwich",
+        "Jerusalem Mix",
+        "Sabich Plate",
+        "Lamb Shawarma",
+        "Tahini Ice Cream"
+      ]
+    },
+    {
+      "name": "Shpagat",
+      "location": "Nahalat Binyamin St, Tel Aviv",
+      "dishes": [
+        "Lamb Ravioli",
+        "Gnocchi with Pesto",
+        "Chicken Liver Pappardelle",
+        "Salmon Tartare",
+        "Tiramisu",
+        "Chocolate Mousse"
+      ]
+    },
+    {
+      "name": "Dizengoff 99",
+      "location": "Dizengoff St, Tel Aviv",
+      "dishes": [
+        "Beef Carpaccio",
+        "Grilled Sea Bass",
+        "Quinoa Salad",
+        "Vegetarian Pizza",
+        "Chocolate Souffle",
+        "Israeli Breakfast"
+      ]
+    },
+    {
+      "name": "Benedict",
+      "location": "Rothschild Blvd, Tel Aviv",
+      "dishes": [
+        "Eggs Benedict",
+        "Pancakes with Maple Syrup",
+        "Smoked Salmon Omelette",
+        "French Toast",
+        "Israeli Salad",
+        "Cappuccino"
+      ]
+    },
+    {
+      "name": "M25 Hummus",
+      "location": "King George St, Tel Aviv",
+      "dishes": [
+        "Hummus with Mushrooms",
+        "Falafel Plate",
+        "Shakshuka with Hummus",
+        "Pita with Hummus and Fava Beans",
+        "Hummus with Tahini",
+        "Malabi Dessert"
+      ]
+    }
+  ]
+}
