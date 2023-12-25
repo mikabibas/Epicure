@@ -24,8 +24,6 @@ img {
 }
 
 .input-search-field-container {
-  display: flex;
-  justify-content: flex-start;
   width: 334px;
   height: 30px;
   padding: 6px 12px;
@@ -43,10 +41,13 @@ img {
 
 .input-field {
   border: none;
-  background: transparent;
-  margin-left: 30px;
+
+  ::placeholder {
+    color: grey;
+    opacity: 0.9;
+  }
 }
 
-.headerNavbarContainer {
+.header-navbar-container {
   border: 2px solid red;
 }
