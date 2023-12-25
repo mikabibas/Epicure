@@ -22,7 +22,7 @@ const BurgerMenu: React.FC = () => {
           </div>
           <div className="menu-items">
             <RestaurantsChefs />
-            <line className="br-line"></line>
+            <div className="br-line"></div>
             <Footer />
           </div>
         </div>
