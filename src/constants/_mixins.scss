@@ -1,11 +1,19 @@
-@import "colors";
-
-@mixin desktop-typography {
-  color: $PRIMARY_BLACK;
-}
-
 @mixin h1-desktop {
+  font-size: 32px;
+  font-weight: 200;
 }
 
 @mixin h2-desktop {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+@mixin h3-desktop {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+@mixin body-text {
+  font-size: 24px;
+  font-weight: 200;
 }

@@ -4,7 +4,8 @@ const PRIVACY_POLICY = "Privacy Policy";
 const PLACEHOLDER_SERACH_INPUT = "Search for restaurant, cuisine, chef";
 const RESTAURANTS = "Restaurants";
 const CHEFS = "Chefs";
-const TEXT_LOGO = "epicure"
+const TEXT_LOGO = "epicure";
+const HERO_TEXT = "Epicure works with the top chef restaurants in Tel Aviv";
 
 export {
   CONTACT_US,
@@ -13,5 +14,6 @@ export {
   PLACEHOLDER_SERACH_INPUT,
   RESTAURANTS,
   CHEFS,
-  TEXT_LOGO
+  TEXT_LOGO,
+  HERO_TEXT,
 };
