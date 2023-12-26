@@ -1,4 +1,4 @@
-import { CHEFS, RESTAURANTS } from "../../constants/variables";
+import { CHEFS, RESTAURANTS } from "../../constants/_variables";
 import "../../styles/header/restaurantsChefs.scss";
 
 const RestaurantsChefs = () => {

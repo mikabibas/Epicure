@@ -1,0 +1,33 @@
+// app dimensions
+
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+// Mixin for small screens (mobile)
+@mixin mobile {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+// Mixin for medium screens (tablet)
+@mixin tablet {
+  @media only screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+// Mixin for large screens (desktop)
+@mixin desktop {
+  @media only screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+// Mixin for extra-large screens (large desktop)
+@mixin large-desktop {
+  @media only screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
