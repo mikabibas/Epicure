@@ -1,3 +1,5 @@
+@import "../../constants/dimensions";
+
 .text2-container {
   height: 68px;
   width: 108px;
@@ -8,6 +10,13 @@
   margin-top: 32px;
   margin-bottom: 24px;
   margin-left: 19px;
+
+  @include desktop {
+    display: none
+  }
+  @include large-desktop {
+   display: none
+  }
 }
 
 h3 {

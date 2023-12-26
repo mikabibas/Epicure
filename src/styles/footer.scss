@@ -1,5 +1,21 @@
+@import "../constants/dimensions";
+
+
 .footer-container {
   flex-shrink: 0;
+  @include mobile {
+    display: block;
+  }
+  @include tablet {
+   display: block;
+  }
+  @include desktop {
+    display: none
+  }
+  @include large-desktop {
+   display: none
+  }
+  
 }
 
 .text-container {
@@ -23,5 +39,5 @@ h3 {
   margin: 0;
 }
 
-// @media (min-width: ) {
-// }
+
+
