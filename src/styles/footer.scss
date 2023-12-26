@@ -1,22 +1,17 @@
 @import "../constants/dimensions";
 
-
 .footer-container {
   flex-shrink: 0;
   @include mobile {
     display: block;
   }
-  @include tablet {
-   display: block;
-  }
   @include desktop {
-    display: none
+    display: none;
   }
 }
 
 .text-container {
   height: 146px;
-  width: 128px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -34,6 +29,3 @@ h3 {
   letter-spacing: 1.92px;
   margin: 0;
 }
-
-
-
