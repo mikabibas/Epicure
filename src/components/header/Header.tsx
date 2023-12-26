@@ -6,6 +6,8 @@ import SearchIcon from "../../assets/images/searchIcon.svg";
 import Cart from "../../assets/images/cart.svg";
 import Profile from "../../assets/images/profile.svg";
 import { CHEFS, PLACEHOLDER_SERACH_INPUT, RESTAURANTS, TEXT_LOGO } from "../../constants/_variables";
+import { Link } from "react-router-dom";
+
 
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -19,8 +21,8 @@ const Header: React.FC = () => {
         <BurgerMenu />
         <div className="logo-container">{isSearchOpen ? "Search" : <Logo />}<div className="logo-text">{TEXT_LOGO}</div>
         <div className="restaurants-chefs-container">  
-          <div><a href="#">{RESTAURANTS}</a></div>
-          <div><a href="#">{CHEFS}</a></div>
+        <div className="link"><Link to="/restaurants">{RESTAURANTS}</Link></div>
+        <div className="link"><Link to="chefs">{CHEFS}</Link></div>
         </div>
         </div>
         <div className="navbar-header">
