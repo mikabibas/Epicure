@@ -18,10 +18,11 @@ const Header: React.FC = () => {
       <div className="header-container">
         <BurgerMenu />
         <div className="logo-container">{isSearchOpen ? "Search" : <Logo />}<div className="logo-text">{TEXT_LOGO}</div>
-        <div className="restaurants-chefs-container">  <div><a href="#">{RESTAURANTS}</a></div>
-        <div><a href="#">{CHEFS}</a></div></div></div>
-       
-      
+        <div className="restaurants-chefs-container">  
+          <div><a href="#">{RESTAURANTS}</a></div>
+          <div><a href="#">{CHEFS}</a></div>
+        </div>
+        </div>
         <div className="navbar-header">
         <div className={isSearchOpen ? "input-search-field-container-desktop" : ""}>
         {isSearchOpen && (

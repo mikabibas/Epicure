@@ -16,12 +16,8 @@
   @include desktop {
     justify-content: space-around;
    padding: 20px 40px;
-   
   }
-  @include large-desktop {
-    justify-content: space-around;    
-    padding: 20px 40px;
-  }
+
 }
 
 .navbar-header {
@@ -89,9 +85,6 @@ text-transform: uppercase;
   @include desktop {
     display: none;
   }
-  @include large-desktop {
-    display: none;
-  }
 }
 
 .input-search-field-container-desktop {
@@ -99,21 +92,6 @@ text-transform: uppercase;
     display: none;
   }
   @include tablet {
-    display: none;
-  }
-}
-
-.desktop {
-  @include mobile {
-    display: block;
-  }
-  @include tablet {
-    display: block;
-  }
-  @include desktop {
-    display: none;
-  }
-  @include large-desktop {
     display: none;
   }
 }
@@ -133,7 +111,7 @@ text-transform: uppercase;
 }
 
 .restaurants-chefs-container {
-  display: flex;
+  display: none;
   gap: 32px;
   a {
     text-decoration: none;
@@ -144,27 +122,17 @@ text-transform: uppercase;
     font-weight: 200;
     line-height: normal;
     letter-spacing: 1.92px;
-  
     :hover{
       text-decoration: underline;
+      background-color: #000;
       text-decoration-color: rgba(222, 146, 0, 0.90);
-
     }
-    :active {
+    ::after {
       text-decoration: underline;
       text-decoration-color: rgba(222, 146, 0, 0.90);
     }
   }
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
   @include desktop {
-    display: flex;
-  }
-  @include large-desktop {
     display: flex;
   }
 }
