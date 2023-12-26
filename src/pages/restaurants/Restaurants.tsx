@@ -4,7 +4,7 @@ interface Props {}
 
 const Restaurants = (props: Props) => {
   return (
-    <div>Restaurants</div>
+    <div>R</div>
   )
 }
 

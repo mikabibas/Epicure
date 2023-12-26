@@ -4,7 +4,7 @@ interface Props {}
 
 const Chefs = (props: Props) => {
   return (
-    <div>Chefs</div>
+    <div>C</div>
   )
 }
 

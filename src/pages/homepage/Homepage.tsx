@@ -1,11 +1,9 @@
 
-import React from 'react'
-
 interface Props {}
 
 const Homepage = (props: Props) => {
   return (
-    <div>Homepage</div>
+    <div>H</div>
   )
 }
 

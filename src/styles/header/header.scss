@@ -8,16 +8,13 @@
   width: 100vw;
   flex-shrink: 0;
   @include mobile {
-    
   }
   @include tablet {
-    
   }
   @include desktop {
     justify-content: space-around;
-   padding: 20px 40px;
+    padding: 20px 40px;
   }
-
 }
 
 .navbar-header {
@@ -39,30 +36,29 @@
 
 .logo-text {
   color: #000;
-font-family: Helvetica Neue;
-font-size: 27px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
-letter-spacing: 1.35px;
-text-transform: uppercase;
-@include mobile {
-  display: none;
-}
-@include tablet {
-  display: none;
+  font-family: Helvetica Neue;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
 }
 
-}
-
-.logo-container{
+.logo-container {
   display: flex;
   gap: 32px;
   align-items: center;
-  
 }
 
-.input-search-field-container-mobile, .input-search-field-container-desktop {
+.input-search-field-container-mobile,
+.input-search-field-container-desktop {
   display: flex;
   width: 334px;
   height: 30px;
@@ -113,8 +109,9 @@ text-transform: uppercase;
 .restaurants-chefs-container {
   display: none;
   gap: 32px;
-  a {
-    text-decoration: none;
+
+  .link {
+    text-decoration-color: transparent;
     color: $PRIMARY_BLACK;
     font-family: Helvetica Neue;
     font-size: 18px;
@@ -122,14 +119,11 @@ text-transform: uppercase;
     font-weight: 200;
     line-height: normal;
     letter-spacing: 1.92px;
-    :hover{
-      text-decoration: underline;
-      background-color: #000;
-      text-decoration-color: rgba(222, 146, 0, 0.90);
-    }
-    ::after {
-      text-decoration: underline;
-      text-decoration-color: rgba(222, 146, 0, 0.90);
+    transition: 0.4s;
+
+    &:hover {
+      text-underline-position: under;
+      box-shadow: 0 2px 0 #de9200e5;
     }
   }
   @include desktop {
