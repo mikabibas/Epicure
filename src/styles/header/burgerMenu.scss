@@ -1,7 +1,10 @@
-$color_1: #0e2431;
+@import "../../constants/dimensions";
 
 .burger-menu {
   display: flex;
+  @include desktop {
+    display: none
+  }
 }
 .nav-container {
   display: flex;
@@ -112,3 +115,4 @@ $color_1: #0e2431;
   height: 1px;
   background: #f2f2f2;
 }
+
