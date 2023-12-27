@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
+
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/restaurants" element={<Restaurants />} />

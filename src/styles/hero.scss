@@ -1,27 +1,64 @@
 @import "../constants/mixins";
+@import "../constants/dimensions";
 
 .hero-container {
-  height: 400px;
-  background-color: lightblue;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255, 0.8);
   display: flex;
   font-size: 20px;
   font-weight: 200;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   flex-shrink: 0;
   outline: none;
+  justify-content: space-between;
 
+  &:focus {
+    outline: none;
+  }
+  @include mobile {
+    width: 335px;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+  @include desktop {
+    height: 200px;
+    width: 550px;
+    padding: 40px 20px;
+  }
+}
+
+.search-container-desktop {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 6px 12px;
+  border: 0.5px solid #000;
+  border-radius: 4px;
+}
+
+.input-field {
+  background-color: transparent;
+  font-size: 14px;
+  width: 240px;
+  &::placeholder {
+    color: black;
+  }
+  &:focus::placeholder {
+    outline: none;
+    color: rgb(146, 146, 146);
+  }
   &:focus {
     outline: none;
   }
 }
 
-.search-container-desktop {
-  margin: 0 auto;
-  padding: 6px 12px;
-  border: 0.5px solid #000;
-  border-radius: 4px;
+.hero-text {
+  margin: 0 100px;
+  @include mobile {
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
