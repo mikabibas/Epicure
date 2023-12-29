@@ -2,6 +2,8 @@
 
 .footer-container {
   flex-shrink: 0;
+  background-color: white;
+
   @include mobile {
     display: block;
   }
