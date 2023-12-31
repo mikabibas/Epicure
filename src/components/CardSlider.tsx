@@ -2,12 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/cardSlider.scss";
+import "styles/cardSlider.scss";
 
 interface Card {
   id: number;
-  title: string;
-  imageUrl: string;
+  name_res: string;
+  chef: string;
+  top_dishes: { dish: string; url: string }[];
+  location: string;
   rating: number;
 }
 
@@ -29,8 +31,12 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id} className="card">
-            <img src={card.imageUrl} alt={card.title} className="card-image" />
-            <h3 className="card-title">{card.title}</h3>
+            <img
+              src={card.top_dishes[1].url}
+              alt={card.top_dishes[1].dish}
+              className="card-image"
+            />
+            <h3 className="card-title">{card.top_dishes[1].dish}</h3>
             <div className="card-rating"> {card.rating}</div>
           </div>
         ))}
