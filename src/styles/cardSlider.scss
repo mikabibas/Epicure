@@ -1,0 +1,25 @@
+.card-slider {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 10px 0;
+}
+
+.card-rating {
+  color: #f39c12;
+  font-weight: bold;
+}
