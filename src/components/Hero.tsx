@@ -21,14 +21,13 @@ const Hero: React.FC = () => {
       </div>
       {search.length > 0 && (
         <ul className="search-list">
+          <li>Restaurant:</li>
           {data
             .filter((restaurant) =>
               restaurant.name_res.toLowerCase().includes(search)
             )
             .map((restaurant) => (
-              <div key={restaurant.id}>
-                <li>{restaurant.name_res}</li>
-              </div>
+              <li key={restaurant.id}>{restaurant.name_res}</li>
             ))}
         </ul>
       )}
