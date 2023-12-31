@@ -24,6 +24,7 @@
     padding: 30px 10px;
   }
   @include desktop {
+    position: relative;
     height: 200px;
     width: 550px;
     padding: 40px 20px;
@@ -37,6 +38,11 @@
   padding: 6px 12px;
   border: 0.5px solid #000;
   border-radius: 4px;
+
+  @include desktop {
+    position: absolute;
+    top: 130px;
+  }
 }
 
 .input-field {
@@ -73,4 +79,9 @@
   background-color: white;
   list-style: none;
   gap: 5px;
+
+  @include desktop {
+    position: inherit;
+    top: 76px;
+  }
 }
