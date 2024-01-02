@@ -1,0 +1,17 @@
+@import "constants/_colors.scss";
+
+.card-container {
+  flex: 1 1 300px;
+  position: relative;
+  box-shadow: 2px 2px 40px hsl(var(--muted) / 0.5);
+  padding: var(--space-lg);
+  border-radius: var(--round-lg);
+  border-top: 0.1em solid white;
+  border-left: 0.1em solid white;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}

@@ -4,8 +4,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
 import { CardSliderProps } from "constants/_interfaces";
+// import Card from "./Card";
 
 const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
+  // const cardList = cards.map((item, index) => {
+  //   return (
+  //     <Card
+  //       id={item.id}
+  //       name_res={item.name_res}
+  //       chef={item.chef}
+  //       dishName={item.dishName}
+  //       starRating={item.starRating}
+  //       price={item.price}
+  //       ingredients={item.ingredients}
+  //       icon={item.icon}
+  //       image={item.image}
+  //     />
+  //   );
+  // });
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -47,12 +64,23 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
           <div key={card.id} className="card">
             <div className="card-image-container">
               <img
-                src={require(`../assets/images/food/${card.url}`)}
+                className="card-image"
+                src={require(`../assets/images/food/${card.image}`)}
                 alt={card.dishName}
               />
             </div>
-            <h3 className="card-title">{card.dishName}</h3>
-            <div className="card-rating"> {card.rating}</div>
+            <div className="card-text-container">
+              <h3 className="card-title">{card.dishName}</h3>
+              <img
+                className="dish-icon"
+                src={require(`assets/images/layout/${card.icon}`)}
+                alt="dish_icon"
+              />
+              <p className="ingredients">{card.ingredients}</p>
+              <p className="dish-price">
+                <span>₪{card.price}</span>
+              </p>
+            </div>
           </div>
         ))}
       </Slider>
