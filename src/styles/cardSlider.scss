@@ -1,0 +1,41 @@
+@import "constants/_colors.scss";
+
+.card-slider {
+  width: 80%;
+  background-color: $PRIMARY_WHITE;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid $BORDER_GREY;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-image-container {
+  width: 100px;
+  height: 100px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 10px 0;
+  height: 20px;
+  background-color: $PRIMARY_WHITE;
+}
+
+.card-rating {
+  color: $SECONDARY_YELLOW;
+  font-weight: bold;
+}
+
+.slick-arrow {
+  background-color: $SECONDARY_YELLOW;
+}

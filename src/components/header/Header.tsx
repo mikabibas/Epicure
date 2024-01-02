@@ -1,10 +1,10 @@
 import BurgerMenu from "./BurgerMenu";
-import "../../styles/header/header.scss";
+import "styles/header/header.scss";
 import Logo from "./Logo";
 import { useState } from "react";
-import SearchIcon from "../../assets/images/searchIcon.svg";
-import Cart from "../../assets/images/cart.svg";
-import Profile from "../../assets/images/profile.svg";
+import SearchIcon from "assets/images/layout/searchIcon.svg";
+import Cart from "assets/images/layout/cart.svg";
+import Profile from "assets/images/layout/profile.svg";
 import {
   CHEFS,
   PLACEHOLDER_SERACH_INPUT,

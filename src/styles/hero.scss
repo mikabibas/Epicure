@@ -1,7 +1,18 @@
-@import "../constants/mixins";
-@import "../constants/dimensions";
+@import "constants/mixins";
+@import "constants/dimensions";
+@import "constants/_colors.scss";
 
 .hero-container {
+  background-image: url("../assets/images/layout/desktop-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-search-container {
   box-sizing: border-box;
   background-color: rgb(255, 255, 255, 0.8);
   display: flex;
@@ -52,11 +63,11 @@
   outline: none;
 
   &::placeholder {
-    color: black;
+    color: $PRIMARY_BLACK;
   }
   &:focus::placeholder {
     outline: none;
-    color: rgb(146, 146, 146);
+    color: $INPUT_FOCUS_GREY;
   }
 }
 
@@ -76,7 +87,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: $PRIMARY_WHITE;
   list-style: none;
   gap: 5px;
 

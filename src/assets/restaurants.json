@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name_res": "Mediterranean Delight",
+    "chef": "Elena Rodriguez",
+    "dishName": "Grilled Octopus",
+    "url": "cacio_pepe.jpeg",
+    "location": "123 Ocean View Street, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "name_res": "Urban Fusion",
+    "chef": "Gabriel Chen",
+    "dishName": "Sushi Platter",
+    "url": "dumpling.jpeg",
+    "location": "456 City Center Avenue, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name_res": "Artisanal Eats",
+    "chef": "Sophie Klein",
+    "dishName": "Truffle Infused Pasta",
+    "url": "meatballs.jpeg",
+    "location": "789 Art Street, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "name_res": "Spice Haven",
+    "chef": "Ravi Patel",
+    "dishName": "Curry Chicken Masala",
+    "url": "pecan_pie.webp",
+    "location": "101 Spice Plaza, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "name_res": "Seafront Bistro",
+    "chef": "Alexandra Costa",
+    "dishName": "Lobster Bisque",
+    "url": "cacio_pepe.jpeg",
+    "location": "202 Coastal Avenue, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "name_res": "Farm-to-Table Fresh",
+    "chef": "David Green",
+    "dishName": "Organic Beet Salad",
+    "url": "hot_dog.webp",
+    "location": "303 Farm Lane, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "name_res": "Taste of Tradition",
+    "chef": "Yossi Cohen",
+    "dishName": "Shakshuka Supreme",
+    "url": "hummus.webp",
+    "location": "404 Heritage Road, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "name_res": "Gastronomic Gems",
+    "chef": "Isabella Rossi",
+    "dishName": "Foie Gras Crostini",
+    "url": "fried_rice.jpeg",
+    "location": "505 Gourmet Street, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "name_res": "Sunset Sushi",
+    "chef": "Kenji Tanaka",
+    "dishName": "Sunset Sushi Roll",
+    "url": "Hamburger-and-french-fries.webp",
+    "location": "606 Sushi Lane, Tel Aviv",
+    "rating": 4
+  },
+  {
+    "id": 10,
+    "name_res": "Modern Mexican Flavors",
+    "chef": "Maria Hernandez",
+    "dishName": "Guacamole Trio",
+    "url": "guacamole.jpeg",
+    "location": "707 Fiesta Street, Tel Aviv",
+    "rating": 4
+  }
+]
