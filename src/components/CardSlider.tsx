@@ -29,6 +29,7 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -45,6 +46,7 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: false,
         },
       },
       {
@@ -52,6 +54,7 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
