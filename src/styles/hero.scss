@@ -59,6 +59,8 @@
   background-color: transparent;
   font-size: 14px;
   width: 240px;
+  outline: none;
+
   &::placeholder {
     color: $PRIMARY_BLACK;
   }
@@ -66,13 +68,11 @@
     outline: none;
     color: $INPUT_FOCUS_GREY;
   }
-  &:focus {
-    outline: none;
-  }
 }
 
 .hero-text {
   margin: 0 100px;
+
   @include mobile {
     margin: auto;
     margin-bottom: 10px;
