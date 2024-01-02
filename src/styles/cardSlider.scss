@@ -74,6 +74,9 @@
   font-weight: bold;
 }
 
-.slick-arrow {
-  background-color: $SECONDARY_YELLOW;
+.slick-prev,
+.slick-next {
+  &::before {
+    color: $SECONDARY_YELLOW;
+  }
 }
