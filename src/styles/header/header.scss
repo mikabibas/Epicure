@@ -1,17 +1,13 @@
-@import "../../constants/dimensions";
-@import "../../constants/colors";
+@import "constants/dimensions";
+@import "constants/colors";
 
 .header-container {
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   flex-shrink: 0;
-  background-color: white;
-  @include mobile {
-  }
-  @include tablet {
-  }
+  background-color: $PRIMARY_WHITE;
   @include desktop {
     justify-content: space-around;
     padding: 20px 40px;
@@ -19,7 +15,7 @@
 }
 
 .navbar-header {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 20px;
 }
@@ -30,13 +26,12 @@
 }
 
 .header-logo {
-  width: 32.934px;
+  width: 32px;
   height: 32px;
-  flex-shrink: 0;
 }
 
 .logo-text {
-  color: #000;
+  color: $PRIMARY_BLACK;
   font-family: Helvetica Neue;
   font-size: 27px;
   font-style: normal;
@@ -52,6 +47,7 @@
   }
 }
 
+//desktop
 .logo-container {
   display: flex;
   gap: 32px;
