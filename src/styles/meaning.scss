@@ -1,0 +1,31 @@
+@import "constants/_colors.scss";
+
+.meaning-container {
+  margin: 20px auto;
+  background-color: $SECONDARY_GREY;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 265px;
+  width: 100vw;
+}
+
+.meaning-title {
+  text-transform: uppercase;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 488px;
+}
+
+.image-text-container {
+  height: 127px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

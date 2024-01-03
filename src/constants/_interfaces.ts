@@ -4,7 +4,7 @@ export interface CardInterface {
   name_res?: string;
   dishName?: string;
   chef?: string;
-  rating?: number;
+  rating?: string;
   icon?: string;
   ingredients?: string;
   price?: number;

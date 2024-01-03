@@ -5,7 +5,7 @@
     "chef": "Elena Rodriguez",
     "dishName": "Grilled Octopus",
     "image": "cacio_pepe.jpeg",
-    "rating": 4,
+    "rating": "3-stars.png",
     "ingredients": "Octopus, Olive Oil, Lemon, Garlic",
     "price": 72,
     "icon": "leaf_icon.png"
@@ -16,7 +16,7 @@
     "chef": "Gabriel Chen",
     "dishName": "Sushi Platter",
     "image": "dumpling.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Salmon, Avocado, Soy Sauce, Wasabi",
     "price": 58,
     "icon": "leaves_icon.png"
@@ -27,7 +27,7 @@
     "chef": "Sophie Klein",
     "dishName": "Truffle Infused Pasta",
     "image": "meatballs.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Pasta, Truffle Oil, Parmesan, Cream",
     "price": 65,
     "icon": "pepper_icon.png"
@@ -38,7 +38,7 @@
     "chef": "Ravi Patel",
     "dishName": "Curry Chicken Masala",
     "image": "pecan_pie.webp",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Chicken, Curry Spices, Tomato, Cream",
     "price": 75,
     "icon": "leaf_icon.png"
@@ -49,7 +49,7 @@
     "chef": "Alexandra Costa",
     "dishName": "Lobster Bisque",
     "image": "cacio_pepe.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Lobster, Cream, Sherry, Chives",
     "price": 67,
     "icon": "leaves_icon.png"
@@ -60,7 +60,7 @@
     "chef": "David Green",
     "dishName": "Organic Beet Salad",
     "image": "hot_dog.webp",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Beets, Arugula, Goat Cheese, Walnuts",
     "price": 54,
     "icon": "pepper_icon.png"
@@ -71,7 +71,7 @@
     "chef": "Yossi Cohen",
     "dishName": "Shakshuka Supreme",
     "image": "hummus.webp",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Tomatoes, Bell Peppers, Eggs, Cumin",
     "price": 60,
     "icon": "leaf_icon.png"
@@ -82,7 +82,7 @@
     "chef": "Isabella Rossi",
     "dishName": "Foie Gras Crostini",
     "image": "fried_rice.jpeg",
-    "rating": 4,
+    "rating": "3-stars.png",
     "ingredients": "Foie Gras, Baguette, Fig Jam, Balsamic",
     "price": 82,
     "icon": "leaves_icon.png"
@@ -93,7 +93,7 @@
     "chef": "Kenji Tanaka",
     "dishName": "Sunset Sushi Roll",
     "image": "Hamburger-and-french-fries.webp",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Tuna, Avocado, Mango, Soy Paper",
     "price": 73,
     "icon": "pepper_icon.png"
@@ -104,7 +104,7 @@
     "chef": "Maria Hernandez",
     "dishName": "Guacamole Trio",
     "image": "guacamole.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Avocado, Tomato, Cilantro, Lime",
     "price": 55,
     "icon": "leaf_icon.png"
@@ -115,7 +115,7 @@
     "chef": "Carlos Garcia",
     "dishName": "BBQ Ribs",
     "image": "shawarma.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Pork Ribs, BBQ Sauce, Coleslaw, Cornbread",
     "price": 68,
     "icon": "leaves_icon.png"
@@ -126,7 +126,7 @@
     "chef": "Juliette Leclerc",
     "dishName": "Croissant Breakfast",
     "image": "waffles.webp",
-    "rating": 5,
+    "rating": "3-stars.png",
     "ingredients": "Croissants, Jam, Butter, Coffee",
     "price": 78,
     "icon": "pepper_icon.png"
@@ -137,7 +137,7 @@
     "chef": "Liam Thompson",
     "dishName": "Quinoa Salad",
     "image": "shakshuka.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Quinoa, Chickpeas, Cucumber, Vinaigrette",
     "price": 53,
     "icon": "leaf_icon.png"
@@ -148,7 +148,7 @@
     "chef": "Michael Johnson",
     "dishName": "Filet Mignon",
     "image": "pasta.jpeg",
-    "rating": 4,
+    "rating": "4-stars.png",
     "ingredients": "Beef Fillet, Mushroom Sauce, Potatoes, Asparagus",
     "price": 87,
     "icon": "leaves_icon.png"
@@ -159,7 +159,7 @@
     "chef": "Emma White",
     "dishName": "Grilled Salmon",
     "image": "rice.jpeg",
-    "rating": 4,
+    "rating": "3-stars.png",
     "ingredients": "Salmon, Lemon, Dill, Quinoa",
     "price": 66,
     "icon": "pepper_icon.png"

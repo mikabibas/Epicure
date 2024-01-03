@@ -1,5 +1,5 @@
-@import "constants/dimensions";
-@import "constants/colors";
+@import "constants/_dimensions";
+@import "constants/_colors";
 
 .header-container {
   display: flex;
@@ -65,7 +65,7 @@
   gap: 8px;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 0.5px solid #000;
+  border: 0.5px solid $PRIMARY_BLACK;
   outline: none;
   transition: transform 0.5s ease-in-out;
 
@@ -75,7 +75,7 @@
 }
 
 .input-search-field-container-mobile {
-  background-color: white;
+  background-color: $PRIMARY_WHITE;
   @include desktop {
     display: none;
   }
@@ -96,7 +96,7 @@
   margin-left: 20px;
 
   &::placeholder {
-    color: lightgrey;
+    color: $INPUT_FOCUS_GREY;
   }
 }
 
@@ -121,7 +121,7 @@
 
     &:hover {
       text-underline-position: under;
-      box-shadow: 0 2px 0 #de9200e5;
+      box-shadow: 0 2px 0 $HOVER_LINK;
     }
   }
   @include desktop {
