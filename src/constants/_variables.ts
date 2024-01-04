@@ -6,6 +6,12 @@ const RESTAURANTS = "Restaurants";
 const CHEFS = "Chefs";
 const TEXT_LOGO = "epicure";
 const HERO_TEXT = "Epicure works with the top chef restaurants in Tel Aviv";
+const POPULAR_RESTAURANTS = "Popular restaurants in epicure:";
+const SIGNATURE_DISH = "signature dish of:";
+const MEANING_ICONS = "the meaning of our icons:";
+const SPICY = "spicy";
+const VEGETERIAN = "Vegeterian";
+const VEGAN = "vegan";
 
 //FOOD IMAGES
 const PANCAKES_IMG = "assets/images/food/pancakes.webp";
@@ -42,4 +48,10 @@ export {
   PECAN_PIE_IMG,
   RECTANGULAR_PIZZA_IMG,
   SALMON_SALAD_IMG,
+  POPULAR_RESTAURANTS,
+  SIGNATURE_DISH,
+  MEANING_ICONS,
+  SPICY,
+  VEGAN,
+  VEGETERIAN,
 };

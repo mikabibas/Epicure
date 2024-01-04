@@ -1,22 +1,45 @@
 @import "constants/_colors.scss";
+@import "constants/_dimensions.scss";
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.restaurants-slider-title {
+  text-transform: uppercase;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1.25px;
+  @include mobile {
+    font-size: 14px;
+    margin: 10px auto;
+  }
+}
 
 .card-slider {
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  background-color: $PRIMARY_WHITE;
-  margin: 0 auto;
+  height: 350px;
+  margin: 30px auto;
+  position: relative;
 }
 
 .card {
-  border: 1px solid $BORDER_GREY;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   text-align: center;
+  width: 380px;
 }
 
 .card-image-container {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 150px;
 }
 
 .card-image {
@@ -25,10 +48,39 @@
   object-fit: cover;
 }
 
+.card-text-container {
+  background-color: $SECONDARY_BEIGE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-title {
   margin: 10px 0;
-  height: 20px;
-  background-color: $PRIMARY_WHITE;
+}
+
+.dish-icon {
+  height: 31px;
+  width: 40px;
+}
+
+.dish-price {
+  width: 70%;
+  text-align: center;
+  border-bottom: 0.1px solid $PRIMARY_GREY;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  span {
+    background: $SECONDARY_BEIGE;
+    padding: 0 10px;
+  }
+}
+
+.ingredients {
+  margin: 5px 20px;
+  font-size: 12px;
+  height: 45px;
 }
 
 .card-rating {
@@ -36,6 +88,34 @@
   font-weight: bold;
 }
 
-.slick-arrow {
-  background-color: $SECONDARY_YELLOW;
+.slick-prev,
+.slick-next {
+  display: none !important;
+  &::before {
+    color: $SECONDARY_YELLOW;
+  }
+}
+
+.slider-link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: $PRIMARY_BLACK;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 35px;
+  @include mobile {
+    left: 0;
+  }
+}
+
+.arrows-link {
+  width: 15px;
+  height: 12px;
+  margin-left: 10px;
+}
+
+.dish-rating {
+  width: 100px;
 }
