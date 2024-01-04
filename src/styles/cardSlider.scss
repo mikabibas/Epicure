@@ -28,6 +28,10 @@
   height: 350px;
   margin: 30px auto;
   position: relative;
+
+  @include mobile {
+    margin-top: 50px;
+  }
 }
 
 .card {
