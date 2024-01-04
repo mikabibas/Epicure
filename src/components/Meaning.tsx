@@ -6,7 +6,6 @@ const Meaning = () => {
     <div className="meaning-container">
       <h1 className="meaning-title">{MEANING_ICONS}</h1>
       <div className="icon-container">
-        {}
         <div className="image-text-container">
           <img
             src={require("assets/images/layout/pepper_icon.png")}
