@@ -13,3 +13,13 @@ export interface CardInterface {
 export interface CardSliderProps {
   cards: CardInterface[];
 }
+
+interface IRestaurant {
+  id: number;
+  res_name: string;
+  chef: string;
+}
+
+export interface IResState {
+  restaurant: IRestaurant[];
+}

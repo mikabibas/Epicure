@@ -10,6 +10,7 @@ import CardSlider from "components/CardRestSlider";
 import data from "assets/restaurants.json";
 import CardDishSlider from "components/CardDishSlider";
 import Meaning from "components/Meaning";
+import RestaurantList from "components/RestaurantList";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
+        <RestaurantList />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/restaurants" element={<Restaurants />} />
