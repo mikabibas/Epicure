@@ -11,6 +11,7 @@ import data from "assets/restaurants.json";
 import CardDishSlider from "components/CardDishSlider";
 import Meaning from "components/Meaning";
 import RestaurantList from "components/RestaurantList";
+import ChefSection from "components/ChefSection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <CardDishSlider cards={data} />
         <CardSlider cards={data} />
         <Meaning />
+        <ChefSection chefName="Yossi Shitrit" restaurants={data} />
         <FooterDesktop />
       </BrowserRouter>
     </div>

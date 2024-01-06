@@ -1,0 +1,97 @@
+@import "constants/_colors.scss";
+@import "constants/_dimensions.scss";
+
+.chef-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1185px;
+  margin: 30px auto;
+  gap: 40px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chef-container-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1.25px;
+}
+
+.chef-image-text-container {
+  display: flex;
+  gap: 60px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.chef-image {
+  object-fit: cover;
+}
+
+.image-title-container {
+  width: 478px;
+  display: block;
+  position: relative;
+}
+
+.chef-name {
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.7);
+  color: $PRIMARY_BLACK;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 2.67px;
+  padding: 20px 0;
+}
+
+.chef-paragraph {
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  text-align: justify;
+}
+
+.restaurants-container {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.restaurant-card {
+  width: 230px;
+  height: 357px;
+  margin-right: 16px;
+  background-color: $SECONDARY_BEIGE;
+}
+
+.restaurant-image {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+  margin: 0;
+}
+
+.restaurant-title {
+  text-transform: capitalize;
+  font-size: 30px;
+  letter-spacing: 1.25px;
+}
+
+.restaurant-name {
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+  height: 40%;
+  margin: 0;
+}

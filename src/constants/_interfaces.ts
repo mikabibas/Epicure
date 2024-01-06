@@ -14,12 +14,14 @@ export interface CardSliderProps {
   cards: CardInterface[];
 }
 
-interface IRestaurant {
+export interface IRestaurant {
   id: number;
-  res_name: string;
+  name_res: string;
   chef: string;
+  image: string;
 }
 
-export interface IResState {
-  restaurant: IRestaurant[];
+export interface ChefComponentProps {
+  chefName: string;
+  restaurants: IRestaurant[];
 }
