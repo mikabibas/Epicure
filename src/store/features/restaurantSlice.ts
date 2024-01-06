@@ -16,7 +16,7 @@ const restaurantSlice = createSlice({
   initialState: {
     restaurants: [],
     status: "idle",
-    error: null as string | null, // Initialize error as null with explicit type
+    error: null as string | null,
   },
   reducers: {},
   extraReducers: (builder) => {

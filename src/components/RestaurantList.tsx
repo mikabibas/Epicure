@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { fetchRestaurants } from "store/features/restaurantSlice";
+import { useAppDispatch, useAppSelector } from "store/store";
 
 const RestaurantList: React.FC = () => {
-  const dispatch = useDispatch();
-  const restaurants = useSelector(
+  const dispatch = useAppDispatch();
+  const restaurants = useAppSelector(
     (state: any) => state.restaurants.restaurants
   );
-  const status = useSelector((state: any) => state.restaurants.status);
-  const error = useSelector((state: any) => state.restaurants.error);
+  const status = useAppSelector((state: any) => state.restaurants.status);
+  const error = useAppSelector((state: any) => state.restaurants.error);
 
   useEffect(() => {
     dispatch(fetchRestaurants() as any);
   }, [dispatch]);
+
+  console.log(status);
 
   if (status === "loading") {
     return <div>Loading...</div>;

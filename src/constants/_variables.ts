@@ -27,6 +27,40 @@ const PECAN_PIE_IMG = "assets/images/food/pecan_pie.webp";
 const RECTANGULAR_PIZZA_IMG = "assets/images/food/rectangular_pizza.jpeg";
 const SALMON_SALAD_IMG = "assets/images/food/salmon_salad.jpeg";
 
+//slider settings
+const SLIDER_SETTINGS = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 export {
   CONTACT_US,
   TERM_OF_USE,
@@ -54,4 +88,5 @@ export {
   SPICY,
   VEGAN,
   VEGETERIAN,
+  SLIDER_SETTINGS,
 };
