@@ -27,6 +27,47 @@ const PECAN_PIE_IMG = "assets/images/food/pecan_pie.webp";
 const RECTANGULAR_PIZZA_IMG = "assets/images/food/rectangular_pizza.jpeg";
 const SALMON_SALAD_IMG = "assets/images/food/salmon_salad.jpeg";
 
+//slider settings
+const SLIDER_SETTINGS = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+// chef
+const CHEF_PARAGRAPH =
+  "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.";
+const CHEF_NAME = "Yossi Shitrit";
+const CHEF_WEEK = "chef of the week:";
+const CHEF_RESTAURANTS = "Yossi's Restaurants";
+
 export {
   CONTACT_US,
   TERM_OF_USE,
@@ -54,4 +95,9 @@ export {
   SPICY,
   VEGAN,
   VEGETERIAN,
+  SLIDER_SETTINGS,
+  CHEF_PARAGRAPH,
+  CHEF_NAME,
+  CHEF_WEEK,
+  CHEF_RESTAURANTS,
 };

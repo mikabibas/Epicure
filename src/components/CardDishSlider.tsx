@@ -4,46 +4,17 @@ import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
 import { CardSliderProps } from "constants/_interfaces";
 import { Link } from "react-router-dom";
-import { RESTAURANTS, POPULAR_RESTAURANTS } from "constants/_variables";
+import {
+  RESTAURANTS,
+  POPULAR_RESTAURANTS,
+  SLIDER_SETTINGS,
+} from "constants/_variables";
 
 const CardDishSlider: React.FC<CardSliderProps> = ({ cards }) => {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="card-slider">
       <h1 className="restaurants-slider-title">{POPULAR_RESTAURANTS}</h1>
-      <Slider {...settings}>
+      <Slider {...SLIDER_SETTINGS}>
         {cards.map((card) => (
           <div key={card.id} className="card">
             <div className="card-image-container">

@@ -13,3 +13,15 @@ export interface CardInterface {
 export interface CardSliderProps {
   cards: CardInterface[];
 }
+
+export interface IRestaurant {
+  id: number;
+  name_res: string;
+  chef: string;
+  image: string;
+}
+
+export interface ChefComponentProps {
+  chefName: string;
+  restaurants: IRestaurant[];
+}
