@@ -5,7 +5,7 @@ import "styles/cardSlider.scss";
 import { CardSliderProps } from "constants/_interfaces";
 import { SIGNATURE_DISH, SLIDER_SETTINGS } from "constants/_variables";
 
-const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
+const CardRestSlider: React.FC<CardSliderProps> = ({ cards }) => {
   return (
     <div className="card-slider">
       <h1 className="restaurants-slider-title">{SIGNATURE_DISH}</h1>
@@ -38,4 +38,4 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
   );
 };
 
-export default CardSlider;
+export default CardRestSlider;

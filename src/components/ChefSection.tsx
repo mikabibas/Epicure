@@ -7,6 +7,8 @@ import {
 } from "constants/_variables";
 import { ChefComponentProps, IRestaurant } from "constants/_interfaces";
 import "styles/chefSection.scss";
+import MediaQuery from "react-responsive";
+import Slider from "react-slick";
 
 const ChefSection: React.FC<ChefComponentProps> = ({
   chefName,
@@ -15,6 +17,26 @@ const ChefSection: React.FC<ChefComponentProps> = ({
   const [filteredRestaurants, setFilteredRestaurants] = useState<IRestaurant[]>(
     []
   );
+
+  const filteredRestaurantsMapped = filteredRestaurants.map((restaurant) => (
+    <div className="restaurant-card" key={restaurant.id}>
+      <img
+        className="restaurant-image"
+        src={require(`assets/images/food/${restaurant.image}`)}
+        alt="restaurant_img"
+      />
+      <h1 className="restaurant-name">{restaurant.name_res}</h1>
+    </div>
+  ));
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+  };
 
   useEffect(() => {
     const filtered = restaurants.filter(
@@ -40,16 +62,10 @@ const ChefSection: React.FC<ChefComponentProps> = ({
         </div>
         <h1 className="restaurant-title">{CHEF_RESTAURANTS}</h1>
         <div className="restaurants-container">
-          {filteredRestaurants.map((restaurant) => (
-            <div className="restaurant-card" key={restaurant.id}>
-              <img
-                className="restaurant-image"
-                src={require(`assets/images/food/${restaurant.image}`)}
-                alt="restaurant_img"
-              />
-              <h1 className="restaurant-name">{restaurant.name_res}</h1>
-            </div>
-          ))}
+          <MediaQuery minWidth={780}>{filteredRestaurantsMapped}</MediaQuery>
+          <MediaQuery maxWidth={780}>
+            <Slider {...settings}>{filteredRestaurantsMapped}</Slider>
+          </MediaQuery>
         </div>
       </div>
     </div>

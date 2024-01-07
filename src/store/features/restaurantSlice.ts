@@ -1,36 +1,47 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import restaurants from "assets/restaurants.json";
+import { IRestaurant } from "constants/_interfaces";
+import { ERestaurantStatus } from "constants/enum";
 
 export const fetchRestaurants = createAsyncThunk(
   "restaurants/fetchRestaurants",
   async () => {
-    const response = await fetch("assets/restaurants.json", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    });
-    return response.json();
+    // const response = await fetch("assets/restaurants.json", {
+    //   method: "GET",
+    //   headers: { "Content-Type": "application/json" },
+    // });
+    return restaurants as IRestaurant[];
   }
 );
 
+interface IRestaurantState {
+  restaurants: IRestaurant[];
+  status: ERestaurantStatus;
+  error: string | null;
+}
+
+const initialState: IRestaurantState = {
+  restaurants: [],
+  status: ERestaurantStatus.IDLE,
+  error: null,
+};
+
 const restaurantSlice = createSlice({
   name: "restaurants",
-  initialState: {
-    restaurants: [],
-    status: "idle",
-    error: null as string | null,
-  },
+  initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchRestaurants.pending, (state) => {
-        state.status = "loading";
+        state.status = ERestaurantStatus.LOADING;
       })
       .addCase(fetchRestaurants.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = ERestaurantStatus.SUCCEEDED;
         state.restaurants = action.payload;
         state.error = null;
       })
       .addCase(fetchRestaurants.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = ERestaurantStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"
           : "Unknown error";

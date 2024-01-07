@@ -9,12 +9,21 @@
   width: 1185px;
   margin: 30px auto;
   gap: 40px;
+
+  @include mobile {
+    width: 100vw;
+    align-items: flex-start;
+    margin: 20px;
+  }
 }
 
 .second-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .chef-container-title {
@@ -31,14 +40,17 @@
   }
 }
 
-.chef-image {
-  object-fit: cover;
-}
-
 .image-title-container {
-  width: 478px;
   display: block;
   position: relative;
+
+  @include mobile {
+    width: fit-content;
+  }
+}
+
+.chef-image {
+  object-fit: cover;
 }
 
 .chef-name {
@@ -53,18 +65,27 @@
   line-height: 47px;
   letter-spacing: 2.67px;
   padding: 20px 0;
+
+  @include mobile {
+    font-size: 25px;
+  }
 }
 
 .chef-paragraph {
   font-size: 24px;
   letter-spacing: 1.25px;
   text-align: justify;
+
+  @include mobile {
+    width: 100vw;
+  }
 }
 
 .restaurants-container {
   display: flex;
   @include mobile {
     flex-direction: column;
+    width: 100vw;
   }
 }
 
