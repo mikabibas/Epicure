@@ -19,7 +19,6 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
-        <RestaurantList />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/restaurants" element={<Restaurants />} />

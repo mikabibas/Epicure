@@ -29,7 +29,6 @@ const SALMON_SALAD_IMG = "assets/images/food/salmon_salad.jpeg";
 
 //slider settings
 const SLIDER_SETTINGS = {
-  infinite: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -41,7 +40,6 @@ const SLIDER_SETTINGS = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
       },
     },
     {
