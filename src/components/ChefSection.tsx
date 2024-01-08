@@ -4,8 +4,8 @@ import {
   CHEF_PARAGRAPH,
   CHEF_RESTAURANTS,
   CHEF_WEEK,
-} from "constants/_variables";
-import { ChefComponentProps, IRestaurant } from "constants/_interfaces";
+} from "constants/variables";
+import { ChefComponentProps, IRestaurant } from "constants/interfaces";
 import "styles/chefSection.scss";
 import MediaQuery from "react-responsive";
 import Slider from "react-slick";

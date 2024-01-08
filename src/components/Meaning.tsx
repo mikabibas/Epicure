@@ -1,4 +1,4 @@
-import { MEANING_ICONS, SPICY, VEGAN, VEGETERIAN } from "constants/_variables";
+import { MEANING_ICONS, SPICY, VEGAN, VEGETERIAN } from "constants/variables";
 import "styles/meaning.scss";
 
 const Meaning = () => {

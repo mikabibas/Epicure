@@ -2,13 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
-import { CardSliderProps } from "constants/_interfaces";
+import { CardSliderProps } from "constants/interfaces";
 import { Link } from "react-router-dom";
 import {
   RESTAURANTS,
   POPULAR_RESTAURANTS,
   SLIDER_SETTINGS,
-} from "constants/_variables";
+} from "constants/variables";
 
 const CardDishSlider: React.FC<CardSliderProps> = ({ cards }) => {
   return (

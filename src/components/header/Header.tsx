@@ -10,7 +10,7 @@ import {
   PLACEHOLDER_SERACH_INPUT,
   RESTAURANTS,
   TEXT_LOGO,
-} from "constants/_variables";
+} from "constants/variables";
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {

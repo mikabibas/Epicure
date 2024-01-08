@@ -2,7 +2,7 @@ import {
   CONTACT_US,
   PRIVACY_POLICY,
   TERM_OF_USE,
-} from "../constants/_variables";
+} from "../constants/variables";
 import "../styles/footerDesktop.scss";
 
 const FooterDesktop = () => {

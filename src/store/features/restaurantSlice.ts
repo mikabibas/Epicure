@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import restaurants from "assets/restaurants.json";
-import { IRestaurant } from "constants/_interfaces";
+import { IRestaurant } from "constants/interfaces";
 import { ERestaurantStatus } from "constants/enum";
 
 export const fetchRestaurants = createAsyncThunk(

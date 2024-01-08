@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
-import { HERO_TEXT, PLACEHOLDER_SERACH_INPUT } from "constants/_variables";
+import { HERO_TEXT, PLACEHOLDER_SERACH_INPUT } from "constants/variables";
 import "styles/hero.scss";
 import data from "assets/restaurants.json";
 

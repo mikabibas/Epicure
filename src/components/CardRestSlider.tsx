@@ -2,8 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
-import { CardSliderProps } from "constants/_interfaces";
-import { SIGNATURE_DISH, SLIDER_SETTINGS } from "constants/_variables";
+import { CardSliderProps } from "constants/interfaces";
+import { SIGNATURE_DISH, SLIDER_SETTINGS } from "constants/variables";
 
 const CardRestSlider: React.FC<CardSliderProps> = ({ cards }) => {
   return (
