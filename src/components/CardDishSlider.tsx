@@ -25,6 +25,7 @@ const CardDishSlider: React.FC<CardSliderProps> = ({ cards }) => {
               />
             </div>
             <div className="card-text-container">
+              <div className="restaurant-name">{card.name_res}</div>
               <h3 className="card-title">{card.chef}</h3>
               <img
                 className="dish-rating"

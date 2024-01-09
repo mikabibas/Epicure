@@ -4,6 +4,7 @@ import {
   CHEF_PARAGRAPH,
   CHEF_RESTAURANTS,
   CHEF_WEEK,
+  SLIDER_SETTINGS,
 } from "constants/variables";
 import { ChefComponentProps, IRestaurant } from "constants/interfaces";
 import "styles/chefSection.scss";
@@ -28,14 +29,6 @@ const ChefSection: React.FC<ChefComponentProps> = ({
       <h1 className="restaurant-name">{restaurant.name_res}</h1>
     </div>
   ));
-
-  const settings = {
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: false,
-  };
 
   useEffect(() => {
     const filtered = restaurants.filter(
@@ -63,7 +56,7 @@ const ChefSection: React.FC<ChefComponentProps> = ({
         <div className="restaurants-container">
           <MediaQuery minWidth={780}>{filteredRestaurantsMapped}</MediaQuery>
           <MediaQuery maxWidth={780}>
-            <Slider {...settings}>{filteredRestaurantsMapped}</Slider>
+            <Slider {...SLIDER_SETTINGS}>{filteredRestaurantsMapped}</Slider>
           </MediaQuery>
         </div>
       </div>

@@ -1,11 +1,5 @@
-import React from 'react'
+const Chefs = () => {
+  return <div>Chefs</div>;
+};
 
-interface Props {}
-
-const Chefs = (props: Props) => {
-  return (
-    <div>C</div>
-  )
-}
-
-export default Chefs
+export default Chefs;
