@@ -1,10 +1,18 @@
-import logo from "assets/images/layout/logo.png";
 import "styles/header/header.scss";
 
-const Logo = () => {
+interface LogoProps {
+  size: number;
+  src: string;
+}
+
+const Logo: React.FC<LogoProps> = ({ size, src }: LogoProps) => {
   return (
-    <div>
-      <img className="header-logo" src={logo} alt="logo" />
+    <div style={{ width: size, height: size }}>
+      <img
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+        src={src}
+        alt="logo"
+      />
     </div>
   );
 };

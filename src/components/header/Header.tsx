@@ -1,6 +1,7 @@
 import BurgerMenu from "./BurgerMenu";
 import "styles/header/header.scss";
 import Logo from "./Logo";
+import logo from "assets/images/layout/logo.png";
 import { useState } from "react";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
 import Cart from "assets/images/layout/cart.svg";
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
       <div className="header-container">
         <BurgerMenu />
         <div className="logo-container">
-          {isSearchOpen ? "Search" : <Logo />}
+          {isSearchOpen ? "Search" : <Logo src={logo} size={32} />}
           <div className="logo-text">{TEXT_LOGO}</div>
           <div className="restaurants-chefs-container">
             <Link className="link" to="/restaurants">
