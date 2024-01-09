@@ -108,7 +108,8 @@
   letter-spacing: 2px;
   line-height: 35px;
   @include mobile {
-    left: 0;
+    bottom: -50px;
+    left: 10px;
   }
 }
 
