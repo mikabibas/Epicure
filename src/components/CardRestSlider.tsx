@@ -3,37 +3,31 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
 import { CardSliderProps } from "constants/interfaces";
-import { SIGNATURE_DISH, SLIDER_SETTINGS } from "constants/variables";
+import { Link } from "react-router-dom";
+import {
+  RESTAURANTS,
+  POPULAR_RESTAURANTS,
+  SLIDER_SETTINGS,
+} from "constants/variables";
+import Card from "./Card";
 
 const CardRestSlider: React.FC<CardSliderProps> = ({ cards }) => {
   return (
     <div className="card-slider">
-      <h1 className="restaurants-slider-title">{SIGNATURE_DISH}</h1>
+      <h1 className="restaurants-slider-title">{POPULAR_RESTAURANTS}</h1>
       <Slider {...SLIDER_SETTINGS}>
         {cards.map((card) => (
-          <div key={card.id} className="card">
-            <div className="card-image-container">
-              <img
-                className="card-image"
-                src={require(`../assets/images/food/${card.image}`)}
-                alt={card.dishName}
-              />
-            </div>
-            <div className="card-text-container">
-              <h3 className="card-title">{card.dishName}</h3>
-              <img
-                className="dish-icon"
-                src={require(`assets/images/layout/${card.icon}`)}
-                alt="dish_icon"
-              />
-              <p className="ingredients">{card.ingredients}</p>
-              <p className="dish-price">
-                <span>₪ {card.price}</span>
-              </p>
-            </div>
-          </div>
+          <Card key={card.id} card={card} />
         ))}
       </Slider>
+      <Link className="slider-link" to="/restaurants">
+        All {RESTAURANTS}
+        <img
+          className="arrows-link"
+          src={require("assets/images/layout/arrows.jpg")}
+          alt="arrows"
+        />
+      </Link>
     </div>
   );
 };

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name_res": "Mediterranean Delight",
-    "chef": "Yossi Shitrit",
+    "chef": "Nitzan Raz",
     "dishName": "Grilled Octopus",
     "image": "cacio_pepe.jpeg",
     "rating": "3-stars.png",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name_res": "Urban Fusion",
-    "chef": "Gabriel Chen",
+    "chef": "Assaf Granit",
     "dishName": "Sushi Platter",
     "image": "dumpling.jpeg",
     "rating": "4-stars.png",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name_res": "Artisanal Eats",
-    "chef": "Sophie Klein",
+    "chef": "Meir Adoni",
     "dishName": "Truffle Infused Pasta",
     "image": "meatballs.jpeg",
     "rating": "4-stars.png",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name_res": "Spice Haven",
-    "chef": "Ravi Patel",
+    "chef": "Eyal Shani",
     "dishName": "Curry Chicken Masala",
     "image": "pecan_pie.webp",
     "rating": "4-stars.png",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "name_res": "Seafront Bistro",
-    "chef": "Alexandra Costa",
+    "chef": "Omer Miller",
     "dishName": "Lobster Bisque",
     "image": "cacio_pepe.jpeg",
     "rating": "4-stars.png",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "name_res": "Farm-to-Table Fresh",
-    "chef": "David Green",
+    "chef": "Yossi Shitrit",
     "dishName": "Organic Beet Salad",
     "image": "hot_dog.webp",
     "rating": "4-stars.png",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "name_res": "Taste of Tradition",
-    "chef": "Yossi Shitrit",
+    "chef": "Yuval Ben Neriyah",
     "dishName": "Shakshuka Supreme",
     "image": "hummus.webp",
     "rating": "4-stars.png",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "name_res": "Gastronomic Gems",
-    "chef": "Isabella Rossi",
+    "chef": "Aviv Moshe",
     "dishName": "Foie Gras Crostini",
     "image": "fried_rice.jpeg",
     "rating": "3-stars.png",
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "name_res": "Sunset Sushi",
-    "chef": "Kenji Tanaka",
+    "chef": "Shahaf Shabtay",
     "dishName": "Sunset Sushi Roll",
     "image": "Hamburger-and-french-fries.webp",
     "rating": "4-stars.png",
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "name_res": "Modern Mexican Flavors",
-    "chef": "Maria Hernandez",
+    "chef": "Nitzan Raz",
     "dishName": "Guacamole Trio",
     "image": "guacamole.jpeg",
     "rating": "4-stars.png",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "name_res": "Fusion Grill",
-    "chef": "Carlos Garcia",
+    "chef": "Eyal Shani",
     "dishName": "BBQ Ribs",
     "image": "shawarma.jpeg",
     "rating": "4-stars.png",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "name_res": "Cafe Parisienne",
-    "chef": "Yossi Shitrit",
+    "chef": "Omer Miller",
     "dishName": "Croissant Breakfast",
     "image": "waffles.webp",
     "rating": "3-stars.png",
@@ -134,7 +134,7 @@
   {
     "id": 13,
     "name_res": "Vegan Bliss",
-    "chef": "Liam Thompson",
+    "chef": "Assaf Granit",
     "dishName": "Quinoa Salad",
     "image": "shakshuka.jpeg",
     "rating": "4-stars.png",
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "name_res": "Sizzling Steakhouse",
-    "chef": "Michael Johnson",
+    "chef": "Meir Adoni",
     "dishName": "Filet Mignon",
     "image": "pasta.jpeg",
     "rating": "4-stars.png",
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "name_res": "Coastal Catch",
-    "chef": "Emma White",
+    "chef": "Yossi Shitrit",
     "dishName": "Grilled Salmon",
     "image": "rice.jpeg",
     "rating": "3-stars.png",

@@ -86,6 +86,21 @@ const NEW = "new";
 const MOST_POP = "most popular";
 const OPEN_NOW = "open now";
 const MAP_VIEW = "map view";
+const MOST_VIEWED = "Most Viewed";
+
+const RES_FILTERS = [
+  { path: "/all", label: ALL },
+  { path: "/new", label: NEW },
+  { path: "/most-popular", label: MOST_POP },
+  { path: "/open-now", label: OPEN_NOW },
+  { path: "/map-view", label: MAP_VIEW },
+];
+
+const CHEF_FILTERS = [
+  { path: "/all", label: ALL },
+  { path: "/new", label: NEW },
+  { path: "/most-viewed", label: MOST_VIEWED },
+];
 
 export {
   CONTACT_US,
@@ -131,4 +146,6 @@ export {
   MOST_POP,
   MAP_VIEW,
   OPEN_NOW,
+  RES_FILTERS,
+  CHEF_FILTERS,
 };
