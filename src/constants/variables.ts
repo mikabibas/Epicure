@@ -34,6 +34,7 @@ const SLIDER_SETTINGS = {
   slidesToScroll: 3,
   dots: false,
   arrows: false,
+  infinite: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -65,6 +66,19 @@ const CHEF_PARAGRAPH =
 const CHEF_NAME = "Yossi Shitrit";
 const CHEF_WEEK = "chef of the week:";
 const CHEF_RESTAURANTS = "Yossi's Restaurants";
+
+// about-us
+const ABOUT_TITLE = "About Us:";
+const ABOUT_PARAGRAPH1 =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blanditturpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, dignissim a vestibulum.";
+const ABOUT_PARAGRAPH2 =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros.";
+
+//buttons text
+const DWN_ON = "Download on the";
+const APP_STORE = "App Store";
+const GT_ON = "Get it on";
+const GOOGLE_PLAY = "Google Play";
 
 export {
   CONTACT_US,
@@ -98,4 +112,11 @@ export {
   CHEF_NAME,
   CHEF_WEEK,
   CHEF_RESTAURANTS,
+  ABOUT_PARAGRAPH1,
+  ABOUT_PARAGRAPH2,
+  ABOUT_TITLE,
+  DWN_ON,
+  GT_ON,
+  GOOGLE_PLAY,
+  APP_STORE,
 };

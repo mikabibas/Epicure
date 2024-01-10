@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  z-index: 100;
 
   @include mobile {
     margin: 46px auto;

@@ -9,9 +9,9 @@ import Hero from "components/Hero";
 import data from "assets/restaurants.json";
 import CardDishSlider from "components/CardDishSlider";
 import Meaning from "components/Meaning";
-import RestaurantList from "components/RestaurantList";
 import ChefSection from "components/ChefSection";
 import CardRestSlider from "components/CardRestSlider";
+import AboutUs from "components/AboutUs";
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <CardRestSlider cards={data} />
         <Meaning />
         <ChefSection chefName="Yossi Shitrit" restaurants={data} />
+        <AboutUs />
         <FooterDesktop />
       </BrowserRouter>
     </div>
