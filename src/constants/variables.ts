@@ -80,6 +80,13 @@ const APP_STORE = "App Store";
 const GT_ON = "Get it on";
 const GOOGLE_PLAY = "Google Play";
 
+// restaurants page navigation
+const ALL = "all";
+const NEW = "new";
+const MOST_POP = "most popular";
+const OPEN_NOW = "open now";
+const MAP_VIEW = "map view";
+
 export {
   CONTACT_US,
   TERM_OF_USE,
@@ -119,4 +126,9 @@ export {
   GT_ON,
   GOOGLE_PLAY,
   APP_STORE,
+  ALL,
+  NEW,
+  MOST_POP,
+  MAP_VIEW,
+  OPEN_NOW,
 };
