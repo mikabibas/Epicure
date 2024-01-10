@@ -48,7 +48,7 @@ const Header: React.FC = () => {
                   className="search-icon"
                   src={SearchIcon}
                   alt="search_icon"
-                />{" "}
+                />
                 <input
                   className="input-field"
                   type="text"

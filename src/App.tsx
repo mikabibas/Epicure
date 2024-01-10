@@ -12,6 +12,8 @@ import Meaning from "components/Meaning";
 import ChefSection from "components/ChefSection";
 import CardRestSlider from "components/CardRestSlider";
 import AboutUs from "components/AboutUs";
+import MediaQuery from "react-responsive";
+import Footer from "components/Footer";
 
 function App() {
   return (
@@ -29,7 +31,12 @@ function App() {
         <Meaning />
         <ChefSection chefName="Yossi Shitrit" restaurants={data} />
         <AboutUs />
-        <FooterDesktop />
+        <MediaQuery minWidth={780}>
+          <FooterDesktop />
+        </MediaQuery>
+        <MediaQuery maxWidth={780}>
+          <Footer />
+        </MediaQuery>
       </BrowserRouter>
     </div>
   );

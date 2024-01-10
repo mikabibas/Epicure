@@ -82,11 +82,9 @@
   display: flex;
   .menu-items {
     background-color: $PRIMARY_WHITE;
-    display: flex;
     position: fixed;
     width: 100%;
-    padding-top: 60px;
-    height: 100vh;
+    padding-top: 350px;
     transform: translate(-200%);
     display: flex;
     flex-direction: column;
