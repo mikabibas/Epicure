@@ -1,11 +1,13 @@
-import React from 'react'
+import Header from "components/header/Header";
+import FilterNav from "components/restaurantsPage/FilterNav";
 
-interface Props {}
-
-const Restaurants = (props: Props) => {
+const Restaurants = () => {
   return (
-    <div>R</div>
-  )
-}
+    <div>
+      <Header />
+      <FilterNav />
+    </div>
+  );
+};
 
-export default Restaurants
+export default Restaurants;

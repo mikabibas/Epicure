@@ -7,9 +7,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 60vh;
+  height: 400px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  @include mobile {
+    height: 250px;
+  }
 }
 
 .hero-search-container {

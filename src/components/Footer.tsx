@@ -1,9 +1,5 @@
-import {
-  CONTACT_US,
-  PRIVACY_POLICY,
-  TERM_OF_USE,
-} from "../constants/variables";
-import "../styles/footer.scss";
+import { CONTACT_US, PRIVACY_POLICY, TERM_OF_USE } from "constants/variables";
+import "styles/footer.scss";
 
 const Footer = () => {
   return (
