@@ -74,6 +74,12 @@ const ABOUT_PARAGRAPH1 =
 const ABOUT_PARAGRAPH2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros.";
 
+//buttons text
+const DWN_ON = "Download on the";
+const APP_STORE = "App Store";
+const GT_ON = "Get it on";
+const GOOGLE_PLAY = "Google Play";
+
 // restaurants page navigation
 const ALL = "all";
 const NEW = "new";
@@ -116,6 +122,10 @@ export {
   ABOUT_PARAGRAPH1,
   ABOUT_PARAGRAPH2,
   ABOUT_TITLE,
+  DWN_ON,
+  GT_ON,
+  GOOGLE_PLAY,
+  APP_STORE,
   ALL,
   NEW,
   MOST_POP,
