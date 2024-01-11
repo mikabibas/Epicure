@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
       </div>
       <div className="card-text-container">
         <div className="restaurant-name">{card.name_res}</div>
-        <h3 className="card-title">{card.chef}</h3>
+        <h3 className="card-title">{card.chef?.chef_name}</h3>
         <img
           className="dish-rating"
           src={require(`assets/images/layout/${card.rating}`)}

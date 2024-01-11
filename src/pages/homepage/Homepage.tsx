@@ -7,6 +7,7 @@ import CardRestSlider from "components/CardDishSlider";
 import AboutUs from "components/AboutUs";
 import Footer from "components/Footer";
 import Header from "components/header/Header";
+import { CHEF_NAME } from "constants/variables";
 
 const Homepage = () => {
   return (
@@ -16,7 +17,10 @@ const Homepage = () => {
       <CardDishSlider cards={data} />
       <CardRestSlider cards={data} />
       <Meaning />
-      <ChefSection chefName="Yossi Shitrit" restaurants={data} />
+      <ChefSection
+        chef={{ chef_name: CHEF_NAME, chef_img: "chef_yossi.png" }}
+        restaurants={data}
+      />
       <AboutUs />
       <Footer />
     </div>

@@ -1,9 +1,14 @@
+interface ChefInfo {
+  chef_name: string;
+  chef_img: string;
+}
+
 export interface CardInterface {
   id?: number;
   image?: string;
   name_res?: string;
   dishName?: string;
-  chef?: string;
+  chef?: ChefInfo;
   rating?: string;
   icon?: string;
   ingredients?: string;
@@ -17,11 +22,11 @@ export interface CardSliderProps {
 export interface IRestaurant {
   id: number;
   name_res: string;
-  chef: string;
+  chef: ChefInfo;
   image: string;
 }
 
 export interface ChefComponentProps {
-  chefName: string;
+  chef: ChefInfo;
   restaurants: IRestaurant[];
 }
