@@ -1,4 +1,5 @@
-interface ChefInfo {
+export interface ChefInfo {
+  chef?: any;
   chef_name: string;
   chef_img: string;
 }

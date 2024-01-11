@@ -4,7 +4,7 @@
     "name_res": "Mediterranean Delight",
     "chef": {
       "chef_name": "Nitzan Raz",
-      "chef_img": ""
+      "chef_img": "nitzanRaz.png"
     },
     "dishName": "Grilled Octopus",
     "image": "cacio_pepe.jpeg",
@@ -17,8 +17,8 @@
     "id": 2,
     "name_res": "Urban Fusion",
     "chef": {
-      "chef_name": "Assaf Granit",
-      "chef_img": ""
+      "chef_name": "Asaf Granit",
+      "chef_img": "asafGranit.png"
     },
     "dishName": "Sushi Platter",
     "image": "dumpling.jpeg",
@@ -32,7 +32,7 @@
     "name_res": "Artisanal Eats",
     "chef": {
       "chef_name": "Meir Adoni",
-      "chef_img": ""
+      "chef_img": "meirAdoni.png"
     },
     "dishName": "Truffle Infused Pasta",
     "image": "meatballs.jpeg",
@@ -46,7 +46,7 @@
     "name_res": "Spice Haven",
     "chef": {
       "chef_name": "Eyal Shani",
-      "chef_img": ""
+      "chef_img": "eyalShani.png"
     },
     "dishName": "Curry Chicken Masala",
     "image": "pecan_pie.webp",
@@ -60,7 +60,7 @@
     "name_res": "Seafront Bistro",
     "chef": {
       "chef_name": "Omer Miller",
-      "chef_img": ""
+      "chef_img": "omerMiller.png"
     },
     "dishName": "Lobster Bisque",
     "image": "cacio_pepe.jpeg",
@@ -74,7 +74,7 @@
     "name_res": "Farm-to-Table Fresh",
     "chef": {
       "chef_name": "Yossi Shitrit",
-      "chef_img": ""
+      "chef_img": "yossiShitrit.png"
     },
     "dishName": "Organic Beet Salad",
     "image": "hot_dog.webp",
@@ -88,7 +88,7 @@
     "name_res": "Taste of Tradition",
     "chef": {
       "chef_name": "Yuval Ben Neriyah",
-      "chef_img": ""
+      "chef_img": "yuvalBenNeriyah.png"
     },
     "dishName": "Shakshuka Supreme",
     "image": "hummus.webp",
@@ -102,7 +102,7 @@
     "name_res": "Gastronomic Gems",
     "chef": {
       "chef_name": "Aviv Moshe",
-      "chef_img": ""
+      "chef_img": "avivMoshe.png"
     },
     "dishName": "Foie Gras Crostini",
     "image": "fried_rice.jpeg",
@@ -116,7 +116,7 @@
     "name_res": "Sunset Sushi",
     "chef": {
       "chef_name": "Shahaf Shabtay",
-      "chef_img": ""
+      "chef_img": "shahafShabtay.png"
     },
     "dishName": "Sunset Sushi Roll",
     "image": "Hamburger-and-french-fries.webp",
@@ -130,7 +130,7 @@
     "name_res": "Modern Mexican Flavors",
     "chef": {
       "chef_name": "Nitzan Raz",
-      "chef_img": ""
+      "chef_img": "nitzanRaz.png"
     },
     "dishName": "Guacamole Trio",
     "image": "guacamole.jpeg",
@@ -144,7 +144,7 @@
     "name_res": "Fusion Grill",
     "chef": {
       "chef_name": "Eyal Shani",
-      "chef_img": ""
+      "chef_img": "eyalShani.png"
     },
     "dishName": "BBQ Ribs",
     "image": "shawarma.jpeg",
@@ -158,7 +158,7 @@
     "name_res": "Cafe Parisienne",
     "chef": {
       "chef_name": "Omer Miller",
-      "chef_img": ""
+      "chef_img": "omerMiller.png"
     },
     "dishName": "Croissant Breakfast",
     "image": "waffles.webp",
@@ -172,7 +172,7 @@
     "name_res": "Vegan Bliss",
     "chef": {
       "chef_name": "Assaf Granit",
-      "chef_img": ""
+      "chef_img": "asafGranit.png"
     },
     "dishName": "Quinoa Salad",
     "image": "shakshuka.jpeg",
@@ -186,7 +186,7 @@
     "name_res": "Sizzling Steakhouse",
     "chef": {
       "chef_name": "Meir Adoni",
-      "chef_img": ""
+      "chef_img": "meirAdoni.png"
     },
     "dishName": "Filet Mignon",
     "image": "pasta.jpeg",
@@ -200,7 +200,7 @@
     "name_res": "Coastal Catch",
     "chef": {
       "chef_name": "Yossi Shitrit",
-      "chef_img": ""
+      "chef_img": "yossiShitrit.png"
     },
     "dishName": "Grilled Salmon",
     "image": "rice.jpeg",

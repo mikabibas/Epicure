@@ -1,4 +1,4 @@
-export enum ERestaurantStatus {
+export enum EFetchStatus {
   IDLE = "idle",
   LOADING = "loading",
   SUCCEEDED = "succeeded",
