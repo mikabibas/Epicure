@@ -1,3 +1,5 @@
+import { EAppRoutes } from "constants/enum";
+import { Link } from "react-router-dom";
 import "styles/header/header.scss";
 
 interface LogoProps {
@@ -7,13 +9,15 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ size, src }: LogoProps) => {
   return (
-    <div style={{ width: size, height: size }}>
-      <img
-        style={{ width: "100%", height: "100%", objectFit: "contain" }}
-        src={src}
-        alt="logo"
-      />
-    </div>
+    <Link to={EAppRoutes.HOMEPAGE}>
+      <div style={{ width: size, height: size }}>
+        <img
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          src={src}
+          alt="logo"
+        />
+      </div>
+    </Link>
   );
 };
 

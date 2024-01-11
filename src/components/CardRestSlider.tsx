@@ -10,6 +10,7 @@ import {
   SLIDER_SETTINGS,
 } from "constants/variables";
 import Card from "./Card";
+import { EAppRoutes } from "constants/enum";
 
 const CardRestSlider: React.FC<CardSliderProps> = ({ cards }) => {
   return (
@@ -20,7 +21,7 @@ const CardRestSlider: React.FC<CardSliderProps> = ({ cards }) => {
           <Card key={card.id} card={card} />
         ))}
       </Slider>
-      <Link className="slider-link" to="/restaurants">
+      <Link className="slider-link" to={EAppRoutes.RESTAURANTS}>
         All {RESTAURANTS}
         <img
           className="arrows-link"

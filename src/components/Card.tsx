@@ -1,7 +1,7 @@
-import { CardInterface } from "constants/interfaces";
+import { ICard } from "constants/interfaces";
 
 interface CardProps {
-  card: CardInterface;
+  card: ICard;
 }
 
 const Card: React.FC<CardProps> = ({ card }) => {

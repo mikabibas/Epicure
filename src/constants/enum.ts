@@ -4,3 +4,9 @@ export enum ERestaurantStatus {
   SUCCEEDED = "succeeded",
   FAILED = "failed",
 }
+
+export enum EAppRoutes {
+  HOMEPAGE = "/",
+  RESTAURANTS = "/restaurants",
+  CHEFS = "/chefs",
+}

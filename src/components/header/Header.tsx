@@ -13,6 +13,7 @@ import {
   TEXT_LOGO,
 } from "constants/variables";
 import { Link } from "react-router-dom";
+import { EAppRoutes } from "constants/enum";
 
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -28,10 +29,10 @@ const Header: React.FC = () => {
           {isSearchOpen ? "Search" : <Logo src={logo} size={32} />}
           <div className="logo-text">{TEXT_LOGO}</div>
           <div className="restaurants-chefs-container">
-            <Link className="link" to="/restaurants">
+            <Link className="link" to={EAppRoutes.RESTAURANTS}>
               {RESTAURANTS}
             </Link>
-            <Link className="link" to="/chefs">
+            <Link className="link" to={EAppRoutes.CHEFS}>
               {CHEFS}
             </Link>
           </div>

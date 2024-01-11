@@ -3,7 +3,7 @@ interface ChefInfo {
   chef_img: string;
 }
 
-export interface CardInterface {
+export interface ICard {
   id?: number;
   image?: string;
   name_res?: string;
@@ -16,7 +16,7 @@ export interface CardInterface {
 }
 
 export interface CardSliderProps {
-  cards: CardInterface[];
+  cards: ICard[];
 }
 
 export interface IRestaurant {
