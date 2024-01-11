@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-// import chefsData from "assets/restaurants.json";
 import { EFetchStatus } from "constants/enum";
 import { ChefInfo } from "constants/interfaces";
 import data from "assets/restaurants.json";
@@ -7,16 +6,12 @@ import data from "assets/restaurants.json";
 export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
   const chefs: ChefInfo[] = data as any as ChefInfo[];
 
-  console.log(data);
-
   const chefsWithDetails: ChefInfo[] = chefs.map((chef) => {
     return {
       chef_name: chef.chef.chef_name,
       chef_img: chef.chef.chef_img,
     };
   });
-
-  console.log(chefsWithDetails);
 
   return chefsWithDetails;
 });

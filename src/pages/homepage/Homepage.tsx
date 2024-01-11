@@ -9,8 +9,6 @@ import Footer from "components/Footer";
 import Header from "components/header/Header";
 import { CHEF_NAME } from "constants/variables";
 
-console.log(data);
-
 const Homepage = () => {
   return (
     <div>
