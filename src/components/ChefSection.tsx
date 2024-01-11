@@ -11,10 +11,7 @@ import "styles/chefSection.scss";
 import MediaQuery from "react-responsive";
 import Slider from "react-slick";
 
-const ChefSection: React.FC<ChefComponentProps> = ({
-  chefName,
-  restaurants,
-}) => {
+const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
   const [filteredRestaurants, setFilteredRestaurants] = useState<IRestaurant[]>(
     []
   );
@@ -32,10 +29,10 @@ const ChefSection: React.FC<ChefComponentProps> = ({
 
   useEffect(() => {
     const filtered = restaurants.filter(
-      (restaurant) => restaurant.chef === chefName
+      (restaurant) => restaurant.chef.chef_name === chef.chef_name
     );
     setFilteredRestaurants(filtered);
-  }, [chefName, restaurants]);
+  }, [chef, restaurants]);
 
   return (
     <div className="chef-container">

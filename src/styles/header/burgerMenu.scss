@@ -91,6 +91,7 @@
     transition: transform 0.6s ease-in-out;
     text-align: center;
     inset-inline-start: 0;
+    z-index: 1;
     li {
       margin-bottom: 1.2rem;
       font-size: 1.5rem;
@@ -105,7 +106,6 @@
       text-decoration: none;
       font-weight: 500;
       font-size: 1.2rem;
-      padding: 0.7rem;
       &:hover {
         font-weight: bolder;
       }

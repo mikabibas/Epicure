@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import restaurants from "assets/restaurants.json";
 import { IRestaurant } from "constants/interfaces";
-import { ERestaurantStatus } from "constants/enum";
+import { EFetchStatus } from "constants/enum";
 
 export const fetchRestaurants = createAsyncThunk(
   "restaurants/fetchRestaurants",
@@ -16,13 +16,13 @@ export const fetchRestaurants = createAsyncThunk(
 
 interface IRestaurantState {
   restaurants: IRestaurant[];
-  status: ERestaurantStatus;
+  status: EFetchStatus;
   error: string | null;
 }
 
 const initialState: IRestaurantState = {
   restaurants: [],
-  status: ERestaurantStatus.IDLE,
+  status: EFetchStatus.IDLE,
   error: null,
 };
 
@@ -33,15 +33,15 @@ const restaurantSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchRestaurants.pending, (state) => {
-        state.status = ERestaurantStatus.LOADING;
+        state.status = EFetchStatus.LOADING;
       })
       .addCase(fetchRestaurants.fulfilled, (state, action) => {
-        state.status = ERestaurantStatus.SUCCEEDED;
+        state.status = EFetchStatus.SUCCEEDED;
         state.restaurants = action.payload;
         state.error = null;
       })
       .addCase(fetchRestaurants.rejected, (state, action) => {
-        state.status = ERestaurantStatus.FAILED;
+        state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"
           : "Unknown error";

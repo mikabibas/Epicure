@@ -1,4 +1,5 @@
 @import "constants/_colors.scss";
+@import "constants/_dimensions.scss";
 
 .navigation-menu {
   width: 100vw;
@@ -9,6 +10,7 @@
     width: 100vw;
     list-style-type: none;
     gap: 40px;
+    padding: 0;
 
     a {
       color: $PRIMARY_BLACK;
@@ -23,6 +25,14 @@
         text-underline-position: under;
         box-shadow: 0 2px 0 $HOVER_LINK;
       }
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    @include mobile {
+      justify-content: space-evenly;
+      gap: 0;
     }
   }
 }

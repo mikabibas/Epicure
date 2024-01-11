@@ -1,0 +1,14 @@
+@import "constants/_dimensions.scss";
+
+.restaurants-grid-container,
+.chefs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+  margin: 50px 127px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    margin: 25px 20px;
+  }
+}

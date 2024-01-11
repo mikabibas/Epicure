@@ -23,7 +23,6 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 350px;
   margin: 50px auto;
   position: relative;
 
@@ -36,12 +35,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 380px;
+  height: 379px;
 }
 
 .card-image-container {
   width: 100%;
-  height: 150px;
+  height: 60%;
 }
 
 .card-image {
@@ -54,13 +53,14 @@
   background-color: $SECONDARY_BEIGE;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  height: 150px;
+  height: 40%;
 }
 
 .card-title {
   margin: 10px 0;
+  font-size: 1rem;
 }
 
 .dish-icon {
@@ -118,8 +118,4 @@
   width: 15px;
   height: 12px;
   margin-left: 10px;
-}
-
-.dish-rating {
-  width: 100px;
 }
