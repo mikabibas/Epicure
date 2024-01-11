@@ -89,17 +89,17 @@ const MAP_VIEW = "map view";
 const MOST_VIEWED = "Most Viewed";
 
 const RES_FILTERS = [
-  { path: "/all", label: ALL },
-  { path: "/new", label: NEW },
-  { path: "/most-popular", label: MOST_POP },
-  { path: "/open-now", label: OPEN_NOW },
-  { path: "/map-view", label: MAP_VIEW },
+  { path: "/restaurants/all", label: ALL },
+  { path: "/restaurants/new", label: NEW },
+  { path: "/restaurants/most-popular", label: MOST_POP },
+  { path: "/restaurants/open-now", label: OPEN_NOW },
+  { path: "/restaurants/map-view", label: MAP_VIEW },
 ];
 
 const CHEF_FILTERS = [
-  { path: "/all", label: ALL },
-  { path: "/new", label: NEW },
-  { path: "/most-viewed", label: MOST_VIEWED },
+  { path: "/chefs/all", label: ALL },
+  { path: "/chefs/new", label: NEW },
+  { path: "/chefs/most-viewed", label: MOST_VIEWED },
 ];
 
 export {
