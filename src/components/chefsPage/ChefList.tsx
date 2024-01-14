@@ -22,18 +22,26 @@ const ChefList: React.FC = () => {
     return <div>Error: {error}</div>;
   }
 
+  const uniqueChefNames = new Set<string>();
+
   return (
     <div className="chefs-container">
-      {chefs.map((chef: ChefInfo) => (
-        <div key={chef.chef_name} className="image-title-container">
-          <img
-            className="chef-image"
-            src={require(`assets/images/chefs/${chef.chef_img}`)}
-            alt={chef.chef_name}
-          />
-          <h1 className="chef-name">{chef.chef_name}</h1>
-        </div>
-      ))}
+      {chefs.map((chef: ChefInfo) => {
+        if (!uniqueChefNames.has(chef.chef_name)) {
+          uniqueChefNames.add(chef.chef_name);
+          return (
+            <div key={chef.chef_name} className="image-title-container">
+              <img
+                className="chef-image"
+                src={require(`assets/images/chefs/${chef.chef_img}`)}
+                alt={chef.chef_name}
+              />
+              <h1 className="chef-name">{chef.chef_name}</h1>
+            </div>
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };
