@@ -11,7 +11,7 @@
   gap: 40px;
 
   @include mobile {
-    width: 100vw;
+    width: 330px;
     align-items: flex-start;
     margin: 20px;
   }
@@ -23,6 +23,7 @@
   gap: 20px;
   @include mobile {
     justify-content: center;
+    width: 330px;
   }
 }
 
@@ -37,6 +38,7 @@
   gap: 60px;
   @include mobile {
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -45,14 +47,14 @@
   position: relative;
 
   @include mobile {
-    width: fit-content;
+    width: 100%;
   }
 }
 
 .chef-image {
   object-fit: cover;
   @include mobile {
-    width: 350px;
+    width: 100%;
   }
 }
 
@@ -80,7 +82,7 @@
   text-align: justify;
 
   @include mobile {
-    width: 350px;
+    width: 100%;
   }
 }
 
@@ -88,7 +90,7 @@
   display: flex;
   @include mobile {
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
 }
 
