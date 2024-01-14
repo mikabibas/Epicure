@@ -1,4 +1,4 @@
-import ChefList from "components/ChefList";
+import ChefList from "components/chefsPage/ChefList";
 import Footer from "components/Footer";
 import Header from "components/header/Header";
 import FilterNav from "components/restaurantsPage/FilterNav";
