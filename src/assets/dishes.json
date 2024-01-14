@@ -5,7 +5,8 @@
     "restaurant_id": 1,
     "ingredients": "Hummus, Falafel, Tzatziki, Pita",
     "price": 24,
-    "image_url": "mediterranean_delight_platter.jpeg"
+    "image_url": "mediterranean_delight_platter.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 2,
@@ -13,7 +14,8 @@
     "restaurant_id": 1,
     "ingredients": "Calamari, Lemon, Garlic, Olive Oil",
     "price": 18,
-    "image_url": "grilled_calamari.jpeg"
+    "image_url": "grilled_calamari.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 3,
@@ -21,7 +23,8 @@
     "restaurant_id": 1,
     "ingredients": "Tomatoes, Cucumbers, Feta, Olives",
     "price": 14,
-    "image_url": "greek_salad.jpeg"
+    "image_url": "greek_salad.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 4,
@@ -29,7 +32,8 @@
     "restaurant_id": 1,
     "ingredients": "Eggplant, Ground Beef, Bechamel Sauce",
     "price": 20,
-    "image_url": "moussaka.jpeg"
+    "image_url": "moussaka.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 5,
@@ -37,7 +41,8 @@
     "restaurant_id": 1,
     "ingredients": "Pita Bread, Hummus",
     "price": 10,
-    "image_url": "pita_and_hummus.jpeg"
+    "image_url": "pita_and_hummus.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 6,
@@ -45,7 +50,8 @@
     "restaurant_id": 1,
     "ingredients": "Bulgur, Tomatoes, Parsley, Mint",
     "price": 16,
-    "image_url": "tabbouleh.jpeg"
+    "image_url": "tabbouleh.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 7,
@@ -53,7 +59,8 @@
     "restaurant_id": 1,
     "ingredients": "Chicken, Lamb, Tahini Sauce",
     "price": 22,
-    "image_url": "shawarma_plate.jpeg"
+    "image_url": "shawarma_plate.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 8,
@@ -61,7 +68,8 @@
     "restaurant_id": 1,
     "ingredients": "Eggplant, Tahini, Garlic",
     "price": 12,
-    "image_url": "baba_ganoush.jpeg"
+    "image_url": "baba_ganoush.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 9,
@@ -69,7 +77,8 @@
     "restaurant_id": 1,
     "ingredients": "Spinach, Feta, Phyllo Dough",
     "price": 18,
-    "image_url": "spanakopita.jpeg"
+    "image_url": "spanakopita.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 10,
@@ -77,7 +86,8 @@
     "restaurant_id": 1,
     "ingredients": "Olives, Capers, Garlic",
     "price": 14,
-    "image_url": "olive_tapenade.jpeg"
+    "image_url": "olive_tapenade.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 11,
@@ -85,7 +95,8 @@
     "restaurant_id": 2,
     "ingredients": "Assorted Fresh Fish, Wasabi, Soy Sauce",
     "price": 48,
-    "image_url": "assorted_sashimi.jpeg"
+    "image_url": "assorted_sashimi.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 12,
@@ -93,7 +104,8 @@
     "restaurant_id": 2,
     "ingredients": "Assorted Vegetables, Tempura Batter, Dipping Sauce",
     "price": 26,
-    "image_url": "vegetarian_tempura.jpeg"
+    "image_url": "vegetarian_tempura.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 13,
@@ -101,7 +113,8 @@
     "restaurant_id": 2,
     "ingredients": "Crab, Avocado, Cucumber, Tobiko",
     "price": 36,
-    "image_url": "rainbow_roll.jpeg"
+    "image_url": "rainbow_roll.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 14,
@@ -109,7 +122,8 @@
     "restaurant_id": 2,
     "ingredients": "Dragon Fruit, Mixed Greens, Sesame Dressing",
     "price": 16,
-    "image_url": "dragon_fruit_salad.jpeg"
+    "image_url": "dragon_fruit_salad.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 15,
@@ -117,7 +131,26 @@
     "restaurant_id": 2,
     "ingredients": "Salmon, Teriyaki Sauce, Steamed Rice",
     "price": 32,
-    "image_url": "teriyaki_salmon.jpeg"
+    "image_url": "teriyaki_salmon.jpeg",
+    "icon": "leaves_icon.png"
+  },
+  {
+    "dish_id": 16,
+    "dish_name": "New Dish 1",
+    "restaurant_id": 3,
+    "ingredients": "Ingredient 1, Ingredient 2",
+    "price": 78,
+    "image_url": "new_dish_1.jpeg",
+    "icon": "leaves_icon.png"
+  },
+  {
+    "dish_id": 17,
+    "dish_name": "New Dish 2",
+    "restaurant_id": 3,
+    "ingredients": "Ingredient 3, Ingredient 4",
+    "price": 67,
+    "image_url": "new_dish_2.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 16,
@@ -125,7 +158,8 @@
     "restaurant_id": 2,
     "ingredients": "Tofu, Seaweed, Green Onions, Miso Paste",
     "price": 14,
-    "image_url": "miso_soup.jpeg"
+    "image_url": "miso_soup.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 17,
@@ -133,7 +167,8 @@
     "restaurant_id": 2,
     "ingredients": "Edamame Beans, Sea Salt",
     "price": 8,
-    "image_url": "edamame.jpeg"
+    "image_url": "edamame.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 18,
@@ -141,7 +176,8 @@
     "restaurant_id": 2,
     "ingredients": "Matcha, Milk, Sugar",
     "price": 10,
-    "image_url": "green_tea_ice_cream.jpeg"
+    "image_url": "green_tea_ice_cream.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 19,
@@ -149,7 +185,8 @@
     "restaurant_id": 2,
     "ingredients": "Cream Cheese, Eggs, Sugar",
     "price": 18,
-    "image_url": "japanese_cheesecake.jpeg"
+    "image_url": "japanese_cheesecake.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 20,
@@ -157,7 +194,8 @@
     "restaurant_id": 2,
     "ingredients": "Rice, Nori, Tuna, Avocado",
     "price": 22,
-    "image_url": "sushi_burrito.jpeg"
+    "image_url": "sushi_burrito.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 21,
@@ -165,7 +203,8 @@
     "restaurant_id": 3,
     "ingredients": "Arborio Rice, Wild Mushrooms, Parmesan",
     "price": 28,
-    "image_url": "wild_mushroom_risotto.jpeg"
+    "image_url": "wild_mushroom_risotto.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 22,
@@ -173,7 +212,8 @@
     "restaurant_id": 3,
     "ingredients": "Tomatoes, Mozzarella, Basil, Balsamic Glaze",
     "price": 16,
-    "image_url": "caprese_salad.jpeg"
+    "image_url": "caprese_salad.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 23,
@@ -181,7 +221,8 @@
     "restaurant_id": 3,
     "ingredients": "Chicken Breast, Lemon, Herbs",
     "price": 24,
-    "image_url": "lemon_herb_grilled_chicken.jpeg"
+    "image_url": "lemon_herb_grilled_chicken.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 24,
@@ -189,7 +230,8 @@
     "restaurant_id": 3,
     "ingredients": "Chocolate, Butter, Eggs",
     "price": 18,
-    "image_url": "chocolate_fondant.jpeg"
+    "image_url": "chocolate_fondant.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 25,
@@ -197,7 +239,8 @@
     "restaurant_id": 3,
     "ingredients": "Prosciutto, Asparagus, Olive Oil",
     "price": 14,
-    "image_url": "prosciutto_wrapped_asparagus.jpeg"
+    "image_url": "prosciutto_wrapped_asparagus.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 26,
@@ -205,7 +248,8 @@
     "restaurant_id": 3,
     "ingredients": "Pasta, Basil Pesto, Pine Nuts",
     "price": 20,
-    "image_url": "pesto_pasta.jpeg"
+    "image_url": "pesto_pasta.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 27,
@@ -213,7 +257,8 @@
     "restaurant_id": 3,
     "ingredients": "Assorted Cheeses, Crackers, Grapes",
     "price": 22,
-    "image_url": "artisanal_cheese_board.jpeg"
+    "image_url": "artisanal_cheese_board.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 28,
@@ -221,7 +266,8 @@
     "restaurant_id": 3,
     "ingredients": "Onions, Pastry Dough, Gruyere Cheese",
     "price": 16,
-    "image_url": "caramelized_onion_tart.jpeg"
+    "image_url": "caramelized_onion_tart.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 29,
@@ -229,7 +275,8 @@
     "restaurant_id": 3,
     "ingredients": "Raspberries, Lemon Curd, Pastry",
     "price": 18,
-    "image_url": "raspberry_lemon_tart.jpeg"
+    "image_url": "raspberry_lemon_tart.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 30,
@@ -237,7 +284,8 @@
     "restaurant_id": 3,
     "ingredients": "Beef Tenderloin, Arugula, Parmesan",
     "price": 26,
-    "image_url": "beef_carpaccio.jpeg"
+    "image_url": "beef_carpaccio.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 31,
@@ -245,7 +293,8 @@
     "restaurant_id": 4,
     "ingredients": "Mixed Vegetables, Cashews, Coconut Milk",
     "price": 22,
-    "image_url": "vegetable_korma.jpeg"
+    "image_url": "vegetable_korma.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 32,
@@ -253,7 +302,8 @@
     "restaurant_id": 4,
     "ingredients": "Lamb Chops, Yogurt, Spices",
     "price": 30,
-    "image_url": "tandoori_lamb_chops.jpeg"
+    "image_url": "tandoori_lamb_chops.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 33,
@@ -261,7 +311,8 @@
     "restaurant_id": 4,
     "ingredients": "Paneer, Tomato Sauce, Garam Masala",
     "price": 18,
-    "image_url": "paneer_tikka_masala.jpeg"
+    "image_url": "paneer_tikka_masala.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 34,
@@ -269,7 +320,8 @@
     "restaurant_id": 4,
     "ingredients": "Chicken, Potatoes, Vinegar, Spices",
     "price": 26,
-    "image_url": "chicken_vindaloo.jpeg"
+    "image_url": "chicken_vindaloo.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 35,
@@ -277,7 +329,8 @@
     "restaurant_id": 4,
     "ingredients": "Assorted Naan Breads, Garlic Butter",
     "price": 14,
-    "image_url": "naan_bread_basket.jpeg"
+    "image_url": "naan_bread_basket.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 36,
@@ -285,7 +338,8 @@
     "restaurant_id": 4,
     "ingredients": "Spinach, Potatoes, Mustard Greens",
     "price": 20,
-    "image_url": "saag_aloo.jpeg"
+    "image_url": "saag_aloo.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 37,
@@ -293,7 +347,8 @@
     "restaurant_id": 4,
     "ingredients": "Mango, Yogurt, Cardamom",
     "price": 10,
-    "image_url": "mango_lassi.jpeg"
+    "image_url": "mango_lassi.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 38,
@@ -301,7 +356,8 @@
     "restaurant_id": 4,
     "ingredients": "Prawns, Basmati Rice, Saffron",
     "price": 32,
-    "image_url": "prawn_biryani.jpeg"
+    "image_url": "prawn_biryani.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 39,
@@ -309,7 +365,8 @@
     "restaurant_id": 4,
     "ingredients": "Potatoes, Cauliflower, Turmeric",
     "price": 18,
-    "image_url": "aloo_gobi.jpeg"
+    "image_url": "aloo_gobi.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 40,
@@ -317,7 +374,8 @@
     "restaurant_id": 4,
     "ingredients": "Cottage Cheese, Milk, Cardamom",
     "price": 12,
-    "image_url": "ras_malai.jpeg"
+    "image_url": "ras_malai.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 41,
@@ -325,7 +383,8 @@
     "restaurant_id": 5,
     "ingredients": "Clams, Potatoes, Cream, Bacon",
     "price": 16,
-    "image_url": "clam_chowder.jpeg"
+    "image_url": "clam_chowder.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 42,
@@ -333,7 +392,8 @@
     "restaurant_id": 5,
     "ingredients": "Shrimp, Crab, Okra, Andouille Sausage",
     "price": 24,
-    "image_url": "seafood_gumbo.jpeg"
+    "image_url": "seafood_gumbo.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 43,
@@ -341,7 +401,8 @@
     "restaurant_id": 5,
     "ingredients": "Lobster Tails, Garlic, Lemon, Butter",
     "price": 38,
-    "image_url": "lemon_garlic_butter_lobster.jpeg"
+    "image_url": "lemon_garlic_butter_lobster.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 44,
@@ -349,7 +410,8 @@
     "restaurant_id": 5,
     "ingredients": "Oysters, Spinach, Bacon, Parmesan",
     "price": 28,
-    "image_url": "oyster_rockefeller.jpeg"
+    "image_url": "oyster_rockefeller.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 45,
@@ -357,7 +419,8 @@
     "restaurant_id": 5,
     "ingredients": "Swordfish, Lemon, Herbs",
     "price": 32,
-    "image_url": "grilled_swordfish.jpeg"
+    "image_url": "grilled_swordfish.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 46,
@@ -365,7 +428,8 @@
     "restaurant_id": 5,
     "ingredients": "Shrimp, Garlic, White Wine, Pasta",
     "price": 26,
-    "image_url": "shrimp_scampi.jpeg"
+    "image_url": "shrimp_scampi.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 47,
@@ -373,7 +437,8 @@
     "restaurant_id": 5,
     "ingredients": "Crab Meat, Slider Buns, Remoulade Sauce",
     "price": 18,
-    "image_url": "crab_cake_sliders.jpeg"
+    "image_url": "crab_cake_sliders.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 48,
@@ -381,7 +446,8 @@
     "restaurant_id": 5,
     "ingredients": "Lobster, Mayonnaise, Celery, New England Roll",
     "price": 34,
-    "image_url": "lobster_roll.jpeg"
+    "image_url": "lobster_roll.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 49,
@@ -389,7 +455,8 @@
     "restaurant_id": 5,
     "ingredients": "Shrimp, Mussels, Chorizo, Saffron Rice",
     "price": 38,
-    "image_url": "seafood_paella_2.jpeg"
+    "image_url": "seafood_paella_2.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 50,
@@ -397,7 +464,8 @@
     "restaurant_id": 5,
     "ingredients": "Calamari Rings, Flour, Marinara Sauce",
     "price": 20,
-    "image_url": "crispy_calamari.jpeg"
+    "image_url": "crispy_calamari.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 51,
@@ -405,7 +473,8 @@
     "restaurant_id": 6,
     "ingredients": "Quinoa, Bell Peppers, Black Beans, Corn",
     "price": 22,
-    "image_url": "quinoa_stuffed_bell_peppers.jpeg"
+    "image_url": "quinoa_stuffed_bell_peppers.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 52,
@@ -413,7 +482,8 @@
     "restaurant_id": 6,
     "ingredients": "Sweet Potatoes, Kale, Pomegranate Seeds",
     "price": 18,
-    "image_url": "sweet_potato_and_kale_salad.jpeg"
+    "image_url": "sweet_potato_and_kale_salad.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 53,
@@ -421,7 +491,8 @@
     "restaurant_id": 6,
     "ingredients": "Zucchini, Eggplant, Ricotta, Marinara Sauce",
     "price": 26,
-    "image_url": "vegetarian_lasagna.jpeg"
+    "image_url": "vegetarian_lasagna.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 54,
@@ -429,7 +500,8 @@
     "restaurant_id": 6,
     "ingredients": "Tomatoes, Arugula, Goat Cheese",
     "price": 20,
-    "image_url": "farmers_market_pizza.jpeg"
+    "image_url": "farmers_market_pizza.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 55,
@@ -437,7 +509,8 @@
     "restaurant_id": 6,
     "ingredients": "Beets, Goat Cheese, Puff Pastry",
     "price": 24,
-    "image_url": "roasted_beet_and_goat_cheese_tart.jpeg"
+    "image_url": "roasted_beet_and_goat_cheese_tart.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 56,
@@ -445,7 +518,8 @@
     "restaurant_id": 6,
     "ingredients": "Assorted Vegetables, Hummus, Whole Grain Wrap",
     "price": 16,
-    "image_url": "farm_fresh_veggie_wrap.jpeg"
+    "image_url": "farm_fresh_veggie_wrap.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 57,
@@ -453,7 +527,8 @@
     "restaurant_id": 6,
     "ingredients": "Arborio Rice, Pumpkin, Parmesan",
     "price": 28,
-    "image_url": "pumpkin_risotto.jpeg"
+    "image_url": "pumpkin_risotto.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 58,
@@ -461,7 +536,8 @@
     "restaurant_id": 6,
     "ingredients": "Cucumber, Avocado, Tomatoes",
     "price": 14,
-    "image_url": "cucumber_avocado_gazpacho.jpeg"
+    "image_url": "cucumber_avocado_gazpacho.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 59,
@@ -469,7 +545,8 @@
     "restaurant_id": 6,
     "ingredients": "Portobello Mushrooms, Brioche Bun, Chipotle Mayo",
     "price": 22,
-    "image_url": "grilled_portobello_mushroom_burger.jpeg"
+    "image_url": "grilled_portobello_mushroom_burger.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 60,
@@ -477,7 +554,8 @@
     "restaurant_id": 6,
     "ingredients": "Assorted Seasonal Vegetables, Dips",
     "price": 30,
-    "image_url": "farmers_market_platter.jpeg"
+    "image_url": "farmers_market_platter.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 61,
@@ -485,7 +563,8 @@
     "restaurant_id": 7,
     "ingredients": "Chicken Broth, Matzo Balls, Carrots",
     "price": 14,
-    "image_url": "matzo_ball_soup.jpeg"
+    "image_url": "matzo_ball_soup.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 62,
@@ -493,7 +572,8 @@
     "restaurant_id": 7,
     "ingredients": "Beef Brisket, Potato Kugel, Gravy",
     "price": 32,
-    "image_url": "brisket_with_kugel.jpeg"
+    "image_url": "brisket_with_kugel.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 63,
@@ -501,7 +581,8 @@
     "restaurant_id": 7,
     "ingredients": "Potatoes, Onions, Applesauce",
     "price": 18,
-    "image_url": "latkes_with_applesauce.jpeg"
+    "image_url": "latkes_with_applesauce.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 64,
@@ -509,7 +590,8 @@
     "restaurant_id": 7,
     "ingredients": "Challah Bread, Eggs, Maple Syrup",
     "price": 16,
-    "image_url": "challah_french_toast.jpeg"
+    "image_url": "challah_french_toast.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 65,
@@ -517,7 +599,8 @@
     "restaurant_id": 7,
     "ingredients": "Eggplant, Tomatoes, Peppers",
     "price": 20,
-    "image_url": "baba_ganoush_with_matbucha.jpeg"
+    "image_url": "baba_ganoush_with_matbucha.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 66,
@@ -525,7 +608,8 @@
     "restaurant_id": 7,
     "ingredients": "Pastry Dough, Fruit Filling",
     "price": 12,
-    "image_url": "hamentashen.jpeg"
+    "image_url": "hamentashen.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 67,
@@ -533,7 +617,8 @@
     "restaurant_id": 7,
     "ingredients": "Cucumbers, Dill, Garlic",
     "price": 8,
-    "image_url": "kosher_pickles.jpeg"
+    "image_url": "kosher_pickles.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 68,
@@ -541,7 +626,8 @@
     "restaurant_id": 7,
     "ingredients": "Tomatoes, Cucumbers, Red Onion",
     "price": 14,
-    "image_url": "israeli_salad.jpeg"
+    "image_url": "israeli_salad.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 69,
@@ -549,7 +635,8 @@
     "restaurant_id": 7,
     "ingredients": "Beef, Barley, Beans",
     "price": 26,
-    "image_url": "cholent.jpeg"
+    "image_url": "cholent.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 70,
@@ -557,7 +644,8 @@
     "restaurant_id": 7,
     "ingredients": "Pastry Dough, Jam, Nuts",
     "price": 16,
-    "image_url": "rugelach.jpeg"
+    "image_url": "rugelach.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 71,
@@ -565,7 +653,8 @@
     "restaurant_id": 8,
     "ingredients": "Foie Gras, Sushi Rice, Nori",
     "price": 40,
-    "image_url": "foie_gras_sushi.jpeg"
+    "image_url": "foie_gras_sushi.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 72,
@@ -573,7 +662,8 @@
     "restaurant_id": 8,
     "ingredients": "Beef Fillet, Truffle Oil, Mashed Potatoes",
     "price": 54,
-    "image_url": "truffle_infused_steak.jpeg"
+    "image_url": "truffle_infused_steak.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 73,
@@ -581,7 +671,8 @@
     "restaurant_id": 8,
     "ingredients": "Caviar, Blini Pancakes, Sour Cream",
     "price": 48,
-    "image_url": "caviar_blini.jpeg"
+    "image_url": "caviar_blini.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 74,
@@ -589,7 +680,8 @@
     "restaurant_id": 8,
     "ingredients": "Escargot, Garlic Butter, Baguette",
     "price": 36,
-    "image_url": "escargot_with_garlic_butter.jpeg"
+    "image_url": "escargot_with_garlic_butter.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 75,
@@ -597,7 +689,8 @@
     "restaurant_id": 8,
     "ingredients": "Lobster, Brandy Cream Sauce, Herbs",
     "price": 58,
-    "image_url": "lobster_thermidor.jpeg"
+    "image_url": "lobster_thermidor.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 76,
@@ -605,7 +698,8 @@
     "restaurant_id": 8,
     "ingredients": "Smoked Salmon, Avocado, Capers",
     "price": 32,
-    "image_url": "smoked_salmon_tartare.jpeg"
+    "image_url": "smoked_salmon_tartare.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 77,
@@ -613,7 +707,8 @@
     "restaurant_id": 8,
     "ingredients": "Duck Leg, Duck Fat, Potatoes",
     "price": 46,
-    "image_url": "duck_confir.jpeg"
+    "image_url": "duck_confir.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 78,
@@ -621,7 +716,8 @@
     "restaurant_id": 8,
     "ingredients": "Chocolate, Eggs, Sugar",
     "price": 24,
-    "image_url": "chocolate_souffle.jpeg"
+    "image_url": "chocolate_souffle.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 79,
@@ -629,7 +725,8 @@
     "restaurant_id": 8,
     "ingredients": "Assorted Cheeses, White Wine, Bread",
     "price": 38,
-    "image_url": "gourmet_cheese_fondue.jpeg"
+    "image_url": "gourmet_cheese_fondue.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 80,
@@ -637,7 +734,8 @@
     "restaurant_id": 8,
     "ingredients": "Mango, Basil, Simple Syrup",
     "price": 16,
-    "image_url": "mango_basil_sorbet.jpeg"
+    "image_url": "mango_basil_sorbet.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 81,
@@ -645,7 +743,8 @@
     "restaurant_id": 9,
     "ingredients": "Shrimp Tempura, Avocado, Unagi Sauce",
     "price": 28,
-    "image_url": "dragon_roll.jpeg"
+    "image_url": "dragon_roll.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 82,
@@ -653,7 +752,8 @@
     "restaurant_id": 9,
     "ingredients": "Assorted Fresh Fish, Ponzu Sauce",
     "price": 42,
-    "image_url": "rainbow_sashimi_platter.jpeg"
+    "image_url": "rainbow_sashimi_platter.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 83,
@@ -661,7 +761,8 @@
     "restaurant_id": 9,
     "ingredients": "Spicy Tuna, Avocado, Wonton Crisps",
     "price": 32,
-    "image_url": "spicy_tuna_tartare.jpeg"
+    "image_url": "spicy_tuna_tartare.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 84,
@@ -669,7 +770,8 @@
     "restaurant_id": 9,
     "ingredients": "Fresh Salmon, Sushi Rice, Wasabi",
     "price": 18,
-    "image_url": "salmon_nigiri.jpeg"
+    "image_url": "salmon_nigiri.jpeg",
+    "icon": "leaves_icon.png"
   },
   {
     "dish_id": 85,
@@ -677,7 +779,8 @@
     "restaurant_id": 9,
     "ingredients": "Spicy Crab, Cucumber, Spicy Mayo",
     "price": 26,
-    "image_url": "volcano_roll.jpeg"
+    "image_url": "volcano_roll.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 86,
@@ -685,7 +788,8 @@
     "restaurant_id": 9,
     "ingredients": "Crispy Rice, Spicy Tuna, Jalapeño",
     "price": 22,
-    "image_url": "crispy_rice_with_spicy_tuna.jpeg"
+    "image_url": "crispy_rice_with_spicy_tuna.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 87,
@@ -693,7 +797,8 @@
     "restaurant_id": 9,
     "ingredients": "Green Tea Mochi, Matcha Ice Cream",
     "price": 14,
-    "image_url": "green_tea_mochi_ice_cream.jpeg"
+    "image_url": "green_tea_mochi_ice_cream.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 88,
@@ -701,7 +806,8 @@
     "restaurant_id": 9,
     "ingredients": "Edamame, Sake, Sea Salt",
     "price": 12,
-    "image_url": "sake_infused_edamame.jpeg"
+    "image_url": "sake_infused_edamame.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 89,
@@ -709,7 +815,8 @@
     "restaurant_id": 9,
     "ingredients": "Tofu, Avocado, Sesame Seeds",
     "price": 20,
-    "image_url": "tofu_avocado_roll.jpeg"
+    "image_url": "tofu_avocado_roll.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 90,
@@ -717,7 +824,8 @@
     "restaurant_id": 9,
     "ingredients": "Mango, Passion Fruit, Boba Pearls",
     "price": 10,
-    "image_url": "mango_passion_fruit_bubble_tea.jpeg"
+    "image_url": "mango_passion_fruit_bubble_tea.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 91,
@@ -725,7 +833,8 @@
     "restaurant_id": 10,
     "ingredients": "Shrimp, Avocado, Lime, Tostada Shells",
     "price": 24,
-    "image_url": "ceviche_tostadas.jpeg"
+    "image_url": "ceviche_tostadas.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 92,
@@ -733,7 +842,8 @@
     "restaurant_id": 10,
     "ingredients": "Grilled Corn, Cotija Cheese, Mayo",
     "price": 16,
-    "image_url": "street_corn_elote.jpeg"
+    "image_url": "street_corn_elote.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 93,
@@ -741,7 +851,8 @@
     "restaurant_id": 10,
     "ingredients": "Poblano Peppers, Cheese, Tomato Sauce",
     "price": 28,
-    "image_url": "chiles_rellenos.jpeg"
+    "image_url": "chiles_rellenos.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 94,
@@ -749,7 +860,8 @@
     "restaurant_id": 10,
     "ingredients": "Shredded Chicken, Chipotle Sauce, Cilantro",
     "price": 18,
-    "image_url": "chicken_tinga_tacos.jpeg"
+    "image_url": "chicken_tinga_tacos.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 95,
@@ -757,7 +869,8 @@
     "restaurant_id": 10,
     "ingredients": "Guajillo Sauce, Cheese, Tortillas",
     "price": 26,
-    "image_url": "guajillo_chili_enchiladas.jpeg"
+    "image_url": "guajillo_chili_enchiladas.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 96,
@@ -765,7 +878,8 @@
     "restaurant_id": 10,
     "ingredients": "Mango, Avocado, Red Onion",
     "price": 14,
-    "image_url": "mango_avocado_salsa.jpeg"
+    "image_url": "mango_avocado_salsa.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 97,
@@ -773,7 +887,8 @@
     "restaurant_id": 10,
     "ingredients": "Pork Carnitas, Rice, Beans, Guacamole",
     "price": 32,
-    "image_url": "pork_carnitas_burrito.jpeg"
+    "image_url": "pork_carnitas_burrito.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 98,
@@ -781,7 +896,8 @@
     "restaurant_id": 10,
     "ingredients": "Corn, Cotija Cheese, Lime Crema",
     "price": 20,
-    "image_url": "mexican_street_corn_salad.jpeg"
+    "image_url": "mexican_street_corn_salad.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 99,
@@ -789,7 +905,8 @@
     "restaurant_id": 10,
     "ingredients": "Churro Dough, Chocolate Sauce",
     "price": 12,
-    "image_url": "churros_with_chocolate_dipping_sauce.jpeg"
+    "image_url": "churros_with_chocolate_dipping_sauce.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 100,
@@ -797,7 +914,8 @@
     "restaurant_id": 10,
     "ingredients": "Horchata, Espresso, Cinnamon",
     "price": 14,
-    "image_url": "horchata_latte.jpeg"
+    "image_url": "horchata_latte.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 101,
@@ -805,7 +923,8 @@
     "restaurant_id": 11,
     "ingredients": "Smoked Pork Belly, Slider Buns, BBQ Sauce",
     "price": 22,
-    "image_url": "smoked_pork_belly_sliders.jpeg"
+    "image_url": "smoked_pork_belly_sliders.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 102,
@@ -813,7 +932,8 @@
     "restaurant_id": 11,
     "ingredients": "Chicken Wings, Pineapple Habanero Glaze",
     "price": 18,
-    "image_url": "grilled_pineapple_habanero_wings.jpeg"
+    "image_url": "grilled_pineapple_habanero_wings.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 103,
@@ -821,7 +941,8 @@
     "restaurant_id": 11,
     "ingredients": "Bison Meat, Black Beans, Chili Spices",
     "price": 26,
-    "image_url": "bison_and_black_bean_chili.jpeg"
+    "image_url": "bison_and_black_bean_chili.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 104,
@@ -829,7 +950,8 @@
     "restaurant_id": 11,
     "ingredients": "Beef, Lemongrass Marinade, Peanut Sauce",
     "price": 24,
-    "image_url": "lemongrass_beef_skewers.jpeg"
+    "image_url": "lemongrass_beef_skewers.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 105,
@@ -837,7 +959,8 @@
     "restaurant_id": 11,
     "ingredients": "Pulled Chicken, Cheese, Tortillas",
     "price": 20,
-    "image_url": "pulled_chicken_quesadillas.jpeg"
+    "image_url": "pulled_chicken_quesadillas.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 106,
@@ -845,7 +968,8 @@
     "restaurant_id": 11,
     "ingredients": "Salmon, Sesame Ginger Glaze, Steamed Rice",
     "price": 32,
-    "image_url": "sesame_ginger_glazed_salmon.jpeg"
+    "image_url": "sesame_ginger_glazed_salmon.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 107,
@@ -853,7 +977,8 @@
     "restaurant_id": 11,
     "ingredients": "Beef Short Ribs, Kimchi, Gochujang Sauce",
     "price": 28,
-    "image_url": "korean_bbq_tacos.jpeg"
+    "image_url": "korean_bbq_tacos.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 108,
@@ -861,7 +986,8 @@
     "restaurant_id": 11,
     "ingredients": "Shrimp, Mango Sriracha Sauce",
     "price": 26,
-    "image_url": "mango_sriracha_shrimp.jpeg"
+    "image_url": "mango_sriracha_shrimp.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 109,
@@ -869,7 +995,8 @@
     "restaurant_id": 11,
     "ingredients": "Jerk Chicken, Rice, Black Beans, Salsa",
     "price": 30,
-    "image_url": "jerk_chicken_burrito_bowl.jpeg"
+    "image_url": "jerk_chicken_burrito_bowl.jpeg",
+    "icon": "pepper_icon.png"
   },
   {
     "dish_id": 110,
@@ -877,7 +1004,8 @@
     "restaurant_id": 11,
     "ingredients": "Beef, Thai Basil, Vegetables",
     "price": 24,
-    "image_url": "thai_basil_beef_stir_fry.jpeg"
+    "image_url": "thai_basil_beef_stir_fry.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 111,
@@ -885,7 +1013,8 @@
     "restaurant_id": 12,
     "ingredients": "Ham, Gruyere, Bechamel Sauce",
     "price": 18,
-    "image_url": "croque_monsieur.jpeg"
+    "image_url": "croque_monsieur.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 112,
@@ -893,7 +1022,8 @@
     "restaurant_id": 12,
     "ingredients": "Bacon, Eggs, Cream, Cheese",
     "price": 22,
-    "image_url": "quiche_lorraine.jpeg"
+    "image_url": "quiche_lorraine.jpeg",
+    "icon": "egg_icon.png"
   },
   {
     "dish_id": 113,
@@ -901,7 +1031,8 @@
     "restaurant_id": 12,
     "ingredients": "Onions, Beef Broth, Gruyere Cheese",
     "price": 16,
-    "image_url": "french_onion_soup.jpeg"
+    "image_url": "french_onion_soup.jpeg",
+    "icon": "soup_icon.png"
   },
   {
     "dish_id": 114,
@@ -909,7 +1040,8 @@
     "restaurant_id": 12,
     "ingredients": "Bread, Eggs, Milk, Cinnamon",
     "price": 14,
-    "image_url": "pain_perdu.jpeg"
+    "image_url": "pain_perdu.jpeg",
+    "icon": "bread_icon.png"
   },
   {
     "dish_id": 115,
@@ -917,7 +1049,8 @@
     "restaurant_id": 12,
     "ingredients": "Tuna, Potatoes, Green Beans, Olives",
     "price": 20,
-    "image_url": "salade_nicoise.jpeg"
+    "image_url": "salade_nicoise.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 116,
@@ -925,7 +1058,8 @@
     "restaurant_id": 12,
     "ingredients": "Chicken, Red Wine, Mushrooms",
     "price": 26,
-    "image_url": "coq_au_vin.jpeg"
+    "image_url": "coq_au_vin.jpeg",
+    "icon": "chicken_icon.png"
   },
   {
     "dish_id": 117,
@@ -933,7 +1067,8 @@
     "restaurant_id": 12,
     "ingredients": "Escargot, Garlic Butter, Parsley",
     "price": 30,
-    "image_url": "escargot_bourguignon.jpeg"
+    "image_url": "escargot_bourguignon.jpeg",
+    "icon": "snail_icon.png"
   },
   {
     "dish_id": 118,
@@ -941,7 +1076,8 @@
     "restaurant_id": 12,
     "ingredients": "Eggplant, Zucchini, Bell Peppers",
     "price": 24,
-    "image_url": "ratatouille.jpeg"
+    "image_url": "ratatouille.jpeg",
+    "icon": "vegetable_icon.png"
   },
   {
     "dish_id": 119,
@@ -949,7 +1085,8 @@
     "restaurant_id": 12,
     "ingredients": "Chocolate, Cream, Sugar",
     "price": 12,
-    "image_url": "chocolate_mousse.jpeg"
+    "image_url": "chocolate_mousse.jpeg",
+    "icon": "dessert_icon.png"
   },
   {
     "dish_id": 120,
@@ -957,7 +1094,8 @@
     "restaurant_id": 12,
     "ingredients": "Apples, Puff Pastry, Caramel",
     "price": 18,
-    "image_url": "tarte_tatin.jpeg"
+    "image_url": "tarte_tatin.jpeg",
+    "icon": "dessert_icon.png"
   },
   {
     "dish_id": 121,
@@ -965,7 +1103,8 @@
     "restaurant_id": 13,
     "ingredients": "Vegan Cheese, Tomatoes, Basil",
     "price": 16,
-    "image_url": "vegan_pizza.jpeg"
+    "image_url": "vegan_pizza.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 122,
@@ -973,7 +1112,8 @@
     "restaurant_id": 13,
     "ingredients": "Kale, Quinoa, Bell Peppers",
     "price": 18,
-    "image_url": "kale_and_quinoa_stuffed_peppers.jpeg"
+    "image_url": "kale_and_quinoa_stuffed_peppers.jpeg",
+    "icon": "vegetable_icon.png"
   },
   {
     "dish_id": 123,
@@ -981,7 +1121,8 @@
     "restaurant_id": 13,
     "ingredients": "Rice Noodles, Tofu, Bean Sprouts",
     "price": 20,
-    "image_url": "vegan_pad_thai.jpeg"
+    "image_url": "vegan_pad_thai.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 124,
@@ -989,7 +1130,8 @@
     "restaurant_id": 13,
     "ingredients": "Chickpeas, Coconut Milk, Curry Spices",
     "price": 22,
-    "image_url": "chickpea_curry.jpeg"
+    "image_url": "chickpea_curry.jpeg",
+    "icon": "spice_icon.png"
   },
   {
     "dish_id": 125,
@@ -997,7 +1139,8 @@
     "restaurant_id": 13,
     "ingredients": "Avocado, Cocoa Powder, Maple Syrup",
     "price": 14,
-    "image_url": "vegan_chocolate_avocado_mousse.jpeg"
+    "image_url": "vegan_chocolate_avocado_mousse.jpeg",
+    "icon": "dessert_icon.png"
   },
   {
     "dish_id": 126,
@@ -1005,7 +1148,8 @@
     "restaurant_id": 13,
     "ingredients": "Quinoa, Black Beans, Burger Bun",
     "price": 16,
-    "image_url": "quinoa_and_black_bean_burger.jpeg"
+    "image_url": "quinoa_and_black_bean_burger.jpeg",
+    "icon": "burger_icon.png"
   },
   {
     "dish_id": 127,
@@ -1013,7 +1157,8 @@
     "restaurant_id": 13,
     "ingredients": "Romaine Lettuce, Croutons, Vegan Caesar Dressing",
     "price": 14,
-    "image_url": "vegan_caesar_salad.jpeg"
+    "image_url": "vegan_caesar_salad.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 128,
@@ -1021,7 +1166,8 @@
     "restaurant_id": 13,
     "ingredients": "Sweet Potatoes, Lentils, Coconut Milk",
     "price": 20,
-    "image_url": "sweet_potato_and_lentil_curry.jpeg"
+    "image_url": "sweet_potato_and_lentil_curry.jpeg",
+    "icon": "spice_icon.png"
   },
   {
     "dish_id": 129,
@@ -1029,7 +1175,8 @@
     "restaurant_id": 13,
     "ingredients": "Flour, Coconut Oil, Chocolate Chips",
     "price": 12,
-    "image_url": "vegan_chocolate_chip_cookies.jpeg"
+    "image_url": "vegan_chocolate_chip_cookies.jpeg",
+    "icon": "dessert_icon.png"
   },
   {
     "dish_id": 130,
@@ -1037,7 +1184,8 @@
     "restaurant_id": 13,
     "ingredients": "Avocado, Lime, Cashews",
     "price": 18,
-    "image_url": "avocado_lime_cheesecake.jpeg"
+    "image_url": "avocado_lime_cheesecake.jpeg",
+    "icon": "dessert_icon.png"
   },
   {
     "dish_id": 131,
@@ -1045,7 +1193,8 @@
     "restaurant_id": 14,
     "ingredients": "Ribeye Steak, Salt, Pepper",
     "price": 45,
-    "image_url": "tomahawk_ribeye_steak.jpeg"
+    "image_url": "tomahawk_ribeye_steak.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 132,
@@ -1053,7 +1202,8 @@
     "restaurant_id": 14,
     "ingredients": "Shrimp, Garlic, Butter, White Wine",
     "price": 38,
-    "image_url": "garlic_butter_shrimp_scampi.jpeg"
+    "image_url": "garlic_butter_shrimp_scampi.jpeg",
+    "icon": "shrimp_icon.png"
   },
   {
     "dish_id": 133,
@@ -1061,7 +1211,8 @@
     "restaurant_id": 14,
     "ingredients": "Filet Mignon, Red Wine, Shallots",
     "price": 50,
-    "image_url": "filet_mignon_with_red_wine_reduction.jpeg"
+    "image_url": "filet_mignon_with_red_wine_reduction.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 134,
@@ -1069,7 +1220,8 @@
     "restaurant_id": 14,
     "ingredients": "Porterhouse Steak, Salt, Pepper",
     "price": 48,
-    "image_url": "grilled_porterhouse_steak.jpeg"
+    "image_url": "grilled_porterhouse_steak.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 135,
@@ -1077,7 +1229,8 @@
     "restaurant_id": 14,
     "ingredients": "Beef Tenderloin, Mushrooms, Blue Cheese",
     "price": 42,
-    "image_url": "mushroom_and_blue_cheese_stuffed_tenderloin.jpeg"
+    "image_url": "mushroom_and_blue_cheese_stuffed_tenderloin.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 136,
@@ -1085,7 +1238,8 @@
     "restaurant_id": 14,
     "ingredients": "New York Strip Steak, Peppercorns",
     "price": 46,
-    "image_url": "peppercorn_crusted_new_york_strip.jpeg"
+    "image_url": "peppercorn_crusted_new_york_strip.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 137,
@@ -1093,7 +1247,8 @@
     "restaurant_id": 14,
     "ingredients": "Lobster Tail, Filet Mignon, Garlic Butter",
     "price": 55,
-    "image_url": "surf_and_turf.jpeg"
+    "image_url": "surf_and_turf.jpeg",
+    "icon": "surf_and_turf_icon.png"
   },
   {
     "dish_id": 138,
@@ -1101,7 +1256,8 @@
     "restaurant_id": 14,
     "ingredients": "Ribeye Steak, Chimichurri Sauce",
     "price": 42,
-    "image_url": "ribeye_steak_with_chimichurri_sauce.jpeg"
+    "image_url": "ribeye_steak_with_chimichurri_sauce.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 139,
@@ -1109,7 +1265,8 @@
     "restaurant_id": 14,
     "ingredients": "Beef Tenderloin, Mushroom Duxelles, Puff Pastry",
     "price": 55,
-    "image_url": "classic_beef_wellington.jpeg"
+    "image_url": "classic_beef_wellington.jpeg",
+    "icon": "wellington_icon.png"
   },
   {
     "dish_id": 140,
@@ -1117,7 +1274,8 @@
     "restaurant_id": 14,
     "ingredients": "Sirloin Steak, Port Wine Reduction",
     "price": 40,
-    "image_url": "port_wine_reduction_sirloin.jpeg"
+    "image_url": "port_wine_reduction_sirloin.jpeg",
+    "icon": "steak_icon.png"
   },
   {
     "dish_id": 141,
@@ -1125,7 +1283,8 @@
     "restaurant_id": 15,
     "ingredients": "Swordfish, Lemon, Herbs",
     "price": 32,
-    "image_url": "grilled_swordfish.jpeg"
+    "image_url": "grilled_swordfish.jpeg",
+    "icon": "fish_icon.png"
   },
   {
     "dish_id": 142,
@@ -1133,7 +1292,8 @@
     "restaurant_id": 15,
     "ingredients": "Crab Meat, Avocado, Lime",
     "price": 28,
-    "image_url": "crab_stuffed_avocado.jpeg"
+    "image_url": "crab_stuffed_avocado.jpeg",
+    "icon": "seafood_icon.png"
   },
   {
     "dish_id": 143,
@@ -1141,7 +1301,8 @@
     "restaurant_id": 15,
     "ingredients": "Shrimp, Pasta, Lemon Butter Sauce",
     "price": 34,
-    "image_url": "lemon_butter_shrimp_pasta.jpeg"
+    "image_url": "lemon_butter_shrimp_pasta.jpeg",
+    "icon": "pasta_icon.png"
   },
   {
     "dish_id": 144,
@@ -1149,7 +1310,8 @@
     "restaurant_id": 15,
     "ingredients": "Red Snapper, Cajun Spices",
     "price": 36,
-    "image_url": "blackened_red_snapper.jpeg"
+    "image_url": "blackened_red_snapper.jpeg",
+    "icon": "fish_icon.png"
   },
   {
     "dish_id": 145,
@@ -1157,7 +1319,8 @@
     "restaurant_id": 15,
     "ingredients": "Shrimp, Mussels, Calamari, Saffron Rice",
     "price": 40,
-    "image_url": "seafood_paella.jpeg"
+    "image_url": "seafood_paella.jpeg",
+    "icon": "paella_icon.png"
   },
   {
     "dish_id": 146,
@@ -1165,7 +1328,8 @@
     "restaurant_id": 15,
     "ingredients": "Mahi Mahi, Coconut Milk, Lime",
     "price": 38,
-    "image_url": "coconut_lime_mahi_mahi.jpeg"
+    "image_url": "coconut_lime_mahi_mahi.jpeg",
+    "icon": "fish_icon.png"
   },
   {
     "dish_id": 147,
@@ -1173,7 +1337,8 @@
     "restaurant_id": 15,
     "ingredients": "Lobster Tail, Garlic Butter",
     "price": 48,
-    "image_url": "grilled_lobster_tail.jpeg"
+    "image_url": "grilled_lobster_tail.jpeg",
+    "icon": "lobster_icon.png"
   },
   {
     "dish_id": 148,
@@ -1181,7 +1346,8 @@
     "restaurant_id": 15,
     "ingredients": "Clams, Linguine, White Wine Sauce",
     "price": 32,
-    "image_url": "clam_linguine.jpeg"
+    "image_url": "clam_linguine.jpeg",
+    "icon": "pasta_icon.png"
   },
   {
     "dish_id": 149,
@@ -1189,7 +1355,8 @@
     "restaurant_id": 15,
     "ingredients": "Salmon, Mango Salsa",
     "price": 36,
-    "image_url": "mango_salsa_salmon.jpeg"
+    "image_url": "mango_salsa_salmon.jpeg",
+    "icon": "fish_icon.png"
   },
   {
     "dish_id": 150,
@@ -1197,6 +1364,7 @@
     "restaurant_id": 15,
     "ingredients": "Tuna Steaks, Soy Ginger Marinade",
     "price": 42,
-    "image_url": "grilled_tuna_steaks.jpeg"
+    "image_url": "grilled_tuna_steaks.jpeg",
+    "icon": "fish_icon.png"
   }
 ]

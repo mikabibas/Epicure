@@ -6,12 +6,8 @@
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
     },
-    "dishName": "Grilled Octopus",
     "image": "cacio_pepe.jpeg",
-    "rating": "3-stars.png",
-    "ingredients": "Octopus, Olive Oil, Lemon, Garlic",
-    "price": 72,
-    "icon": "leaf_icon.png"
+    "rating": "3-stars.png"
   },
   {
     "id": 2,
@@ -20,12 +16,8 @@
       "chef_name": "Assaf Granit",
       "chef_img": "asafGranit.png"
     },
-    "dishName": "Sushi Platter",
     "image": "dumpling.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Salmon, Avocado, Soy Sauce, Wasabi",
-    "price": 58,
-    "icon": "leaves_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 3,
@@ -34,12 +26,8 @@
       "chef_name": "Meir Adoni",
       "chef_img": "meirAdoni.png"
     },
-    "dishName": "Truffle Infused Pasta",
     "image": "meatballs.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Pasta, Truffle Oil, Parmesan, Cream",
-    "price": 65,
-    "icon": "pepper_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 4,
@@ -48,12 +36,8 @@
       "chef_name": "Eyal Shani",
       "chef_img": "eyalShani.png"
     },
-    "dishName": "Curry Chicken Masala",
     "image": "pecan_pie.webp",
-    "rating": "4-stars.png",
-    "ingredients": "Chicken, Curry Spices, Tomato, Cream",
-    "price": 75,
-    "icon": "leaf_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 5,
@@ -62,12 +46,8 @@
       "chef_name": "Omer Miller",
       "chef_img": "omerMiller.png"
     },
-    "dishName": "Lobster Bisque",
     "image": "cacio_pepe.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Lobster, Cream, Sherry, Chives",
-    "price": 67,
-    "icon": "leaves_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 6,
@@ -76,12 +56,8 @@
       "chef_name": "Yossi Shitrit",
       "chef_img": "yossiShitrit.png"
     },
-    "dishName": "Organic Beet Salad",
     "image": "hot_dog.webp",
-    "rating": "4-stars.png",
-    "ingredients": "Beets, Arugula, Goat Cheese, Walnuts",
-    "price": 54,
-    "icon": "pepper_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 7,
@@ -90,12 +66,8 @@
       "chef_name": "Yuval Ben Neriyah",
       "chef_img": "yuvalBenNeriyah.png"
     },
-    "dishName": "Shakshuka Supreme",
     "image": "hummus.webp",
-    "rating": "4-stars.png",
-    "ingredients": "Tomatoes, Bell Peppers, Eggs, Cumin",
-    "price": 60,
-    "icon": "leaf_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 8,
@@ -104,12 +76,8 @@
       "chef_name": "Aviv Moshe",
       "chef_img": "avivMoshe.png"
     },
-    "dishName": "Foie Gras Crostini",
     "image": "fried_rice.jpeg",
-    "rating": "3-stars.png",
-    "ingredients": "Foie Gras, Baguette, Fig Jam, Balsamic",
-    "price": 82,
-    "icon": "leaves_icon.png"
+    "rating": "3-stars.png"
   },
   {
     "id": 9,
@@ -118,12 +86,8 @@
       "chef_name": "Shahaf Shabtay",
       "chef_img": "shahafShabtay.png"
     },
-    "dishName": "Sunset Sushi Roll",
     "image": "Hamburger-and-french-fries.webp",
-    "rating": "4-stars.png",
-    "ingredients": "Tuna, Avocado, Mango, Soy Paper",
-    "price": 73,
-    "icon": "pepper_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 10,
@@ -132,12 +96,8 @@
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
     },
-    "dishName": "Guacamole Trio",
     "image": "guacamole.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Avocado, Tomato, Cilantro, Lime",
-    "price": 55,
-    "icon": "leaf_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 11,
@@ -146,12 +106,8 @@
       "chef_name": "Eyal Shani",
       "chef_img": "eyalShani.png"
     },
-    "dishName": "BBQ Ribs",
     "image": "shawarma.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Pork Ribs, BBQ Sauce, Coleslaw, Cornbread",
-    "price": 68,
-    "icon": "leaves_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 12,
@@ -160,12 +116,8 @@
       "chef_name": "Omer Miller",
       "chef_img": "omerMiller.png"
     },
-    "dishName": "Croissant Breakfast",
     "image": "waffles.webp",
-    "rating": "3-stars.png",
-    "ingredients": "Croissants, Jam, Butter, Coffee",
-    "price": 78,
-    "icon": "pepper_icon.png"
+    "rating": "3-stars.png"
   },
   {
     "id": 13,
@@ -174,12 +126,8 @@
       "chef_name": "Assaf Granit",
       "chef_img": "asafGranit.png"
     },
-    "dishName": "Quinoa Salad",
     "image": "shakshuka.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Quinoa, Chickpeas, Cucumber, Vinaigrette",
-    "price": 53,
-    "icon": "leaf_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 14,
@@ -188,12 +136,8 @@
       "chef_name": "Meir Adoni",
       "chef_img": "meirAdoni.png"
     },
-    "dishName": "Filet Mignon",
     "image": "pasta.jpeg",
-    "rating": "4-stars.png",
-    "ingredients": "Beef Fillet, Mushroom Sauce, Potatoes, Asparagus",
-    "price": 87,
-    "icon": "leaves_icon.png"
+    "rating": "4-stars.png"
   },
   {
     "id": 15,
@@ -202,11 +146,7 @@
       "chef_name": "Yossi Shitrit",
       "chef_img": "yossiShitrit.png"
     },
-    "dishName": "Grilled Salmon",
     "image": "rice.jpeg",
-    "rating": "3-stars.png",
-    "ingredients": "Salmon, Lemon, Dill, Quinoa",
-    "price": 66,
-    "icon": "pepper_icon.png"
+    "rating": "3-stars.png"
   }
 ]
