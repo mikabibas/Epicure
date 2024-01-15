@@ -25,10 +25,10 @@ const Hero: React.FC = () => {
             <li>Restaurant:</li>
             {data
               .filter((restaurant) =>
-                restaurant.name_res.toLowerCase().includes(search)
+                restaurant.res_name.toLowerCase().includes(search)
               )
               .map((restaurant) => (
-                <li key={restaurant.id}>{restaurant.name_res}</li>
+                <li key={restaurant.id}>{restaurant.res_name}</li>
               ))}
           </ul>
         )}

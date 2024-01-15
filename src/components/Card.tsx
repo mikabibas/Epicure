@@ -10,12 +10,12 @@ const Card: React.FC<CardProps> = ({ card }) => {
       <div className="card-image-container">
         <img
           className="card-image"
-          src={require(`assets/images/food/${card.image}`)}
-          alt={card.dishName}
+          src={require(`assets/images/food/${card.res_image}`)}
+          alt={card.res_name}
         />
       </div>
       <div className="card-text-container">
-        <div className="restaurant-name">{card.name_res}</div>
+        <div className="restaurant-name">{card.res_name}</div>
         <h3 className="card-title">{card.chef?.chef_name}</h3>
         <img
           className="dish-rating"

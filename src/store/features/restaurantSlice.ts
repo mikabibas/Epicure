@@ -1,21 +1,17 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import restaurants from "assets/restaurants.json";
-import { IRestaurant } from "constants/interfaces";
+import { ICard } from "constants/interfaces";
 import { EFetchStatus } from "constants/enum";
 
 export const fetchRestaurants = createAsyncThunk(
   "restaurants/fetchRestaurants",
   async () => {
-    // const response = await fetch("assets/restaurants.json", {
-    //   method: "GET",
-    //   headers: { "Content-Type": "application/json" },
-    // });
-    return restaurants as IRestaurant[];
+    return restaurants as ICard[];
   }
 );
 
 interface IRestaurantState {
-  restaurants: IRestaurant[];
+  restaurants: ICard[];
   status: EFetchStatus;
   error: string | null;
 }
