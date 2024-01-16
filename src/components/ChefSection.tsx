@@ -6,30 +6,28 @@ import {
   CHEF_WEEK,
   SLIDER_SETTINGS,
 } from "constants/variables";
-import { ChefComponentProps, IRestaurant } from "constants/interfaces";
+import { ChefComponentProps, ICard } from "constants/interfaces";
 import "styles/chefSection.scss";
 import MediaQuery from "react-responsive";
 import Slider from "react-slick";
 
 const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
-  const [filteredRestaurants, setFilteredRestaurants] = useState<IRestaurant[]>(
-    []
-  );
+  const [filteredRestaurants, setFilteredRestaurants] = useState<ICard[]>([]);
 
   const filteredRestaurantsMapped = filteredRestaurants.map((restaurant) => (
     <div className="restaurant-card" key={restaurant.id}>
       <img
         className="restaurant-image"
-        src={require(`assets/images/food/${restaurant.image}`)}
+        src={require(`assets/images/food/${restaurant.res_image}`)}
         alt="restaurant_img"
       />
-      <h1 className="restaurant-name">{restaurant.name_res}</h1>
+      <h1 className="restaurant-name">{restaurant.res_name}</h1>
     </div>
   ));
 
   useEffect(() => {
     const filtered = restaurants.filter(
-      (restaurant) => restaurant.chef.chef_name === chef.chef_name
+      (restaurant) => restaurant.chef?.chef_name === chef.chef_name
     );
     setFilteredRestaurants(filtered);
   }, [chef, restaurants]);

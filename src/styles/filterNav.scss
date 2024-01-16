@@ -2,41 +2,48 @@
 @import "constants/_dimensions.scss";
 
 .navigation-menu {
+  display: flex;
+  justify-content: center;
   width: 100vw;
+  list-style-type: none;
+  gap: 40px;
+  padding: 0;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    list-style-type: none;
-    gap: 40px;
-    padding: 0;
+  .nav-item {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    color: $PRIMARY_BLACK;
+    text-transform: capitalize;
+    text-decoration-color: transparent;
+    color: $PRIMARY_BLACK;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1.92px;
+    transition: 0.4s;
+    &:hover {
+      text-underline-position: under;
+      box-shadow: 0 2px 0 $HOVER_LINK;
+    }
+    &:focus {
+      text-underline-position: under;
 
-    a {
-      color: $PRIMARY_BLACK;
-      text-transform: capitalize;
-      text-decoration-color: transparent;
-      color: $PRIMARY_BLACK;
-      font-size: 18px;
-      font-weight: 200;
-      letter-spacing: 1.92px;
-      transition: 0.4s;
-      &:hover {
-        text-underline-position: under;
-        box-shadow: 0 2px 0 $HOVER_LINK;
-      }
-      @include mobile {
-        font-size: 14px;
-      }
+      box-shadow: 0 2px 0 $HOVER_LINK;
+    }
+    @include mobile {
+      font-size: 13px;
     }
 
-    @include mobile {
-      justify-content: space-evenly;
-      gap: 0;
+    &.checked {
+      text-underline-position: under;
+      box-shadow: 0 2px 0 $HOVER_LINK;
     }
   }
-}
 
-.active {
-  font-weight: bold;
+  @include mobile {
+    justify-content: space-between;
+    padding: 10px;
+  }
 }

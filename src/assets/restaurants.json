@@ -1,152 +1,227 @@
 [
   {
     "id": 1,
-    "name_res": "Mediterranean Delight",
+    "res_name": "Mediterranean Delight",
     "chef": {
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
     },
-    "image": "cacio_pepe.jpeg",
-    "rating": "3-stars.png"
+    "res_image": "cacio_pepe.jpeg",
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2012-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 2,
-    "name_res": "Urban Fusion",
+    "res_name": "Urban Fusion",
     "chef": {
       "chef_name": "Assaf Granit",
       "chef_img": "asafGranit.png"
     },
-    "image": "dumpling.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "dumpling.jpeg",
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 20:00"
   },
   {
     "id": 3,
-    "name_res": "Artisanal Eats",
+    "res_name": "Artisanal Eats",
     "chef": {
       "chef_name": "Meir Adoni",
       "chef_img": "meirAdoni.png"
     },
-    "image": "meatballs.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "meatballs.jpeg",
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2022-05-30",
+    "opening_hours": "8:00 - 12:00"
   },
   {
     "id": 4,
-    "name_res": "Spice Haven",
+    "res_name": "Spice Haven",
     "chef": {
       "chef_name": "Eyal Shani",
       "chef_img": "eyalShani.png"
     },
-    "image": "pecan_pie.webp",
-    "rating": "4-stars.png"
+    "res_image": "pecan_pie.webp",
+    "rating": {
+      "rating_img": "2-stars.png",
+      "rating_number": 2
+    },
+    "opening_date": "2019-05-30",
+    "opening_hours": "8:00 - 13:00"
   },
   {
     "id": 5,
-    "name_res": "Seafront Bistro",
+    "res_name": "Seafront Bistro",
     "chef": {
       "chef_name": "Omer Miller",
       "chef_img": "omerMiller.png"
     },
-    "image": "cacio_pepe.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "cacio_pepe.jpeg",
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 6,
-    "name_res": "Farm-to-Table Fresh",
+    "res_name": "Farm-to-Table Fresh",
     "chef": {
       "chef_name": "Yossi Shitrit",
       "chef_img": "yossiShitrit.png"
     },
-    "image": "hot_dog.webp",
-    "rating": "4-stars.png"
+    "res_image": "hot_dog.webp",
+    "rating": {
+      "rating_img": "1-stars.png",
+      "rating_number": 1
+    },
+    "opening_date": "2020-05-30",
+    "opening_hours": "8:00 - 16:00"
   },
   {
     "id": 7,
-    "name_res": "Taste of Tradition",
+    "res_name": "Taste of Tradition",
     "chef": {
       "chef_name": "Yuval Ben Neriyah",
       "chef_img": "yuvalBenNeriyah.png"
     },
-    "image": "hummus.webp",
-    "rating": "4-stars.png"
+    "res_image": "hummus.webp",
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2021-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 8,
-    "name_res": "Gastronomic Gems",
+    "res_name": "Gastronomic Gems",
     "chef": {
       "chef_name": "Aviv Moshe",
       "chef_img": "avivMoshe.png"
     },
-    "image": "fried_rice.jpeg",
-    "rating": "3-stars.png"
+    "res_image": "fried_rice.jpeg",
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2018-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 9,
-    "name_res": "Sunset Sushi",
+    "res_name": "Sunset Sushi",
     "chef": {
       "chef_name": "Shahaf Shabtay",
       "chef_img": "shahafShabtay.png"
     },
-    "image": "Hamburger-and-french-fries.webp",
-    "rating": "4-stars.png"
+    "res_image": "Hamburger-and-french-fries.webp",
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 10,
-    "name_res": "Modern Mexican Flavors",
+    "res_name": "Modern Mexican Flavors",
     "chef": {
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
     },
-    "image": "guacamole.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "guacamole.jpeg",
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2017-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 11,
-    "name_res": "Fusion Grill",
+    "res_name": "Fusion Grill",
     "chef": {
       "chef_name": "Eyal Shani",
       "chef_img": "eyalShani.png"
     },
-    "image": "shawarma.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "shawarma.jpeg",
+    "rating": {
+      "rating_img": "1-stars.png",
+      "rating_number": 1
+    },
+    "opening_date": "2010-05-30",
+    "opening_hours": "13:00 - 00:00"
   },
   {
     "id": 12,
-    "name_res": "Cafe Parisienne",
+    "res_name": "Cafe Parisienne",
     "chef": {
       "chef_name": "Omer Miller",
       "chef_img": "omerMiller.png"
     },
-    "image": "waffles.webp",
-    "rating": "3-stars.png"
+    "res_image": "waffles.webp",
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2019-05-30",
+    "opening_hours": "17:00 - 00:00"
   },
   {
     "id": 13,
-    "name_res": "Vegan Bliss",
+    "res_name": "Vegan Bliss",
     "chef": {
       "chef_name": "Assaf Granit",
       "chef_img": "asafGranit.png"
     },
-    "image": "shakshuka.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "shakshuka.jpeg",
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2013-05-30",
+    "opening_hours": "20:00 - 00:00"
   },
   {
     "id": 14,
-    "name_res": "Sizzling Steakhouse",
+    "res_name": "Sizzling Steakhouse",
     "chef": {
       "chef_name": "Meir Adoni",
       "chef_img": "meirAdoni.png"
     },
-    "image": "pasta.jpeg",
-    "rating": "4-stars.png"
+    "res_image": "pasta.jpeg",
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 15,
-    "name_res": "Coastal Catch",
+    "res_name": "Coastal Catch",
     "chef": {
       "chef_name": "Yossi Shitrit",
       "chef_img": "yossiShitrit.png"
     },
-    "image": "rice.jpeg",
-    "rating": "3-stars.png"
+    "res_image": "rice.jpeg",
+    "rating": {
+      "rating_img": "2-stars.png",
+      "rating_number": 2
+    },
+    "opening_date": "2014-05-30",
+    "opening_hours": "14:00 - 00:00"
   }
 ]

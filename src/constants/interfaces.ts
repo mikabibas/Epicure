@@ -4,30 +4,33 @@ export interface ChefInfo {
   chef_img: string;
 }
 
+interface IRating {
+  rating_img: string;
+  rating_number: number;
+}
+
 export interface ICard {
   id?: number;
-  image?: string;
-  name_res?: string;
-  dishName?: string;
+  restaurant_id?: number;
+  dish_id?: number;
+  dish_name?: string;
+  res_image?: string;
+  dish_image?: string;
+  res_name?: string;
   chef?: ChefInfo;
-  rating?: string;
+  rating?: IRating;
   icon?: string;
   ingredients?: string;
   price?: number;
+  opening_hours?: string;
+  opening_date?: string;
 }
 
 export interface CardSliderProps {
   cards: ICard[];
 }
 
-export interface IRestaurant {
-  id: number;
-  name_res: string;
-  chef: ChefInfo;
-  image: string;
-}
-
 export interface ChefComponentProps {
   chef: ChefInfo;
-  restaurants: IRestaurant[];
+  restaurants: ICard[];
 }

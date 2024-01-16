@@ -87,7 +87,6 @@ const MOST_POP = "most popular";
 const OPEN_NOW = "open now";
 const MAP_VIEW = "map view";
 const MOST_VIEWED = "Most Viewed";
-
 const RES_FILTERS = [
   { path: "/restaurants/all", label: ALL },
   { path: "/restaurants/new", label: NEW },
@@ -95,12 +94,16 @@ const RES_FILTERS = [
   { path: "/restaurants/open-now", label: OPEN_NOW },
   { path: "/restaurants/map-view", label: MAP_VIEW },
 ];
+const NAV_OPTIONS = ["All", "New", "Most Popular", "Open Now"];
 
 const CHEF_FILTERS = [
   { path: "/chefs/all", label: ALL },
   { path: "/chefs/new", label: NEW },
   { path: "/chefs/most-viewed", label: MOST_VIEWED },
 ];
+
+const START_DATE = "2020-01-01";
+const END_DATE = "2024-01-01";
 
 export {
   CONTACT_US,
@@ -148,4 +151,7 @@ export {
   OPEN_NOW,
   RES_FILTERS,
   CHEF_FILTERS,
+  START_DATE,
+  END_DATE,
+  NAV_OPTIONS,
 };
