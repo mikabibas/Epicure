@@ -26,7 +26,7 @@ const CardDishSlider: React.FC = () => {
       {status === "loading" && <p>Loading...</p>}
       {status === "failed" && <p>Error loading dishes</p>}
       {status === "succeeded" && (
-        <Slider {...SLIDER_SETTINGS}>
+        <Slider {...SLIDER_SETTINGS} variableWidth>
           {dishes.map((card: ICard) => (
             <div key={card.id} className="card">
               <div className="card-image-container">
