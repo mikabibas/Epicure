@@ -1,13 +1,32 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import restaurants from "assets/restaurants.json";
+import {
+  createSlice,
+  createAsyncThunk,
+  createAction,
+  Dispatch,
+} from "@reduxjs/toolkit";
 import { ICard } from "constants/interfaces";
 import { EFetchStatus } from "constants/enum";
+import { restaurantService } from "services/restaurant.service";
 
-export const fetchRestaurants = createAsyncThunk(
-  "restaurants/fetchRestaurants",
-  async () => {
-    return restaurants as ICard[];
+export const loadRestaurants = createAsyncThunk(
+  "restaurants/loadRestaurants",
+  async (
+    _,
+    { dispatch, getState }: { dispatch: Dispatch; getState: () => any }
+  ) => {
+    try {
+      const restaurants = await restaurantService.query(getState().filterBy);
+      dispatch(setRestaurants(restaurants as ICard[]));
+      return restaurants;
+    } catch (error) {
+      console.error("Error loading restaurants:", error);
+      throw error;
+    }
   }
+);
+
+export const setRestaurants = createAction<ICard[]>(
+  "restaurants/updateRestaurants"
 );
 
 interface IRestaurantState {
@@ -25,18 +44,27 @@ const initialState: IRestaurantState = {
 const restaurantSlice = createSlice({
   name: "restaurants",
   initialState,
-  reducers: {},
+  reducers: {
+    setRestaurants: (state, action) => {
+      return {
+        ...state,
+        restaurants: [...(action.payload as ICard[])],
+        error: null,
+        status: EFetchStatus.IDLE,
+      };
+    },
+  },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchRestaurants.pending, (state) => {
+      .addCase(loadRestaurants.pending, (state: IRestaurantState) => {
         state.status = EFetchStatus.LOADING;
       })
-      .addCase(fetchRestaurants.fulfilled, (state, action) => {
+      .addCase(loadRestaurants.fulfilled, (state: IRestaurantState, action) => {
         state.status = EFetchStatus.SUCCEEDED;
-        state.restaurants = action.payload;
+        state.restaurants = [...(action.payload as ICard[])];
         state.error = null;
       })
-      .addCase(fetchRestaurants.rejected, (state, action) => {
+      .addCase(loadRestaurants.rejected, (state: IRestaurantState, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"

@@ -7,7 +7,12 @@
       "chef_img": "nitzanRaz.png"
     },
     "res_image": "cacio_pepe.jpeg",
-    "rating": "3-stars.png"
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2012-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 2,
@@ -17,7 +22,12 @@
       "chef_img": "asafGranit.png"
     },
     "res_image": "dumpling.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 20:00"
   },
   {
     "id": 3,
@@ -27,7 +37,12 @@
       "chef_img": "meirAdoni.png"
     },
     "res_image": "meatballs.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2022-05-30",
+    "opening_hours": "8:00 - 12:00"
   },
   {
     "id": 4,
@@ -37,7 +52,12 @@
       "chef_img": "eyalShani.png"
     },
     "res_image": "pecan_pie.webp",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "2-stars.png",
+      "rating_number": 2
+    },
+    "opening_date": "2019-05-30",
+    "opening_hours": "8:00 - 13:00"
   },
   {
     "id": 5,
@@ -47,7 +67,12 @@
       "chef_img": "omerMiller.png"
     },
     "res_image": "cacio_pepe.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 6,
@@ -57,7 +82,12 @@
       "chef_img": "yossiShitrit.png"
     },
     "res_image": "hot_dog.webp",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "1-stars.png",
+      "rating_number": 1
+    },
+    "opening_date": "2020-05-30",
+    "opening_hours": "8:00 - 16:00"
   },
   {
     "id": 7,
@@ -67,7 +97,12 @@
       "chef_img": "yuvalBenNeriyah.png"
     },
     "res_image": "hummus.webp",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2021-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 8,
@@ -77,7 +112,12 @@
       "chef_img": "avivMoshe.png"
     },
     "res_image": "fried_rice.jpeg",
-    "rating": "3-stars.png"
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2018-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 9,
@@ -87,7 +127,12 @@
       "chef_img": "shahafShabtay.png"
     },
     "res_image": "Hamburger-and-french-fries.webp",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 10,
@@ -97,7 +142,12 @@
       "chef_img": "nitzanRaz.png"
     },
     "res_image": "guacamole.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2017-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 11,
@@ -107,7 +157,12 @@
       "chef_img": "eyalShani.png"
     },
     "res_image": "shawarma.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "1-stars.png",
+      "rating_number": 1
+    },
+    "opening_date": "2010-05-30",
+    "opening_hours": "13:00 - 00:00"
   },
   {
     "id": 12,
@@ -117,7 +172,12 @@
       "chef_img": "omerMiller.png"
     },
     "res_image": "waffles.webp",
-    "rating": "3-stars.png"
+    "rating": {
+      "rating_img": "3-stars.png",
+      "rating_number": 3
+    },
+    "opening_date": "2019-05-30",
+    "opening_hours": "17:00 - 00:00"
   },
   {
     "id": 13,
@@ -127,7 +187,12 @@
       "chef_img": "asafGranit.png"
     },
     "res_image": "shakshuka.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "5-stars.png",
+      "rating_number": 5
+    },
+    "opening_date": "2013-05-30",
+    "opening_hours": "20:00 - 00:00"
   },
   {
     "id": 14,
@@ -137,7 +202,12 @@
       "chef_img": "meirAdoni.png"
     },
     "res_image": "pasta.jpeg",
-    "rating": "4-stars.png"
+    "rating": {
+      "rating_img": "4-stars.png",
+      "rating_number": 4
+    },
+    "opening_date": "2023-05-30",
+    "opening_hours": "8:00 - 00:00"
   },
   {
     "id": 15,
@@ -147,6 +217,11 @@
       "chef_img": "yossiShitrit.png"
     },
     "res_image": "rice.jpeg",
-    "rating": "3-stars.png"
+    "rating": {
+      "rating_img": "2-stars.png",
+      "rating_number": 2
+    },
+    "opening_date": "2014-05-30",
+    "opening_hours": "14:00 - 00:00"
   }
 ]

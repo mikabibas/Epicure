@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "styles/cardSlider.scss";
-import { fetchRestaurants } from "store/features/restaurantSlice";
+import { loadRestaurants } from "store/features/restaurantSlice";
 import Card from "./Card";
 import { EAppRoutes } from "constants/enum";
 import {
@@ -25,7 +25,7 @@ const CardRestSlider: React.FC = () => {
 
   useEffect(() => {
     if (status === "idle") {
-      dispatch(fetchRestaurants() as any);
+      dispatch(loadRestaurants() as any);
     }
   }, [status, dispatch]);
 

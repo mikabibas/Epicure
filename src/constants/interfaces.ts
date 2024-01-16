@@ -4,6 +4,11 @@ export interface ChefInfo {
   chef_img: string;
 }
 
+interface IRating {
+  rating_img: string;
+  rating_number: number;
+}
+
 export interface ICard {
   id?: number;
   restaurant_id?: number;
@@ -13,10 +18,12 @@ export interface ICard {
   dish_image?: string;
   res_name?: string;
   chef?: ChefInfo;
-  rating?: string;
+  rating?: IRating;
   icon?: string;
   ingredients?: string;
   price?: number;
+  opening_hours?: string;
+  opening_date?: string;
 }
 
 export interface CardSliderProps {

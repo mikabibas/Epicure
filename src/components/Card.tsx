@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
         <h3 className="card-title">{card.chef?.chef_name}</h3>
         <img
           className="dish-rating"
-          src={require(`assets/images/layout/${card.rating}`)}
+          src={require(`assets/images/layout/${card.rating?.rating_img}`)}
           alt="dish_icon"
         />
       </div>
