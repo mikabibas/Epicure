@@ -15,6 +15,7 @@ const Logo: React.FC<LogoProps> = ({ size, src }: LogoProps) => {
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
           src={src}
           alt="logo"
+          className="logo"
         />
       </div>
     </Link>

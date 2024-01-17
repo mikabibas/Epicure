@@ -1,14 +1,5 @@
 [
   {
-    "dish_id": 1,
-    "dish_name": "Mediterranean Delight Platter",
-    "restaurant_id": 1,
-    "ingredients": "Hummus, Falafel, Tzatziki, Pita",
-    "price": 24,
-    "dish_image": "mediterranean_delight_platter.jpeg",
-    "icon": "leaf_icon.png"
-  },
-  {
     "dish_id": 2,
     "dish_name": "Grilled Calamari",
     "restaurant_id": 1,
@@ -79,6 +70,15 @@
     "price": 18,
     "dish_image": "spanakopita.jpeg",
     "icon": "leaves_icon.png"
+  },
+  {
+    "dish_id": 1,
+    "dish_name": "Mediterranean Delight Platter",
+    "restaurant_id": 1,
+    "ingredients": "Hummus, Falafel, Tzatziki, Pita",
+    "price": 24,
+    "dish_image": "mediterranean_delight_platter.jpeg",
+    "icon": "leaf_icon.png"
   },
   {
     "dish_id": 10,

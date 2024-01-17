@@ -21,7 +21,7 @@ const AboutUs = () => {
         </div>
         <Buttons />
       </div>
-      <Logo src={logoText} size={170} />
+      <Logo src={logoText} size={140} />
     </div>
   );
 };

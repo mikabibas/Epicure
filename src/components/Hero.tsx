@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
           <img className="search-icon" src={SearchIcon} alt="search_icon" />{" "}
           <input
             onChange={(e) => setSearch(e.target.value)}
-            className="input-field"
+            className="hero-input-field"
             type="text"
             placeholder={PLACEHOLDER_SERACH_INPUT}
           />

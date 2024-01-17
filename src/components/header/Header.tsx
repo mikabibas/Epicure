@@ -21,6 +21,11 @@ const Header: React.FC = () => {
   const toggleSearch = () => {
     setIsSearchOpen((prevState) => !prevState);
   };
+
+  const isActiveRoute = (route: EAppRoutes) => {
+    return window.location.pathname === route;
+  };
+
   return (
     <div className="header-navbar-container">
       <div className="header-container">
@@ -29,10 +34,20 @@ const Header: React.FC = () => {
           {isSearchOpen ? "Search" : <Logo src={logo} size={32} />}
           <div className="logo-text">{TEXT_LOGO}</div>
           <div className="restaurants-chefs-container">
-            <Link className="link" to={EAppRoutes.RESTAURANTS}>
+            <Link
+              className={`link ${
+                isActiveRoute(EAppRoutes.RESTAURANTS) ? "active" : ""
+              }`}
+              to={EAppRoutes.RESTAURANTS}
+            >
               {RESTAURANTS}
             </Link>
-            <Link className="link" to={EAppRoutes.CHEFS}>
+            <Link
+              className={`link ${
+                isActiveRoute(EAppRoutes.CHEFS) ? "active" : ""
+              }`}
+              to={EAppRoutes.CHEFS}
+            >
               {CHEFS}
             </Link>
           </div>

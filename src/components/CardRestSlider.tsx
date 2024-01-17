@@ -7,14 +7,14 @@ import "styles/cardSlider.scss";
 import { loadRestaurants } from "store/features/restaurantSlice";
 import Card from "./Card";
 import { EAppRoutes } from "constants/enum";
+import { Link } from "react-router-dom";
+import { useAppSelector } from "store/store";
+import { ICard } from "constants/interfaces";
 import {
   RESTAURANTS,
   POPULAR_RESTAURANTS,
   SLIDER_SETTINGS,
 } from "constants/variables";
-import { Link } from "react-router-dom";
-import { useAppSelector } from "store/store";
-import { ICard } from "constants/interfaces";
 
 const CardRestSlider: React.FC = () => {
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const CardRestSlider: React.FC = () => {
       {status === "loading" && <p>Loading...</p>}
       {status === "failed" && <p>Error loading restaurants</p>}
       {status === "succeeded" && (
-        <Slider {...SLIDER_SETTINGS} variableWidth>
+        <Slider {...SLIDER_SETTINGS}>
           {restaurants.map((card: ICard) => (
             <Card key={card.id} card={card} />
           ))}
