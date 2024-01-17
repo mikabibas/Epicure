@@ -26,24 +26,24 @@ const CardDishSlider: React.FC = () => {
       {status === "loading" && <p>Loading...</p>}
       {status === "failed" && <p>Error loading dishes</p>}
       {status === "succeeded" && (
-        <Slider {...SLIDER_SETTINGS} variableWidth>
+        <Slider {...SLIDER_SETTINGS}>
           {dishes.map((card: ICard) => (
-            <div key={card.id} className="card">
-              <div className="card-image-container">
+            <div key={card.id} className="card-dish">
+              <div className="card-image-container-dish">
                 <img
-                  className="card-image"
+                  className="card-image-dish"
                   src={require(`../assets/images/food/${card.dish_image}`)}
                   alt={card.dish_name}
                 />
               </div>
-              <div className="card-text-container">
-                <h3 className="card-title">{card.dish_name}</h3>
+              <div className="card-text-container-dish">
+                <h3 className="restaurant-name">{card.dish_name}</h3>
                 <img
                   className="dish-icon"
                   src={require(`assets/images/layout/${card.icon}`)}
                   alt="dish_icon"
                 />
-                <p className="ingredients">{card.ingredients}</p>
+                <p className="card-title">{card.ingredients}</p>
                 <p className="dish-price">
                   <span>₪ {card.price}</span>
                 </p>

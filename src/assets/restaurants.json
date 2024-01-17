@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "res_name": "Mediterranean Delight",
+    "res_name": "Taste of Tradition",
     "chef": {
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
@@ -91,7 +91,7 @@
   },
   {
     "id": 7,
-    "res_name": "Taste of Tradition",
+    "res_name": "Mediterranean Delight",
     "chef": {
       "chef_name": "Yuval Ben Neriyah",
       "chef_img": "yuvalBenNeriyah.png"
@@ -183,8 +183,8 @@
     "id": 13,
     "res_name": "Vegan Bliss",
     "chef": {
-      "chef_name": "Assaf Granit",
-      "chef_img": "asafGranit.png"
+      "chef_name": "Yossi Shitrit",
+      "chef_img": "yossiShitrit.png"
     },
     "res_image": "shakshuka.jpeg",
     "rating": {

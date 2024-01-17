@@ -24,6 +24,7 @@ const Meaning = () => {
           <img
             src={require("assets/images/layout/leaf_icon.png")}
             alt="leaf_icon"
+            className="icon-img"
           />
           <div className="icon-title">{VEGAN}</div>
         </div>

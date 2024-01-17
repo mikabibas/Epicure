@@ -2,69 +2,146 @@
 @import "constants/_dimensions.scss";
 
 .slick-track {
-  width: max-content !important;
   display: flex;
-  gap: 10px;
+  @include desktop {
+    gap: 24px;
+  }
+}
+
+.slick-slide {
+  @include mobile {
+    margin: 0 20px;
+  }
+}
+
+.slick-list {
+  @include mobile {
+    margin: 0 -27px;
+    padding: 0 20% 0 0 !important;
+  }
 }
 
 .restaurants-slider-title {
   text-transform: uppercase;
-  margin: 15px auto;
+  margin: 80px 20px 40px;
   text-align: center;
   font-size: 30px;
   letter-spacing: 1.25px;
   @include mobile {
+    text-align: start;
     font-size: 14px;
-    margin: 10px auto;
+    margin: 28px 0 8px;
   }
 }
 
 .card-slider {
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin: 50px auto;
   position: relative;
 
+  @include desktop {
+    width: 80%;
+  }
+
   @include mobile {
-    margin-top: 50px;
+    margin: 48px 0 0 20px;
   }
 }
 
-.card {
+.card,
+.card-dish {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 379px;
+  height: 405px;
+  border: none;
+
+  @include mobile {
+    height: 233px;
+    width: 245px;
+    text-align: start;
+  }
 }
 
-.card-image-container {
-  width: 100%;
-  height: 60%;
+.card-dish {
+  @include desktop {
+    height: 654px;
+  }
+  @include mobile {
+    height: 388px;
+    min-width: 245px;
+  }
 }
 
-.card-image {
+.card-image-container,
+.card-image-container-dish {
+  @include desktop {
+    width: 100%;
+    height: 236px;
+  }
+  @include mobile {
+    height: 151px;
+  }
+}
+
+.card-image-dish,
+.card-image-container-dish {
+  height: 306px;
+  @include mobile {
+    height: 152px;
+  }
+}
+
+.card-image,
+.card-image-dish {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
-.card-text-container {
+.card-text-container,
+.card-text-container-dish {
   background-color: $SECONDARY_BEIGE;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
-  height: 40%;
+  padding: 0 16px;
+  height: 169px;
+  padding: 24px 0;
+
+  @include mobile {
+    align-items: flex-start;
+    height: 81px;
+    padding: 16px;
+  }
+}
+
+.card-text-container {
+  justify-content: space-evenly;
+}
+
+.card-text-container-dish {
+  height: 348px;
+  padding: 24px 0 8px;
+  justify-content: space-evenly;
+  @include mobile {
+    height: 213px;
+    padding: 0 16px;
+  }
 }
 
 .card-title {
-  margin: 10px 0;
-  font-size: 1rem;
+  margin: 8px 0;
+  font-size: 24px;
+  max-width: 295px;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .dish-icon {
-  height: 31px;
+  height: 34px;
   width: 40px;
 }
 
@@ -78,12 +155,23 @@
     background: $SECONDARY_BEIGE;
     padding: 0 10px;
   }
+  @include mobile {
+    border-bottom: none;
+    text-align: start;
+    span {
+      padding: 0;
+    }
+  }
 }
 
 .ingredients {
   margin: 5px 20px;
   font-size: 12px;
   height: 45px;
+  @include mobile {
+    align-self: flex-start;
+    margin: 10px 20px 10px 0;
+  }
 }
 
 .card-rating {
@@ -110,7 +198,7 @@
   line-height: 35px;
   @include mobile {
     bottom: -50px;
-    left: 10px;
+    left: 0;
   }
 }
 

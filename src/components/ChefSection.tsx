@@ -21,7 +21,7 @@ const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
         src={require(`assets/images/food/${restaurant.res_image}`)}
         alt="restaurant_img"
       />
-      <h1 className="restaurant-name">{restaurant.res_name}</h1>
+      <h1 className="restaurant-name-chef">{restaurant.res_name}</h1>
     </div>
   ));
 

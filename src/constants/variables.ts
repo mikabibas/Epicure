@@ -55,6 +55,8 @@ const SLIDER_SETTINGS = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "20%",
       },
     },
   ],
