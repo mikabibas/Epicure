@@ -7,12 +7,7 @@ import Cart from "assets/images/layout/cart.svg";
 import Profile from "assets/images/layout/profile.svg";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
 
-import {
-  CHEFS,
-  PLACEHOLDER_SERACH_INPUT,
-  RESTAURANTS,
-  TEXT_LOGO,
-} from "constants/variables";
+import { CHEFS, RESTAURANTS, TEXT_LOGO } from "constants/variables";
 import { Link } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";
 import MediaQuery from "react-responsive";
