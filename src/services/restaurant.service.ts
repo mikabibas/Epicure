@@ -1,4 +1,5 @@
 import restaurants from "assets/restaurants.json";
+import { ICard } from "constants/interfaces";
 
 export interface IFilterBy {
   isNew?: boolean;
@@ -7,10 +8,9 @@ export interface IFilterBy {
 }
 
 const query = (filterBy: IFilterBy) => {
-  let filteredRestaurants = restaurants;
-  console.log(filterBy);
+  let filteredRestaurants = restaurants as ICard[];
 
-  function filterByOpeningDate(restaurants: any, years: any) {
+  function filterByOpeningDate(restaurants: ICard[], years: number) {
     const currentDate = new Date();
     const twoYearsAgo = new Date(
       currentDate.getFullYear() - years,
@@ -31,7 +31,7 @@ const query = (filterBy: IFilterBy) => {
   }
 
   function filterByOpeningHours(
-    restaurants: any,
+    restaurants: ICard[],
     startHour: number,
     endHour: number
   ) {
@@ -52,7 +52,7 @@ const query = (filterBy: IFilterBy) => {
       filteredRestaurants = filterTopRated(restaurants);
       break;
     case filterBy.isOpen:
-      filteredRestaurants = filterByOpeningHours(restaurants, 16, 20);
+      filteredRestaurants = filterByOpeningHours(restaurants, 14, 15);
       break;
     default:
       break;

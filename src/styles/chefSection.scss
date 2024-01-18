@@ -56,8 +56,10 @@
 
 .chef-image {
   object-fit: cover;
-  width: 380px;
-  height: 330px;
+  @include desktop {
+    width: 478px;
+    height: 372px;
+  }
   @include mobile {
     width: 100%;
   }

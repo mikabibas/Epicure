@@ -81,7 +81,7 @@
     height: 236px;
   }
   @include mobile {
-    height: 151px;
+    height: 152px;
   }
 }
 
@@ -97,6 +97,10 @@
 .card-image-dish {
   width: 100%;
   object-fit: cover;
+}
+
+.card-image {
+  height: 236px;
 }
 
 .card-text-container,
@@ -118,6 +122,10 @@
 
 .card-text-container {
   justify-content: space-evenly;
+
+  @include mobile {
+    height: 151px;
+  }
 }
 
 .card-text-container-dish {
@@ -196,9 +204,11 @@
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 35px;
+  margin-left: 10px;
   @include mobile {
     bottom: -50px;
     left: 0;
+    margin: 0;
   }
 }
 

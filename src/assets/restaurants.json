@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "res_name": "Taste of Tradition",
+    "res_name": "Tradition Taste",
     "chef": {
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
@@ -76,7 +76,7 @@
   },
   {
     "id": 6,
-    "res_name": "Farm-to-Table Fresh",
+    "res_name": "Farm Fresh",
     "chef": {
       "chef_name": "Yossi Shitrit",
       "chef_img": "yossiShitrit.png"
@@ -91,7 +91,7 @@
   },
   {
     "id": 7,
-    "res_name": "Mediterranean Delight",
+    "res_name": "Med Delight",
     "chef": {
       "chef_name": "Yuval Ben Neriyah",
       "chef_img": "yuvalBenNeriyah.png"
@@ -106,7 +106,7 @@
   },
   {
     "id": 8,
-    "res_name": "Gastronomic Gems",
+    "res_name": "Gastro Gems",
     "chef": {
       "chef_name": "Aviv Moshe",
       "chef_img": "avivMoshe.png"
@@ -136,7 +136,7 @@
   },
   {
     "id": 10,
-    "res_name": "Modern Mexican Flavors",
+    "res_name": "Mexican Flavors",
     "chef": {
       "chef_name": "Nitzan Raz",
       "chef_img": "nitzanRaz.png"
@@ -196,7 +196,7 @@
   },
   {
     "id": 14,
-    "res_name": "Sizzling Steakhouse",
+    "res_name": "Sizzling Steak",
     "chef": {
       "chef_name": "Meir Adoni",
       "chef_img": "meirAdoni.png"

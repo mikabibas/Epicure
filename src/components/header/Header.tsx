@@ -3,9 +3,10 @@ import "styles/header/header.scss";
 import Logo from "./Logo";
 import logo from "assets/images/layout/logo.png";
 import { useState } from "react";
-import SearchIcon from "assets/images/layout/searchIcon.svg";
 import Cart from "assets/images/layout/cart.svg";
 import Profile from "assets/images/layout/profile.svg";
+import SearchIcon from "assets/images/layout/searchIcon.svg";
+
 import {
   CHEFS,
   PLACEHOLDER_SERACH_INPUT,
@@ -14,6 +15,8 @@ import {
 } from "constants/variables";
 import { Link } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";
+import MediaQuery from "react-responsive";
+import SearchField from "./SearchField";
 
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -31,7 +34,12 @@ const Header: React.FC = () => {
       <div className="header-container">
         <BurgerMenu />
         <div className="logo-container">
-          {isSearchOpen ? "Search" : <Logo src={logo} size={32} />}
+          <MediaQuery maxWidth={780}>
+            {isSearchOpen ? "Search" : <Logo src={logo} size={32} />}
+          </MediaQuery>
+          <MediaQuery minWidth={780}>
+            <Logo src={logo} size={32} />
+          </MediaQuery>
           <div className="logo-text">{TEXT_LOGO}</div>
           <div className="restaurants-chefs-container">
             <Link
@@ -58,39 +66,19 @@ const Header: React.FC = () => {
               isSearchOpen ? "input-search-field-container-desktop" : ""
             }
           >
-            {isSearchOpen && (
-              <div className="search-container">
-                <img
-                  className="search-icon"
-                  src={SearchIcon}
-                  alt="search_icon"
-                />
-                <input
-                  className="input-field"
-                  type="text"
-                  placeholder={PLACEHOLDER_SERACH_INPUT}
-                />
-              </div>
-            )}
+            {isSearchOpen && <SearchField />}
           </div>
           <img onClick={toggleSearch} src={SearchIcon} alt="search_btn" />
           <img src={Profile} alt="profile_btn" />
           <img src={Cart} alt="cart_btn" />
         </div>
       </div>
-      <div
-        className={isSearchOpen ? "input-search-field-container-mobile" : ""}
-      >
-        {isSearchOpen && (
-          <div className="search-container">
-            <img className="search-icon" src={SearchIcon} alt="search_icon" />{" "}
-            <input
-              className="input-field"
-              type="text"
-              placeholder={PLACEHOLDER_SERACH_INPUT}
-            />
-          </div>
-        )}
+      <div className={isSearchOpen ? "search-bigger-container" : ""}>
+        <div
+          className={isSearchOpen ? "input-search-field-container-mobile" : ""}
+        >
+          {isSearchOpen && <SearchField />}
+        </div>
       </div>
     </div>
   );

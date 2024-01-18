@@ -53,13 +53,24 @@
   }
 }
 
+.search-bigger-container {
+  @include mobile {
+    background-color: $PRIMARY_WHITE;
+    width: 100vw;
+    position: absolute;
+    height: 300px;
+    z-index: 5;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+}
+
 .input-search-field-container-mobile,
 .input-search-field-container-desktop {
   display: flex;
   width: 334px;
   height: 30px;
   padding: 6px 12px;
-  margin: 0 auto;
+  margin: 20px auto;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
@@ -81,6 +92,7 @@
 }
 
 .input-search-field-container-desktop {
+  margin: 0 auto;
   @include mobile {
     display: none;
   }
@@ -90,6 +102,8 @@
   border: none;
   width: 250px;
   margin-left: 20px;
+  font-size: 14px;
+  outline: none;
 
   &::placeholder {
     color: $INPUT_FOCUS_GREY;
@@ -98,6 +112,7 @@
 
 .search-container {
   display: flex;
+  align-items: center;
 }
 
 .restaurants-chefs-container {
@@ -125,4 +140,9 @@
   @include desktop {
     display: flex;
   }
+}
+
+.mobile-search-container {
+  height: 300px;
+  z-index: 1;
 }
