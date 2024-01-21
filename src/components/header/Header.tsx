@@ -35,7 +35,9 @@ const Header: React.FC = () => {
           <MediaQuery minWidth={780}>
             <Logo src={logo} size={32} />
           </MediaQuery>
-          <div className="logo-text">{TEXT_LOGO}</div>
+          <Link to={EAppRoutes.HOMEPAGE} className="logo-text">
+            {TEXT_LOGO}
+          </Link>
           <div className="restaurants-chefs-container">
             <Link
               className={`link ${
@@ -61,7 +63,12 @@ const Header: React.FC = () => {
               isSearchOpen ? "input-search-field-container-desktop" : ""
             }
           >
-            {isSearchOpen && <SearchField />}
+            {isSearchOpen && (
+              <SearchField
+                iconSize={24}
+                className={"search-container-mobile"}
+              />
+            )}
           </div>
           <img onClick={toggleSearch} src={SearchIcon} alt="search_btn" />
           <img src={Profile} alt="profile_btn" />
@@ -72,7 +79,9 @@ const Header: React.FC = () => {
         <div
           className={isSearchOpen ? "input-search-field-container-mobile" : ""}
         >
-          {isSearchOpen && <SearchField />}
+          {isSearchOpen && (
+            <SearchField iconSize={24} className={"search-container-mobile"} />
+          )}
         </div>
       </div>
     </div>

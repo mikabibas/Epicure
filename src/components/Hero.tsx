@@ -1,35 +1,33 @@
-import { useState } from "react";
-import SearchIcon from "assets/images/layout/searchIcon.svg";
-import { HERO_TEXT, PLACEHOLDER_SERACH_INPUT } from "constants/variables";
+import React from "react";
+import { useSelector } from "react-redux";
+import { HERO_TEXT, NO_RESTAURANT_FOUND_TEXT } from "constants/variables";
 import "styles/hero.scss";
 import data from "assets/restaurants.json";
+import { selectSearch } from "store/features/searchSlice";
+import SearchField from "./header/SearchField";
 
 const Hero: React.FC = () => {
-  const [search, setSearch] = useState("");
+  const search = useSelector(selectSearch);
+
+  const filteredRestaurants = data.filter((restaurant) =>
+    restaurant.res_name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="hero-container">
       <div className="hero-search-container">
         <div className="hero-text">{HERO_TEXT}</div>
-        <div className="search-container-desktop">
-          <img className="search-icon" src={SearchIcon} alt="search_icon" />{" "}
-          <input
-            onChange={(e) => setSearch(e.target.value)}
-            className="hero-input-field"
-            type="text"
-            placeholder={PLACEHOLDER_SERACH_INPUT}
-          />
-        </div>
+        <SearchField iconSize={32} className={"search-container-desktop"} />
         {search.length > 0 && (
           <ul className="search-list">
-            <li>Restaurant:</li>
-            {data
-              .filter((restaurant) =>
-                restaurant.res_name.toLowerCase().includes(search)
-              )
-              .map((restaurant) => (
+            {filteredRestaurants.length > 0 && <li>Restaurant:</li>}
+            {filteredRestaurants.length > 0 ? (
+              filteredRestaurants.map((restaurant) => (
                 <li key={restaurant.id}>{restaurant.res_name}</li>
-              ))}
+              ))
+            ) : (
+              <li>{NO_RESTAURANT_FOUND_TEXT}</li>
+            )}
           </ul>
         )}
       </div>

@@ -5,11 +5,33 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 24px;
-  margin: 50px 127px;
+  margin: 50px auto;
+  width: 1184px;
+  height: 1156px;
+  justify-content: center;
+  align-items: center;
 
   @include mobile {
     grid-template-columns: 1fr;
     margin: 25px 20px;
     justify-items: center;
+  }
+}
+
+.chefs-container {
+  cursor: pointer;
+  .image-title-container {
+    display: flex;
+    padding: 0;
+    width: 378px;
+    height: 338px;
+
+    .chef-image {
+      width: 100%;
+      height: 100%;
+    }
+    .chef-name {
+      width: 100%;
+    }
   }
 }

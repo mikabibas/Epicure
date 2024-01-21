@@ -24,6 +24,17 @@
   margin-bottom: 24px;
   margin-left: 19px;
 
+  @include mobile {
+    height: 146px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   h3 {
     font-size: 18px;
     font-style: normal;
@@ -34,17 +45,7 @@
 
     @include desktop {
       margin: 30px;
+      cursor: pointer;
     }
-  }
-
-  @include mobile {
-    height: 146px;
-  }
-
-  @include desktop {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
   }
 }
