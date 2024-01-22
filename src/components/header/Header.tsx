@@ -6,7 +6,6 @@ import { useState } from "react";
 import Cart from "assets/images/layout/cart.svg";
 import Profile from "assets/images/layout/profile.svg";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
-
 import { CHEFS, RESTAURANTS, TEXT_LOGO } from "constants/variables";
 import { Link } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";

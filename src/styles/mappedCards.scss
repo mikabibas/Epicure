@@ -6,8 +6,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 24px;
   margin: 50px auto;
-  width: 1184px;
-  height: 1156px;
   justify-content: center;
   align-items: center;
 
@@ -18,20 +16,62 @@
   }
 }
 
+.restaurants-grid-container {
+  @include desktop {
+    width: 1185px;
+  }
+  .card {
+    @include mobile {
+      width: 334px;
+      .card-text-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .chefs-container {
-  cursor: pointer;
+  @include desktop {
+    width: 1184px;
+    height: 1156px;
+  }
   .image-title-container {
     display: flex;
     padding: 0;
     width: 378px;
     height: 338px;
+    cursor: pointer;
+    position: relative;
+
+    @include mobile {
+      width: 335px;
+      height: 315px;
+    }
 
     .chef-image {
       width: 100%;
       height: 100%;
+      @include mobile {
+      }
     }
     .chef-name {
       width: 100%;
+      display: flex;
+      font-family: "helveticaRoman";
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      height: 78px;
+      text-align: center;
+      font-size: 40px;
+      justify-content: center;
+      margin: 0;
+      align-items: center;
+      line-height: normal;
+
+      @include mobile {
+        font-size: 24px;
+      }
     }
   }
 }

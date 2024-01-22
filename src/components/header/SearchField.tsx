@@ -6,7 +6,7 @@ import "styles/header/searchField.scss";
 import { selectSearch, setSearch } from "store/features/searchSlice";
 
 interface SearchFieldProps {
-  iconSize: number;
+  iconSize?: number;
   className: string;
 }
 

@@ -33,6 +33,7 @@
   justify-content: space-evenly;
   position: relative;
   width: 335px;
+  height: 144px;
 
   &:focus {
     outline: none;
@@ -48,8 +49,8 @@
   .hero-text {
     padding: 0 30px;
     @include mobile {
-      margin: auto;
-      margin-bottom: 10px;
+      padding: 0 10px;
+      font-size: 24px;
     }
   }
 }

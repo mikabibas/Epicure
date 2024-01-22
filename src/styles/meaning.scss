@@ -10,7 +10,8 @@
   width: 100%;
 
   @include mobile {
-    margin: 46px auto;
+    margin: 20px auto;
+    height: 584px;
   }
 
   @include desktop {
@@ -34,7 +35,6 @@
 
       @include mobile {
         font-size: 18px;
-        margin-top: 24px;
       }
     }
     .icon-container {

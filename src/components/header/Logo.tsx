@@ -11,12 +11,7 @@ const Logo: React.FC<LogoProps> = ({ size, src }: LogoProps) => {
   return (
     <Link to={EAppRoutes.HOMEPAGE}>
       <div style={{ width: size, height: size }}>
-        <img
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-          src={src}
-          alt="logo"
-          className="logo"
-        />
+        <img src={src} alt="logo" className="logo" />
       </div>
     </Link>
   );

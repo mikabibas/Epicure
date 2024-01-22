@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
     <div className="hero-container">
       <div className="hero-search-container">
         <div className="hero-text">{HERO_TEXT}</div>
-        <SearchField iconSize={32} className={"search-container-desktop"} />
+        <SearchField className={"search-container-desktop"} />
         {search.length > 0 && (
           <ul className="search-list">
             {filteredRestaurants.length > 0 && <li>Restaurant:</li>}

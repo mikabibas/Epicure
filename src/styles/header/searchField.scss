@@ -61,14 +61,24 @@
   position: relative;
   line-height: normal;
 
+  @include mobile {
+    width: 315px;
+    height: 30px;
+  }
+
   .search-container-desktop {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 505px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     font-size: 24px;
     letter-spacing: 1.29px;
+
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -78,7 +88,6 @@
   margin-left: 20px;
   font-size: 14px;
   outline: none;
-  border: 1px solid red;
 
   &::placeholder {
     color: $INPUT_FOCUS_GREY;
@@ -86,6 +95,7 @@
 }
 
 .hero-input-field {
+  display: flex;
   background-color: transparent;
   font-size: 24px;
   width: 100%;
@@ -94,6 +104,7 @@
   align-self: flex-end;
   letter-spacing: 1.29px;
   padding-left: 26px;
+  font-family: "helveticaThin";
 
   &::placeholder {
     color: $PRIMARY_BLACK;
@@ -101,6 +112,9 @@
   &:focus::placeholder {
     outline: none;
     color: $INPUT_FOCUS_GREY;
+  }
+  @include mobile {
+    font-size: 12px;
   }
 }
 .search-list {

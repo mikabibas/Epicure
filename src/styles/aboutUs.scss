@@ -7,7 +7,7 @@
   margin: 0 auto;
   background-color: $SECONDARY_GREY;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 40px 132px;
   font-family: "helveticaThin";
 
@@ -16,15 +16,18 @@
     padding: 20px;
     align-items: flex-start;
     gap: 10px;
+    height: 790px;
   }
 }
 
 .about-text-container {
   display: flex;
   flex-direction: column;
-  width: 920px;
-  height: 449px;
-  margin-left: 50px;
+
+  @include desktop {
+    height: 449px;
+    width: 918px;
+  }
 
   @include mobile {
     width: 100%;
@@ -83,7 +86,6 @@
   cursor: pointer;
 
   @include mobile {
-    width: 170px;
     margin-bottom: 9px;
   }
 }

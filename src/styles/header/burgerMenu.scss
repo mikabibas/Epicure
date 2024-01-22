@@ -105,8 +105,12 @@
     }
     a {
       text-decoration: none;
-      font-weight: 500;
-      font-size: 1.2rem;
+      font-family: "helveticaThin";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      letter-spacing: 1.92px;
       &:hover {
         font-weight: bolder;
       }
