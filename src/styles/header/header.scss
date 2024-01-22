@@ -20,22 +20,31 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .search-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .logo-text {
   color: $PRIMARY_BLACK;
-  font-family: Helvetica Neue;
+  font-family: "helveticaThin";
   font-size: 27px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
   letter-spacing: 1.35px;
   text-transform: uppercase;
+  text-decoration: none;
+  align-self: flex-end;
+
+  &:hover {
+    text-decoration: none;
+    color: $PRIMARY_BLACK;
+  }
+
   @include mobile {
     display: none;
   }
@@ -50,6 +59,8 @@
   align-items: center;
   @include mobile {
     margin-right: -100px;
+    font-family: "helveticaThin";
+    font-size: 18px;
   }
 }
 
@@ -62,57 +73,6 @@
     z-index: 5;
     box-shadow: 0 4px 2px -2px gray;
   }
-}
-
-.input-search-field-container-mobile,
-.input-search-field-container-desktop {
-  display: flex;
-  width: 334px;
-  height: 30px;
-  padding: 6px 12px;
-  margin: 20px auto;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 0.5px solid $PRIMARY_BLACK;
-  outline: none;
-  transition: transform 0.5s ease-in-out;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.input-search-field-container-mobile {
-  background-color: $PRIMARY_WHITE;
-  @include desktop {
-    display: none;
-  }
-}
-
-.input-search-field-container-desktop {
-  margin: 0 auto;
-  @include mobile {
-    display: none;
-  }
-}
-
-.input-field {
-  border: none;
-  width: 250px;
-  margin-left: 20px;
-  font-size: 14px;
-  outline: none;
-
-  &::placeholder {
-    color: $INPUT_FOCUS_GREY;
-  }
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
 }
 
 .restaurants-chefs-container {
@@ -145,4 +105,10 @@
 .mobile-search-container {
   height: 300px;
   z-index: 1;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

@@ -1,0 +1,140 @@
+@import "constants/_colors.scss";
+@import "constants/_dimensions.scss";
+
+.input-search-field-container-mobile {
+  display: flex;
+  width: 334px;
+  height: 30px;
+  padding: 6px 12px;
+  margin: 20px auto;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  outline: none;
+  transition: transform 0.5s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-search-field-container-mobile {
+  background-color: $PRIMARY_WHITE;
+  @include desktop {
+    display: none;
+  }
+}
+
+.input-search-field-container-desktop {
+  .search-container {
+    display: flex;
+    width: 410px;
+    height: 41px;
+    letter-spacing: 1.29px;
+    font-family: "helveticaThin";
+    position: absolute;
+    right: 120px;
+    top: -8px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .hero-input-field {
+      display: flex;
+      font-size: 18px;
+      margin: 0;
+      line-height: normal;
+    }
+  }
+}
+
+.search-container {
+  display: flex;
+  width: 505px;
+  border: 0.5px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 12px;
+  align-items: center;
+  position: relative;
+  line-height: normal;
+
+  @include mobile {
+    width: 315px;
+    height: 30px;
+  }
+
+  .search-container-desktop {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    letter-spacing: 1.29px;
+
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.input-field {
+  border: none;
+  width: 250px;
+  margin-left: 20px;
+  font-size: 14px;
+  outline: none;
+
+  &::placeholder {
+    color: $INPUT_FOCUS_GREY;
+  }
+}
+
+.hero-input-field {
+  display: flex;
+  background-color: transparent;
+  font-size: 24px;
+  width: 100%;
+  outline: none;
+  border: none;
+  align-self: flex-end;
+  letter-spacing: 1.29px;
+  padding-left: 26px;
+  font-family: "helveticaThin";
+
+  &::placeholder {
+    color: $PRIMARY_BLACK;
+  }
+  &:focus::placeholder {
+    outline: none;
+    color: $INPUT_FOCUS_GREY;
+  }
+  @include mobile {
+    font-size: 12px;
+  }
+}
+.search-list {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $PRIMARY_WHITE;
+  list-style: none;
+  gap: 5px;
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  top: 137px;
+  position: absolute;
+  width: 294px;
+
+  @include desktop {
+    top: 186px;
+  }
+}

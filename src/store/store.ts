@@ -4,6 +4,7 @@ import restaurantReducer from "./features/restaurantSlice";
 import chefReducer from "store/features/chefSlice";
 import dishReducer from "store/features/dishSlice";
 import filterByReducer from "store/features/filterBySlice";
+import searchReducer from "store/features/searchSlice";
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     chefs: chefReducer,
     dishes: dishReducer,
     filterBy: filterByReducer,
+    search: searchReducer,
   },
 });
 

@@ -24,19 +24,6 @@
   margin-bottom: 24px;
   margin-left: 19px;
 
-  h3 {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    letter-spacing: 1.92px;
-    margin: 0;
-
-    @include desktop {
-      margin: 30px;
-    }
-  }
-
   @include mobile {
     height: 146px;
   }
@@ -46,5 +33,20 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    margin: 0;
+    font-family: "helveticaThin";
+
+    @include desktop {
+      margin: 30px;
+      cursor: pointer;
+    }
   }
 }

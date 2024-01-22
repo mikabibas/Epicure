@@ -12,6 +12,7 @@ const MEANING_ICONS = "the meaning of our icons:";
 const SPICY = "spicy";
 const VEGETERIAN = "Vegeterian";
 const VEGAN = "vegan";
+const NO_RESTAURANT_FOUND_TEXT = "No restaurants found";
 
 //FOOD IMAGES
 const PANCAKES_IMG = "assets/images/food/pancakes.webp";
@@ -72,7 +73,7 @@ const CHEF_RESTAURANTS = "Yossi's Restaurants";
 // about-us
 const ABOUT_TITLE = "About Us:";
 const ABOUT_PARAGRAPH1 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blanditturpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, dignissim a vestibulum.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blandit turpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, dignissim a vestibulum.";
 const ABOUT_PARAGRAPH2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros.";
 
@@ -156,4 +157,5 @@ export {
   START_DATE,
   END_DATE,
   NAV_OPTIONS,
+  NO_RESTAURANT_FOUND_TEXT,
 };

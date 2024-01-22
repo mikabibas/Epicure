@@ -27,17 +27,19 @@
   text-align: center;
   font-size: 30px;
   letter-spacing: 1.25px;
+  font-family: "helveticaThin";
+
   @include mobile {
     text-align: start;
-    font-size: 14px;
-    margin: 28px 0 8px;
+    font-size: 18px;
+    margin: 48px 0 8px;
   }
 }
 
 .card-slider {
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 0 auto;
   position: relative;
 
   @include desktop {
@@ -100,7 +102,7 @@
 }
 
 .card-image {
-  height: 236px;
+  height: 100%;
 }
 
 .card-text-container,
@@ -142,6 +144,7 @@
   margin: 8px 0;
   font-size: 24px;
   max-width: 295px;
+  font-family: "helveticaThin";
 
   @include mobile {
     font-size: 16px;

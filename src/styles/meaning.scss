@@ -10,64 +10,61 @@
   width: 100%;
 
   @include mobile {
-    margin: 46px auto;
+    margin: 20px auto;
+    height: 584px;
   }
 
   @include desktop {
     height: 265px;
     gap: 32px;
   }
-}
-
-.meaning-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @include desktop {
-    width: 665px;
-    height: 265px;
-  }
-}
-
-.meaning-title {
-  text-transform: uppercase;
-  font-size: 30px;
-
-  @include mobile {
-    font-size: 18px;
-    margin-top: 24px;
-  }
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @include mobile {
+  .meaning-text-container {
+    display: flex;
     flex-direction: column;
-    height: 439px;
-    width: 136px;
-  }
+    justify-content: center;
+    align-items: center;
+    @include desktop {
+      width: 665px;
+      height: 265px;
+      gap: 32px;
+    }
+    .meaning-title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: "helveticaThin";
 
-  @include desktop {
-    width: 488px;
-  }
-}
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 488px;
 
-.image-text-container {
-  height: 127px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-transform: capitalize;
-  font-size: 24px;
+      @include mobile {
+        flex-direction: column;
+        height: 439px;
+        width: 136px;
+      }
+      .image-text-container {
+        height: 127px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-family: "helveticaThin";
+        gap: 32px;
 
-  @include mobile {
-    height: 103px;
-    margin: 32px auto 24px;
-    font-size: 18px;
+        @include mobile {
+          height: 103px;
+          margin: 32px auto 24px;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
