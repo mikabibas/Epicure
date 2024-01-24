@@ -18,7 +18,7 @@ const Homepage = () => {
       <CardDishSlider />
       <Meaning />
       <ChefSection
-        chef={{ chef_name: CHEF_NAME, chef_img: "chef_yossi.png" }}
+        chef={{ name: CHEF_NAME, img: "chef_yossi.png" }}
         restaurants={restaurantsData}
       />
       <AboutUs />

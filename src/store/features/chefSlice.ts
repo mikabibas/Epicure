@@ -8,8 +8,8 @@ export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
 
   const chefsWithDetails: ChefInfo[] = chefs.map((chef) => {
     return {
-      chef_name: chef.chef.chef_name,
-      chef_img: chef.chef.chef_img,
+      name: chef.chef.name,
+      img: chef.chef.img,
     };
   });
 

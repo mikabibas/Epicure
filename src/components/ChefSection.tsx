@@ -27,7 +27,7 @@ const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
 
   useEffect(() => {
     const filtered = restaurants.filter(
-      (restaurant) => restaurant.chef?.chef_name === chef.chef_name
+      (restaurant) => restaurant.chef?.name === chef.name
     );
     setFilteredRestaurants(filtered);
   }, [chef, restaurants]);

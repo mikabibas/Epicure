@@ -3,13 +3,14 @@
     "id": 1,
     "res_name": "Tradition Taste",
     "chef": {
-      "chef_name": "Nitzan Raz",
-      "chef_img": "nitzanRaz.png"
+      "name": "Nitzan Raz",
+      "img": "nitzanRaz.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "cacio_pepe.jpeg",
     "rating": {
-      "rating_img": "3-stars.png",
-      "rating_number": 3
+      "img": "3-stars.png",
+      "number": 3
     },
     "opening_date": "2012-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -18,13 +19,14 @@
     "id": 2,
     "res_name": "Urban Fusion",
     "chef": {
-      "chef_name": "Assaf Granit",
-      "chef_img": "asafGranit.png"
+      "name": "Assaf Granit",
+      "img": "asafGranit.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "dumpling.jpeg",
     "rating": {
-      "rating_img": "4-stars.png",
-      "rating_number": 4
+      "img": "4-stars.png",
+      "number": 4
     },
     "opening_date": "2023-05-30",
     "opening_hours": "8:00 - 20:00"
@@ -33,13 +35,14 @@
     "id": 3,
     "res_name": "Artisanal Eats",
     "chef": {
-      "chef_name": "Meir Adoni",
-      "chef_img": "meirAdoni.png"
+      "name": "Meir Adoni",
+      "img": "meirAdoni.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "meatballs.jpeg",
     "rating": {
-      "rating_img": "5-stars.png",
-      "rating_number": 5
+      "img": "5-stars.png",
+      "number": 5
     },
     "opening_date": "2022-05-30",
     "opening_hours": "8:00 - 12:00"
@@ -48,13 +51,14 @@
     "id": 4,
     "res_name": "Spice Haven",
     "chef": {
-      "chef_name": "Eyal Shani",
-      "chef_img": "eyalShani.png"
+      "name": "Eyal Shani",
+      "img": "eyalShani.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "pecan_pie.webp",
     "rating": {
-      "rating_img": "2-stars.png",
-      "rating_number": 2
+      "img": "2-stars.png",
+      "number": 2
     },
     "opening_date": "2019-05-30",
     "opening_hours": "8:00 - 13:00"
@@ -63,13 +67,14 @@
     "id": 5,
     "res_name": "Seafront Bistro",
     "chef": {
-      "chef_name": "Omer Miller",
-      "chef_img": "omerMiller.png"
+      "name": "Omer Miller",
+      "img": "omerMiller.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "cacio_pepe.jpeg",
     "rating": {
-      "rating_img": "4-stars.png",
-      "rating_number": 4
+      "img": "4-stars.png",
+      "number": 4
     },
     "opening_date": "2023-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -78,13 +83,14 @@
     "id": 6,
     "res_name": "Farm Fresh",
     "chef": {
-      "chef_name": "Yossi Shitrit",
-      "chef_img": "yossiShitrit.png"
+      "name": "Yossi Shitrit",
+      "img": "yossiShitrit.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "hot_dog.webp",
     "rating": {
-      "rating_img": "1-stars.png",
-      "rating_number": 1
+      "img": "1-stars.png",
+      "number": 1
     },
     "opening_date": "2020-05-30",
     "opening_hours": "8:00 - 16:00"
@@ -93,13 +99,14 @@
     "id": 7,
     "res_name": "Med Delight",
     "chef": {
-      "chef_name": "Yuval Ben Neriyah",
-      "chef_img": "yuvalBenNeriyah.png"
+      "name": "Yuval Ben Neriyah",
+      "img": "yuvalBenNeriyah.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "hummus.webp",
     "rating": {
-      "rating_img": "3-stars.png",
-      "rating_number": 3
+      "img": "3-stars.png",
+      "number": 3
     },
     "opening_date": "2021-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -108,13 +115,14 @@
     "id": 8,
     "res_name": "Gastro Gems",
     "chef": {
-      "chef_name": "Aviv Moshe",
-      "chef_img": "avivMoshe.png"
+      "name": "Aviv Moshe",
+      "img": "avivMoshe.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "fried_rice.jpeg",
     "rating": {
-      "rating_img": "3-stars.png",
-      "rating_number": 3
+      "img": "3-stars.png",
+      "number": 3
     },
     "opening_date": "2018-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -123,13 +131,14 @@
     "id": 9,
     "res_name": "Sunset Sushi",
     "chef": {
-      "chef_name": "Shahaf Shabtay",
-      "chef_img": "shahafShabtay.png"
+      "name": "Shahaf Shabtay",
+      "img": "shahafShabtay.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "Hamburger-and-french-fries.webp",
     "rating": {
-      "rating_img": "5-stars.png",
-      "rating_number": 5
+      "img": "5-stars.png",
+      "number": 5
     },
     "opening_date": "2023-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -138,13 +147,14 @@
     "id": 10,
     "res_name": "Mexican Flavors",
     "chef": {
-      "chef_name": "Nitzan Raz",
-      "chef_img": "nitzanRaz.png"
+      "name": "Nitzan Raz",
+      "img": "nitzanRaz.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "guacamole.jpeg",
     "rating": {
-      "rating_img": "4-stars.png",
-      "rating_number": 4
+      "img": "4-stars.png",
+      "number": 4
     },
     "opening_date": "2017-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -153,13 +163,14 @@
     "id": 11,
     "res_name": "Fusion Grill",
     "chef": {
-      "chef_name": "Eyal Shani",
-      "chef_img": "eyalShani.png"
+      "name": "Eyal Shani",
+      "img": "eyalShani.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "shawarma.jpeg",
     "rating": {
-      "rating_img": "1-stars.png",
-      "rating_number": 1
+      "img": "1-stars.png",
+      "number": 1
     },
     "opening_date": "2010-05-30",
     "opening_hours": "13:00 - 00:00"
@@ -168,13 +179,14 @@
     "id": 12,
     "res_name": "Cafe Parisienne",
     "chef": {
-      "chef_name": "Omer Miller",
-      "chef_img": "omerMiller.png"
+      "name": "Omer Miller",
+      "img": "omerMiller.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "waffles.webp",
     "rating": {
-      "rating_img": "3-stars.png",
-      "rating_number": 3
+      "img": "3-stars.png",
+      "number": 3
     },
     "opening_date": "2019-05-30",
     "opening_hours": "17:00 - 00:00"
@@ -183,13 +195,14 @@
     "id": 13,
     "res_name": "Vegan Bliss",
     "chef": {
-      "chef_name": "Yossi Shitrit",
-      "chef_img": "yossiShitrit.png"
+      "name": "Yossi Shitrit",
+      "img": "yossiShitrit.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "shakshuka.jpeg",
     "rating": {
-      "rating_img": "5-stars.png",
-      "rating_number": 5
+      "img": "5-stars.png",
+      "number": 5
     },
     "opening_date": "2013-05-30",
     "opening_hours": "20:00 - 00:00"
@@ -198,13 +211,14 @@
     "id": 14,
     "res_name": "Sizzling Steak",
     "chef": {
-      "chef_name": "Meir Adoni",
-      "chef_img": "meirAdoni.png"
+      "name": "Meir Adoni",
+      "img": "meirAdoni.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "pasta.jpeg",
     "rating": {
-      "rating_img": "4-stars.png",
-      "rating_number": 4
+      "img": "4-stars.png",
+      "number": 4
     },
     "opening_date": "2023-05-30",
     "opening_hours": "8:00 - 00:00"
@@ -213,13 +227,14 @@
     "id": 15,
     "res_name": "Coastal Catch",
     "chef": {
-      "chef_name": "Yossi Shitrit",
-      "chef_img": "yossiShitrit.png"
+      "name": "Yossi Shitrit",
+      "img": "yossiShitrit.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac turpis facilisis vehicula. Proin auctor ultricies ligula, nec scelerisque turpis convallis ac. Duis eu est non justo vulputate congue. Nullam sit amet justo nec metus consequat feugiat."
     },
     "res_image": "rice.jpeg",
     "rating": {
-      "rating_img": "2-stars.png",
-      "rating_number": 2
+      "img": "2-stars.png",
+      "number": 2
     },
     "opening_date": "2014-05-30",
     "opening_hours": "14:00 - 00:00"

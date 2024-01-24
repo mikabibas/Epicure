@@ -17,11 +17,11 @@ const Card: React.FC<CardProps> = ({ card }) => {
       </div>
       <div className="card-text-container">
         <div className="restaurant-name">{card.res_name}</div>
-        <h3 className="card-title">{card.chef?.chef_name}</h3>
+        <h3 className="card-title">{card.chef?.name}</h3>
         <MediaQuery minWidth={600}>
           <img
             className="dish-rating"
-            src={require(`assets/images/layout/${card.rating?.rating_img}`)}
+            src={require(`assets/images/layout/${card.rating?.img}`)}
             alt="dish_icon"
           />
         </MediaQuery>

@@ -1,12 +1,12 @@
 export interface ChefInfo {
   chef?: any;
-  chef_name: string;
-  chef_img: string;
+  name: string;
+  img: string;
 }
 
 interface IRating {
-  rating_img: string;
-  rating_number: number;
+  img: string;
+  number: number;
 }
 
 export interface ICard {

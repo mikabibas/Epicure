@@ -27,16 +27,16 @@ const ChefList: React.FC = () => {
   return (
     <div className="chefs-container">
       {chefs.map((chef: ChefInfo) => {
-        if (!uniqueChefNames.has(chef.chef_name)) {
-          uniqueChefNames.add(chef.chef_name);
+        if (!uniqueChefNames.has(chef.name)) {
+          uniqueChefNames.add(chef.name);
           return (
-            <div key={chef.chef_name} className="image-title-container">
+            <div key={chef.name} className="image-title-container">
               <img
                 className="chef-image"
-                src={require(`assets/images/chefs/${chef.chef_img}`)}
-                alt={chef.chef_name}
+                src={require(`assets/images/chefs/${chef.img}`)}
+                alt={chef.name}
               />
-              <h1 className="chef-name">{chef.chef_name}</h1>
+              <h1 className="chef-name">{chef.name}</h1>
             </div>
           );
         }
