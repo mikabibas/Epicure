@@ -6,7 +6,7 @@ const MappedCards: React.FC<CardSliderProps> = ({ cards }) => {
   return (
     <div className="restaurants-grid-container">
       {cards.map((card) => (
-        <Card key={card.id} card={card} />
+        <Card key={card._id} card={card} />
       ))}
     </div>
   );

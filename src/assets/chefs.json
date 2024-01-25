@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Assaf Granit",
+    "restaurants": [{ "_id": "65b126fc2b8d5e2c9edb5f44", "name": "Shayna" }],
+    "image": "assaf_granit.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Aviv Moshe",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f3d", "name": "Port Said" },
+      { "_id": "65b126fc2b8d5e2c9edb5f3e", "name": "Ouzeria" }
+    ],
+    "image": "aviv_moshe.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Eyal Shani",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f3c", "name": "Taizu" },
+      { "_id": "65b126fc2b8d5e2c9edb5f48", "name": "HaSalon" }
+    ],
+    "image": "eyal_shani.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Meir Adoni",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f3f", "name": "Catit" },
+      { "_id": "65b126fc2b8d5e2c9edb5f49", "name": "Lumina" }
+    ],
+    "image": "meir_adoni.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Omer Miller",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f40", "name": "Barbarossa" },
+      { "_id": "65b126fc2b8d5e2c9edb5f41", "name": "Goocha" }
+    ],
+    "image": "omer_miller.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Shahaf Shabtay",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f43", "name": "Topolopompo" },
+      { "_id": "65b126fc2b8d5e2c9edb5f42", "name": "Benedict" }
+    ],
+    "image": "shahaf_shabtay.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Nitzan Raz",
+    "restaurants": [{ "_id": "65b126fc2b8d5e2c9edb5f47", "name": "Dalida" }],
+    "image": "nitzan_raz.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Yossi Shitrit",
+    "restaurants": [{ "_id": "65b126fc2b8d5e2c9edb5f45", "name": "Café Noir" }],
+    "image": "yossi_shitrit.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  },
+  {
+    "name": "Yuval Ben Neriyah",
+    "restaurants": [
+      { "_id": "65b126fc2b8d5e2c9edb5f46", "name": "Bicicletta" },
+      { "_id": "65b126fc2b8d5e2c9edb5f4a", "name": "Kimmel" }
+    ],
+    "image": "yuval_ben_neriyah.jpg",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  }
+]

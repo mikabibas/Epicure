@@ -28,7 +28,7 @@ const CardDishSlider: React.FC = () => {
       {status === "succeeded" && (
         <Slider {...SLIDER_SETTINGS}>
           {dishes.map((card: ICard) => (
-            <div key={card.id} className="card-dish">
+            <div key={card._id} className="card-dish">
               <div className="card-image-container-dish">
                 <img
                   className="card-image-dish"

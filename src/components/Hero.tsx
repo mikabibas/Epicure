@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             {filteredRestaurants.length > 0 && <li>Restaurant:</li>}
             {filteredRestaurants.length > 0 ? (
               filteredRestaurants.map((restaurant) => (
-                <li key={restaurant.id}>{restaurant.res_name}</li>
+                <li key={restaurant._id}>{restaurant.res_name}</li>
               ))
             ) : (
               <li>{NO_RESTAURANT_FOUND_TEXT}</li>

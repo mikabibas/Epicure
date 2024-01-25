@@ -37,7 +37,7 @@ const CardRestSlider: React.FC = () => {
       {status === "succeeded" && (
         <Slider {...SLIDER_SETTINGS}>
           {restaurants.map((card: ICard) => (
-            <Card key={card.id} card={card} />
+            <Card key={card._id} card={card} />
           ))}
         </Slider>
       )}

@@ -10,8 +10,8 @@ interface IRating {
 }
 
 export interface ICard {
-  id: number;
-  restaurant_id?: number;
+  _id: string;
+  restaurant_id?: string;
   dish_id?: number;
   dish_name?: string;
   res_image?: string;

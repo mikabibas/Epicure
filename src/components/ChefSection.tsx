@@ -15,7 +15,7 @@ const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
   const [filteredRestaurants, setFilteredRestaurants] = useState<ICard[]>([]);
 
   const filteredRestaurantsMapped = filteredRestaurants.map((restaurant) => (
-    <div className="restaurant-card" key={restaurant.id}>
+    <div className="restaurant-card" key={restaurant._id}>
       <img
         className="restaurant-image"
         src={require(`assets/images/food/${restaurant.res_image}`)}
