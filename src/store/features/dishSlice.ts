@@ -7,7 +7,7 @@ export const fetchDishes = createAsyncThunk("dishes/fetchDishes", async () => {
   return dishes as ICard[];
 });
 
-interface IDishState {
+export interface IDishState {
   dishes: ICard[];
   status: string;
   error: string | null;

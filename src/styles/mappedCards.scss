@@ -1,4 +1,5 @@
 @import "constants/_dimensions.scss";
+@import "constants/_colors.scss";
 
 .restaurants-grid-container,
 .chefs-container {
@@ -8,6 +9,11 @@
   margin: 50px auto;
   justify-content: center;
   align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $PRIMARY_BLACK;
+  }
 
   @include mobile {
     grid-template-columns: 1fr;

@@ -8,6 +8,7 @@ export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
 
   const chefsWithDetails: ChefInfo[] = chefs.map((chef) => {
     return {
+      id: chef.chef.id,
       name: chef.chef.name,
       img: chef.chef.img,
     };
@@ -16,7 +17,7 @@ export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
   return chefsWithDetails;
 });
 
-interface IChefState {
+export interface IChefState {
   chefs: ChefInfo[];
   status: string;
   error: string | null;

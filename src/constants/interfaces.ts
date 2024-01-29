@@ -1,5 +1,6 @@
 export interface ChefInfo {
   chef?: any;
+  id?: string;
   name: string;
   img: string;
 }
