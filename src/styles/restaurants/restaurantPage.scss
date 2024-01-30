@@ -22,10 +22,12 @@
   .rest-name {
     font-size: 56px;
     font-family: "helveticaRoman";
+    margin: 32px auto 4px;
   }
   .rest-chef-name {
     font-size: 32px;
     font-family: "helveticaThin";
+    margin-bottom: 32px;
   }
   .open-now-container {
     display: flex;
@@ -34,7 +36,6 @@
     gap: 8px;
     .open-now {
       margin: 8px auto;
-      text-transform: capitalize;
     }
 
     img {
@@ -47,5 +48,53 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     width: 1186px;
+    .card-dish-restaurant-page:nth-child(9),
+    .card-dish-restaurant-page:nth-child(10) {
+      grid-column: span 2;
+    }
+    .card-dish-restaurant-page:nth-child(9){
+      justify-self: end;
+    }
+
+    .card-dish-restaurant-page {
+      height: 413px;
+      width: 272px;
+      display: flex;
+      flex-direction: column;
+
+      .card-image-container-dish-restaurant-page {
+        width: 100%;
+        .card-image-dish-restaurant-page {
+          height: 173.229px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-text-container-dish-restaurant-page {
+        background-color: $SECONDARY_BEIGE;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 240px;
+        padding: 24px 25px 8px;
+        position: relative;
+
+        .restaurant-name-restaurant-page {
+          font-size: 24px;
+          margin: 0;
+          margin-bottom: 8px;
+        }
+
+        .card-title-restaurant-page {
+          font-size: 20px;
+          font-family: "helveticaThin";
+        }
+        .dish-price {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
   }
 }

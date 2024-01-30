@@ -1,5 +1,4 @@
 import { ICard } from "constants/interfaces";
-import MediaQuery from "react-responsive";
 
 interface CardProps {
   card: ICard;

@@ -6,9 +6,8 @@ import { fetchChefs, IChefState } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
 import "styles/cardSlider.scss";
 import "styles/restaurants/restaurantPage.scss";
-import Header from "components/header/Header";
-import Footer from "components/Footer";
 import { OPEN_NOW } from "constants/variables";
+import FilterNav from "components/restaurantsPage/FilterNav";
 
 const RestaurantPage: React.FC = () => {
   const { restaurantId } = useParams<{ restaurantId: string }>();
@@ -17,6 +16,7 @@ const RestaurantPage: React.FC = () => {
   useEffect(() => {
     dispatch(fetchChefs() as any);
     dispatch(fetchDishes() as any);
+    window.scrollTo(0, 0);
   }, [dispatch]);
 
   const restaurant = useAppSelector((state) =>
@@ -31,7 +31,6 @@ const RestaurantPage: React.FC = () => {
 
   return (
     <>
-      <Header />
       <div className="rest-container">
         <div className="rest-hero">
           <img
@@ -51,31 +50,30 @@ const RestaurantPage: React.FC = () => {
           />
           <p className="open-now">{OPEN_NOW}</p>
         </div>
-        <div>
+        {/* <div>
           <button>Breakfast</button>
           <button>Lunch</button>
           <button>Dinner</button>
-        </div>
+        </div> */}
         <div className="rest-dish-container">
           {dishes
             .filter((dish) => dish.restaurant_id === restaurantId)
             .map((dish) => (
-              <div key={dish.dish_id} className="card-dish">
-                <div className="card-image-container-dish">
+              <div key={dish.dish_id} className="card-dish-restaurant-page">
+                <div className="card-image-container-dish-restaurant-page">
                   <img
-                    className="card-image-dish"
+                    className="card-image-dish-restaurant-page"
                     src={require(`../../assets/images/food/${dish.dish_image}`)}
                     alt={dish.dish_name}
                   />
                 </div>
-                <div className="card-text-container-dish">
-                  <h3 className="restaurant-name">{dish.dish_name}</h3>
-                  <img
-                    className="dish-icon"
-                    src={require(`assets/images/layout/${dish.icon}`)}
-                    alt="dish_icon"
-                  />
-                  <p className="card-title">{dish.ingredients}</p>
+                <div className="card-text-container-dish-restaurant-page">
+                  <h3 className="restaurant-name-restaurant-page">
+                    {dish.dish_name}
+                  </h3>
+                  <p className="card-title-restaurant-page">
+                    {dish.ingredients}
+                  </p>
                   <p className="dish-price">
                     <span>₪ {dish.price}</span>
                   </p>
@@ -84,7 +82,6 @@ const RestaurantPage: React.FC = () => {
             ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };

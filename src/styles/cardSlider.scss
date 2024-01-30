@@ -133,19 +133,23 @@
 .card-text-container-dish {
   height: 348px;
   padding: 24px 0 8px;
-  justify-content: space-evenly;
+  position: relative;
+  
   @include mobile {
     height: 213px;
     padding: 0 16px;
   }
+
+  .restaurant-name{
+    width: 220px;
+    height: 90px;
+  }
 }
 
 .card-title {
-  margin: 8px 0;
   font-size: 24px;
   max-width: 295px;
   font-family: "helveticaThin";
-
   @include mobile {
     font-size: 16px;
   }
@@ -154,6 +158,8 @@
 .dish-icon {
   height: 34px;
   width: 40px;
+  margin: 8px auto;
+  object-fit: contain;
 }
 
 .dish-price {
@@ -162,6 +168,8 @@
   border-bottom: 0.1px solid $PRIMARY_GREY;
   line-height: 0.1em;
   margin: 10px 0 20px;
+  position: absolute;
+  bottom: 0;
   span {
     background: $SECONDARY_BEIGE;
     padding: 0 10px;
@@ -178,7 +186,8 @@
 .ingredients {
   margin: 5px 20px;
   font-size: 12px;
-  height: 45px;
+  width: 295px;
+  height: 123px;
   @include mobile {
     align-self: flex-start;
     margin: 10px 20px 10px 0;

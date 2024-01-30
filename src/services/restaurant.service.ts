@@ -26,7 +26,7 @@ const query = (filterBy: IFilterBy) => {
 
   function filterTopRated(restaurants: any) {
     return restaurants.filter(
-      (restaurant: any) => restaurant.rating.rating_number >= 4
+      (restaurant: any) => restaurant.rating.number >= 4
     );
   }
 
