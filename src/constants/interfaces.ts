@@ -1,8 +1,9 @@
 export interface ChefInfo {
-  chef?: any;
-  id?: string;
+  _id?: string;
   name: string;
-  img: string;
+  image?: string;
+  restaurants?: string[];
+  info?: string;
 }
 
 interface IRating {
@@ -18,8 +19,8 @@ export interface ICard {
   res_image?: string;
   dish_image?: string;
   res_name?: string;
-  chef?: ChefInfo;
-  rating?: IRating;
+  chef: ChefInfo;
+  rating: IRating;
   icon?: string;
   ingredients?: string;
   price?: number;

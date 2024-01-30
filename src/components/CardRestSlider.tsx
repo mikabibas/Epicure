@@ -40,6 +40,7 @@ const CardRestSlider: React.FC = () => {
             <Card key={card._id} card={card} />
           ))}
         </Slider>
+        
       )}
       <Link className="slider-link" to={EAppRoutes.RESTAURANTS}>
         All {RESTAURANTS}

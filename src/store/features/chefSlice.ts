@@ -1,20 +1,28 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { EFetchStatus } from "constants/enum";
 import { ChefInfo } from "constants/interfaces";
-import data from "assets/restaurants.json";
+import axios from "axios";
+import { API_URL } from "constants/variables";
 
 export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
-  const chefs: ChefInfo[] = data as any as ChefInfo[];
+  try {
+    const response = await axios.get(`${API_URL}/chefs`);
 
-  const chefsWithDetails: ChefInfo[] = chefs.map((chef) => {
-    return {
-      id: chef.chef.id,
-      name: chef.chef.name,
-      img: chef.chef.img,
-    };
-  });
+    const chefs: ChefInfo[] = response.data.chefs;
+    console.log(chefs);
 
-  return chefsWithDetails;
+    const chefsWithDetails: ChefInfo[] = chefs.map((chef) => ({
+      _id: chef._id,
+      name: chef.name,
+      image: chef.image,
+      restaurants: chef.restaurants,
+      info: chef.info,
+    }));
+
+    return chefsWithDetails;
+  } catch (error) {
+    throw error;
+  }
 });
 
 export interface IChefState {

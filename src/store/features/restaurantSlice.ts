@@ -1,32 +1,34 @@
-import {
-  createSlice,
-  createAsyncThunk,
-  createAction,
-  Dispatch,
-} from "@reduxjs/toolkit";
-import { ICard } from "constants/interfaces";
+import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { EFetchStatus } from "constants/enum";
-import { restaurantService } from "services/restaurant.service";
+import { ICard } from "constants/interfaces";
+import { API_URL } from "constants/variables";
 
 export const loadRestaurants = createAsyncThunk(
   "restaurants/loadRestaurants",
-  async (
-    _,
-    { dispatch, getState }: { dispatch: Dispatch; getState: () => any }
-  ) => {
+  async (_, { dispatch }) => {
     try {
-      const restaurants = await restaurantService.query(getState().filterBy);
-      dispatch(setRestaurants(restaurants as ICard[]));
+      const response = await fetch(`${API_URL}/restaurants`);
+
+      if (!response.ok) {
+        throw new Error(
+          `Error loading restaurants. Status: ${response.status}`
+        );
+      }
+
+      const data = await response.json();
+
+      const restaurants: ICard[] = Array.isArray(data.restaurants)
+        ? data.restaurants
+        : [];
+
+      dispatch(setRestaurantsAction(restaurants));
+
       return restaurants;
     } catch (error) {
       console.error("Error loading restaurants:", error);
       throw error;
     }
   }
-);
-
-export const setRestaurants = createAction<ICard[]>(
-  "restaurants/updateRestaurants"
 );
 
 interface IRestaurantState {
@@ -45,26 +47,23 @@ const restaurantSlice = createSlice({
   name: "restaurants",
   initialState,
   reducers: {
-    setRestaurants: (state, action) => {
-      return {
-        ...state,
-        restaurants: [...(action.payload as ICard[])],
-        error: null,
-        status: EFetchStatus.IDLE,
-      };
+    setRestaurantsAction: (state, action: PayloadAction<ICard[]>) => {
+      state.status = EFetchStatus.SUCCEEDED;
+      state.restaurants = action.payload;
+      state.error = null;
     },
   },
   extraReducers: (builder) => {
     builder
-      .addCase(loadRestaurants.pending, (state: IRestaurantState) => {
+      .addCase(loadRestaurants.pending, (state) => {
         state.status = EFetchStatus.LOADING;
       })
-      .addCase(loadRestaurants.fulfilled, (state: IRestaurantState, action) => {
+      .addCase(loadRestaurants.fulfilled, (state, action) => {
         state.status = EFetchStatus.SUCCEEDED;
-        state.restaurants = [...(action.payload as ICard[])];
+        state.restaurants = action.payload;
         state.error = null;
       })
-      .addCase(loadRestaurants.rejected, (state: IRestaurantState, action) => {
+      .addCase(loadRestaurants.rejected, (state, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"
@@ -74,3 +73,4 @@ const restaurantSlice = createSlice({
 });
 
 export default restaurantSlice.reducer;
+export const { setRestaurantsAction } = restaurantSlice.actions;

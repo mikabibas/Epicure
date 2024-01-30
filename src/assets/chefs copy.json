@@ -2,7 +2,7 @@
   {
     "name": "Assaf Granit",
     "restaurants": [{ "$oid": "65b126fc2b8d5e2c9edb5f44", "name": "Shayna" }],
-    "image": "assaf_granit.jpg",
+    "image": "asafGranit.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -11,7 +11,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f3d", "name": "Port Said" },
       { "$oid": "65b126fc2b8d5e2c9edb5f3e", "name": "Ouzeria" }
     ],
-    "image": "aviv_moshe.jpg",
+    "image": "avivMoshe.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -20,7 +20,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f3c", "name": "Taizu" },
       { "$oid": "65b126fc2b8d5e2c9edb5f48", "name": "HaSalon" }
     ],
-    "image": "eyal_shani.jpg",
+    "image": "eyalShani.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -29,7 +29,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f3f", "name": "Catit" },
       { "$oid": "65b126fc2b8d5e2c9edb5f49", "name": "Lumina" }
     ],
-    "image": "meir_adoni.jpg",
+    "image": "meirAdoni.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -38,7 +38,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f40", "name": "Barbarossa" },
       { "$oid": "65b126fc2b8d5e2c9edb5f41", "name": "Goocha" }
     ],
-    "image": "omer_miller.jpg",
+    "image": "omerMiller.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -47,7 +47,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f43", "name": "Topolopompo" },
       { "$oid": "65b126fc2b8d5e2c9edb5f42", "name": "Benedict" }
     ],
-    "image": "shahaf_shabtay.jpg",
+    "image": "shahafShabtay.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -61,7 +61,7 @@
     "restaurants": [
       { "$oid": "65b126fc2b8d5e2c9edb5f45", "name": "Café Noir" }
     ],
-    "image": "yossi_shitrit.jpg",
+    "image": "yossiShitrit.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   },
   {
@@ -70,7 +70,7 @@
       { "$oid": "65b126fc2b8d5e2c9edb5f46", "name": "Bicicletta" },
       { "$oid": "65b126fc2b8d5e2c9edb5f4a", "name": "Kimmel" }
     ],
-    "image": "yuval_ben_neriyah.jpg",
+    "image": "yuvalBenNeriyah.jpg",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }
 ]

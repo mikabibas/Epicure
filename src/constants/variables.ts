@@ -1,3 +1,5 @@
+const API_URL = "http://localhost:9090/api";
+
 const CONTACT_US = "Contact Us";
 const TERM_OF_USE = "Term of Use";
 const PRIVACY_POLICY = "Privacy Policy";
@@ -94,8 +96,8 @@ const CHEF_FILTERS = [
 const START_DATE = "2020-01-01";
 const END_DATE = "2024-01-01";
 
-
 export {
+  API_URL,
   CONTACT_US,
   TERM_OF_USE,
   PRIVACY_POLICY,
@@ -133,5 +135,4 @@ export {
   END_DATE,
   NAV_OPTIONS,
   NO_RESTAURANT_FOUND_TEXT,
-  
 };
