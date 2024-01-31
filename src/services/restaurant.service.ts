@@ -72,6 +72,8 @@ const query = async (filterBy: IFilterBy) => {
   }
 };
 
+
+
 export const restaurantService = {
   query,
 };

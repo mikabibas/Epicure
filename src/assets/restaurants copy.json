@@ -2,8 +2,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f3c",
     "res_name": "Taizu",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ae" },
-    "res_image": "cacio_pepe.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd03" },
+    "res_image": "taizu2.jpg",
     "rating": {
       "img": "3-stars.png",
       "number": 3
@@ -14,8 +14,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f3d",
     "res_name": "Port Said",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60a8" },
-    "res_image": "dumpling.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dcfd" },
+    "res_image": "portSaid.jpg",
     "rating": {
       "img": "4-stars.png",
       "number": 4
@@ -26,8 +26,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f3e",
     "res_name": "Ouzeria",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ab" },
-    "res_image": "meatballs.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd00" },
+    "res_image": "Ouzeria.jpg",
     "rating": {
       "img": "5-stars.png",
       "number": 5
@@ -38,8 +38,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f3f",
     "res_name": "Catit",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60aa" },
-    "res_image": "pecan_pie.webp",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dcff" },
+    "res_image": "Catit2.jpg",
     "rating": {
       "img": "2-stars.png",
       "number": 2
@@ -50,9 +50,9 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f40",
     "res_name": "Barbarossa",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ac" },
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd01" },
 
-    "res_image": "cacio_pepe.jpeg",
+    "res_image": "barbarossa.webp",
     "rating": {
       "img": "4-stars.png",
       "number": 4
@@ -63,8 +63,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f41",
     "res_name": "Goocha",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60af" },
-    "res_image": "hot_dog.webp",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
+    "res_image": "goocha.jpg",
     "rating": {
       "img": "1-stars.png",
       "number": 1
@@ -75,8 +75,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f42",
     "res_name": "Benedict",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60b0" },
-    "res_image": "hummus.webp",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd05" },
+    "res_image": "Benedict.webp",
     "rating": {
       "img": "3-stars.png",
       "number": 3
@@ -87,8 +87,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f43",
     "res_name": "Topolopompo",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60a9" },
-    "res_image": "fried_rice.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dcfe" },
+    "res_image": "Topolopompo.avif",
     "rating": {
       "img": "3-stars.png",
       "number": 3
@@ -99,8 +99,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f44",
     "res_name": "Shayna",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ad" },
-    "res_image": "Hamburger-and-french-fries.webp",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd02" },
+    "res_image": "Shayna.jpg",
     "rating": {
       "img": "5-stars.png",
       "number": 5
@@ -111,7 +111,7 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f45",
     "res_name": "Café Noir",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ae" },
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd03" },
     "res_image": "guacamole.jpeg",
     "rating": {
       "img": "4-stars.png",
@@ -123,7 +123,7 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f46",
     "res_name": "Bicicletta",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60aa" },
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dcff" },
     "res_image": "shawarma.jpeg",
     "rating": {
       "img": "1-stars.png",
@@ -135,7 +135,7 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f47",
     "res_name": "Dalida",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ac" },
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd01" },
     "res_image": "waffles.webp",
     "rating": {
       "img": "3-stars.png",
@@ -147,7 +147,7 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f48",
     "res_name": "HaSalon",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60af" },
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
     "res_image": "shakshuka.jpeg",
     "rating": {
       "img": "5-stars.png",
@@ -159,8 +159,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f49",
     "res_name": "Lumina",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60ab" },
-    "res_image": "pasta.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd00" },
+    "res_image": "lumina.png",
     "rating": {
       "img": "4-stars.png",
       "number": 4
@@ -171,8 +171,8 @@
   {
     "_id": "65b126fc2b8d5e2c9edb5f4a",
     "res_name": "Kimmel",
-    "chef": { "$oid": "65b21e602b8d5e2c9edb60af" },
-    "res_image": "rice.jpeg",
+    "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
+    "res_image": "kimmel.jpg",
     "rating": {
       "img": "2-stars.png",
       "number": 2
