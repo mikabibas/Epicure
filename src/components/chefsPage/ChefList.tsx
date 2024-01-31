@@ -33,7 +33,7 @@ const ChefList: React.FC = () => {
             <div key={chef.name} className="image-title-container">
               <img
                 className="chef-image"
-                src={require(`assets/images/chefs/${chef.img}`)}
+                src={require(`../../assets/images/chefs/${chef.image}`)}
                 alt={chef.name}
               />
               <h1 className="chef-name">{chef.name}</h1>

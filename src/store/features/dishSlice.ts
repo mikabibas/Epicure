@@ -1,10 +1,16 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { EFetchStatus } from "constants/enum";
 import { ICard } from "constants/interfaces";
-import dishes from "assets/dishes.json";
+import axios from "axios";
+import { API_URL } from "constants/variables";
 
 export const fetchDishes = createAsyncThunk("dishes/fetchDishes", async () => {
-  return dishes as ICard[];
+  try {
+    const response = await axios.get(`${API_URL}/dishes`);
+    return response.data.dishes as ICard[];
+  } catch (error) {
+    throw error;
+  }
 });
 
 export interface IDishState {

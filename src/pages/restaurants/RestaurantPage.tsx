@@ -7,7 +7,6 @@ import { fetchDishes, IDishState } from "store/features/dishSlice";
 import "styles/cardSlider.scss";
 import "styles/restaurants/restaurantPage.scss";
 import { OPEN_NOW } from "constants/variables";
-import FilterNav from "components/restaurantsPage/FilterNav";
 
 const RestaurantPage: React.FC = () => {
   const { restaurantId } = useParams<{ restaurantId: string }>();
@@ -40,7 +39,7 @@ const RestaurantPage: React.FC = () => {
         </div>
         <h1 className="rest-name">{restaurant.res_name}</h1>
         <h2 className="rest-chef-name">
-          {chefs.find((chef) => chef.id === restaurant.chef?.id)?.name}
+          {chefs.find((chef) => chef._id === restaurant.chef?._id)?.name}
         </h2>
         <div className="open-now-container">
           <img
