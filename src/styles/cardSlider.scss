@@ -3,6 +3,11 @@
 
 .slick-track {
   display: flex;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
   @include desktop {
     gap: 24px;
   }
@@ -134,13 +139,13 @@
   height: 348px;
   padding: 24px 0 8px;
   position: relative;
-  
+
   @include mobile {
     height: 213px;
     padding: 0 16px;
   }
 
-  .restaurant-name{
+  .restaurant-name {
     width: 220px;
     height: 90px;
   }
@@ -150,6 +155,10 @@
   font-size: 24px;
   max-width: 295px;
   font-family: "helveticaThin";
+  color: $PRIMARY_BLACK;
+  &:hover {
+    text-decoration: none;
+  }
   @include mobile {
     font-size: 16px;
   }

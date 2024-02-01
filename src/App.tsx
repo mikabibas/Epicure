@@ -19,14 +19,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/restaurants" element={<Restaurants />} />
         <Route path="/restaurants/:restaurantId" element={<RestaurantPage />} />
         <Route path="/chefs" element={<Chefs />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
