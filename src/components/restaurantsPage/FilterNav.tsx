@@ -1,9 +1,8 @@
 import { NAV_OPTIONS } from "constants/variables";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { IFilterBy } from "services/restaurant.service";
-import { updateFilterBy } from "store/features/filterBySlice";
 import { useLocation } from "react-router-dom";
+import { updateFilterBy } from "store/features/restaurantSlice";
 import "styles/filterNav.scss";
 
 const FilterNav = () => {
@@ -12,27 +11,9 @@ const FilterNav = () => {
   const location = useLocation();
 
   const handleRadioChange = (event: any) => {
-    let filterOptions: IFilterBy = {};
-
-    switch (event.target.value) {
-      case "All":
-        filterOptions = { isNew: false, isOpen: false, isPopular: false };
-        break;
-      case "New":
-        filterOptions = { isNew: true, isOpen: false, isPopular: false };
-        break;
-      case "Open Now":
-        filterOptions = { isNew: false, isOpen: true, isPopular: false };
-        break;
-      case "Most Popular":
-        filterOptions = { isNew: false, isOpen: false, isPopular: true };
-        break;
-      default:
-        break;
-    }
-
-    dispatch(updateFilterBy(filterOptions) as any);
-    setSelectedOption(event.target.value);
+    const selectedFilter = event.target.value;
+    setSelectedOption(selectedFilter);
+    dispatch(updateFilterBy(selectedFilter) as any);
   };
 
   const getCheckedClass = (option: string) => {

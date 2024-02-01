@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { useAppSelector } from "store/store";
 import { fetchChefs, IChefState } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
-import "styles/cardSlider.scss";
 import "styles/restaurants/restaurantPage.scss";
 import { OPEN_NOW } from "constants/variables";
 
