@@ -36,3 +36,12 @@ export interface ChefComponentProps {
   chef: ChefInfo;
   restaurants: ICard[];
 }
+
+export interface Dish {
+  dish_id: string;
+  dish_name: string;
+  ingredients: string;
+  price: number;
+  icon: string;
+  dish_image?: string;
+}

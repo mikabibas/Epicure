@@ -4,17 +4,30 @@ import { useParams } from "react-router-dom";
 import { useAppSelector } from "store/store";
 import { fetchChefs, IChefState } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
+import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
+import DishModal from "components/Modal/DishModal";
 import "styles/restaurants/restaurantPage.scss";
 import "styles/filterNav.scss";
-import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
 
 const RestaurantPage: React.FC = () => {
   const { restaurantId } = useParams<{ restaurantId: string }>();
   const dispatch = useDispatch();
   const [selectedOption, setSelectedOption] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedDish, setSelectedDish] = useState(null);
+  const [quantity, setQuantity] = useState(1);
 
   const getCheckedClass = (option: string) => {
     return selectedOption === option ? "checked" : "";
+  };
+
+  const handleDishClick = (dish: any) => {
+    setSelectedDish(dish);
+    setIsModalOpen(true);
+  };
+
+  const handleQuantityChange = (newQuantity: number) => {
+    setQuantity(newQuantity);
   };
 
   useEffect(() => {
@@ -66,7 +79,7 @@ const RestaurantPage: React.FC = () => {
                 className="nav-item"
               />
               <label
-                className={`nav-item ${getCheckedClass(option)}`}
+                className={`nav-item rest-page ${getCheckedClass(option)}`}
                 htmlFor={option}
               >
                 {option === "Most Popular" ? "Most Viewed" : option}
@@ -78,7 +91,11 @@ const RestaurantPage: React.FC = () => {
           {dishes
             .filter((dish) => dish.restaurant_id === restaurantId)
             .map((dish) => (
-              <div key={dish.dish_id} className="card-dish-restaurant-page">
+              <div
+                key={dish.dish_id}
+                className="card-dish-restaurant-page"
+                onClick={() => handleDishClick(dish)}
+              >
                 <div className="card-image-container-dish-restaurant-page">
                   <img
                     className="card-image-dish-restaurant-page"
@@ -101,6 +118,14 @@ const RestaurantPage: React.FC = () => {
             ))}
         </div>
       </div>
+      {isModalOpen && (
+        <DishModal
+          selectedDish={selectedDish}
+          quantity={quantity}
+          onClose={() => setIsModalOpen(false)}
+          onQuantityChange={handleQuantityChange}
+        />
+      )}
     </>
   );
 };
