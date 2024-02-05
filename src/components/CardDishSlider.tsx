@@ -37,12 +37,14 @@ const CardDishSlider: React.FC = () => {
               </div>
               <div className="card-text-container-dish">
                 <h3 className="restaurant-name">{card.dish_name}</h3>
-                <img
-                  className="dish-icon"
-                  src={require(`assets/images/layout/${card.icon}`)}
-                  alt="dish_icon"
-                />
-                <p className="card-title">{card.ingredients}</p>
+                <div className="icon-ingredients-container">
+                  <img
+                    className="dish-icon"
+                    src={require(`assets/images/layout/${card.icon}`)}
+                    alt="dish_icon"
+                  />
+                  <p className="card-title">{card.ingredients}</p>
+                </div>
                 <p className="dish-price">
                   <span>₪ {card.price}</span>
                 </p>

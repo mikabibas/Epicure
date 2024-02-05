@@ -17,6 +17,7 @@
     justify-content: flex-start;
     gap: 21px;
     padding: 10px;
+    margin: 32px 0 24px;
   }
 
   .nav-item {
@@ -41,15 +42,14 @@
       text-underline-position: under;
       box-shadow: 0 2px 0 $HOVER_LINK;
     }
-
-    @include mobile {
-      font-size: 18px;
-    }
-
     &.checked {
       text-underline-position: under;
       box-shadow: 0 2px 0 $HOVER_LINK;
       font-family: "helveticaRoman";
+    }
+
+    @include mobile {
+      font-size: 18px;
     }
   }
 }

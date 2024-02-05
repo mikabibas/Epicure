@@ -14,6 +14,11 @@
 }
 
 .slick-slide {
+  .dish-rating {
+    @include mobile {
+      display: none;
+    }
+  }
   @include mobile {
     margin: 0 20px;
   }
@@ -52,7 +57,7 @@
   }
 
   @include mobile {
-    margin: 48px 0 0 20px;
+    margin-left: 20px;
   }
 }
 
@@ -142,12 +147,21 @@
 
   @include mobile {
     height: 213px;
-    padding: 0 16px;
+    padding: 16px;
   }
 
   .restaurant-name {
     width: 220px;
-    height: 90px;
+    @include desktop {
+      height: 90px;
+    }
+  }
+  .icon-ingredients-container {
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 16px;
+    }
   }
 }
 
@@ -169,6 +183,11 @@
   width: 40px;
   margin: 8px auto;
   object-fit: contain;
+  @include mobile {
+    margin: 0;
+    position: absolute;
+    bottom: 45px;
+  }
 }
 
 .dish-price {
