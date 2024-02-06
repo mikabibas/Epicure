@@ -39,6 +39,7 @@ const DishModal: React.FC<DishModalProps> = ({
     if (selectedDish) {
       const cartItem = { dish: selectedDish, quantity };
       dispatch(addToCart(cartItem));
+      onClose();
     }
   };
 
