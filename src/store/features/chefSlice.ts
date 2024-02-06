@@ -9,7 +9,6 @@ export const fetchChefs = createAsyncThunk("chefs/fetchChefs", async () => {
     const response = await axios.get(`${API_URL}/chefs`);
 
     const chefs: ChefInfo[] = response.data.chefs;
-    console.log(chefs);
 
     const chefsWithDetails: ChefInfo[] = chefs.map((chef) => ({
       _id: chef._id,

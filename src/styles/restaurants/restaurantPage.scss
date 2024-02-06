@@ -27,15 +27,19 @@
   .rest-chef-name {
     font-size: 32px;
     font-family: "helveticaThin";
-    margin-bottom: 32px;
+    margin: 0;
   }
   .open-now-container {
     display: flex;
     width: fit-content;
     align-items: center;
     gap: 8px;
+    margin: 32px auto 48px;
+
     .open-now {
-      margin: 8px auto;
+      font-family: "helveticaThin";
+      margin: 0;
+      font-size: 18px;
     }
 
     img {
@@ -52,7 +56,7 @@
     .card-dish-restaurant-page:nth-child(10) {
       grid-column: span 2;
     }
-    .card-dish-restaurant-page:nth-child(9){
+    .card-dish-restaurant-page:nth-child(9) {
       justify-self: end;
     }
 

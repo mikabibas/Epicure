@@ -137,8 +137,12 @@
   font-size: 40px;
   text-align: center;
   margin: 0;
-  line-height: 1;
+  color: $PRIMARY_BLACK;
   font-family: "helveticaRoman";
+
+  &:hover {
+    text-decoration: none;
+  }
 
   @include mobile {
     font-size: 18px;

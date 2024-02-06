@@ -37,10 +37,11 @@ const CardRestSlider: React.FC = () => {
       {status === "succeeded" && (
         <Slider {...SLIDER_SETTINGS}>
           {restaurants.map((card: ICard) => (
-            <Card key={card._id} card={card} />
+            <Link to={`/restaurants/${card._id}`} key={card._id}>
+              <Card key={card._id} card={card} />
+            </Link>
           ))}
         </Slider>
-        
       )}
       <Link className="slider-link" to={EAppRoutes.RESTAURANTS}>
         All {RESTAURANTS}

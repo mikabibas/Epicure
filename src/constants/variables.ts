@@ -86,6 +86,7 @@ const RES_FILTERS = [
   { path: "/restaurants/map-view", label: MAP_VIEW },
 ];
 const NAV_OPTIONS = ["All", "New", "Most Popular", "Open Now"];
+const RES_NAV_OPTIONS = ["Breakfast", "Lunch", "Dinner"];
 
 const CHEF_FILTERS = [
   { path: "/chefs/all", label: ALL },
@@ -134,5 +135,6 @@ export {
   START_DATE,
   END_DATE,
   NAV_OPTIONS,
+  RES_NAV_OPTIONS,
   NO_RESTAURANT_FOUND_TEXT,
 };
