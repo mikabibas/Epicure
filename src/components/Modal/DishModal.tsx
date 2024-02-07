@@ -13,6 +13,11 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "store/features/cartSlice";
 import "styles/dishModal.scss";
 
+interface RestaurantArrDish {
+  id: string;
+  name: string;
+}
+
 export interface DishModalProps {
   selectedDish: {
     dish_id: string;
@@ -21,6 +26,7 @@ export interface DishModalProps {
     ingredients: string;
     price: number;
     icon: string;
+    restaurant: RestaurantArrDish;
   } | null;
   quantity: number;
   onClose: () => void;
@@ -101,9 +107,17 @@ const DishModal: React.FC<DishModalProps> = ({
                     <input
                       type="number"
                       value={quantity}
-                      onChange={(e) =>
-                        onQuantityChange(parseInt(e.target.value, 10))
-                      }
+                      onChange={(e) => {
+                        const newQuantity = parseInt(e.target.value, 10);
+                        onQuantityChange(newQuantity);
+                        if (selectedDish) {
+                          const cartItem = {
+                            dish: selectedDish,
+                            quantity: newQuantity,
+                          };
+                          dispatch(addToCart(cartItem));
+                        }
+                      }}
                     />
                     <img
                       className="plus-cart"

@@ -37,6 +37,8 @@ export interface ChefComponentProps {
   restaurants: ICard[];
 }
 
+
+
 export interface Dish {
   dish_id: string;
   dish_name: string;
@@ -44,4 +46,8 @@ export interface Dish {
   price: number;
   icon: string;
   dish_image?: string;
+  restaurant: {
+    id: string;
+    name: string;
+  };
 }
