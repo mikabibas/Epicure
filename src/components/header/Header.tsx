@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import Cart from "components/header/Cart";
 import Profile from "assets/images/layout/profile.svg";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
+import CartIcon from "assets/images/layout/cart.svg";
 import { CHEFS, RESTAURANTS, TEXT_LOGO } from "constants/variables";
 import { Link } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";
@@ -110,10 +111,7 @@ const Header: React.FC = () => {
               <div className="cart-badge">{cart.items.length}</div>
             )}
             <div onClick={toggleCart} className="cart-icon">
-              <img
-                src={require(`assets/images/layout/cart.jpg`)}
-                alt="cart_btn"
-              />
+              <img src={CartIcon} alt="cart_btn" />
             </div>
           </div>
         </div>
