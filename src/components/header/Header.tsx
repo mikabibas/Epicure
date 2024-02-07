@@ -2,7 +2,7 @@ import BurgerMenu from "./BurgerMenu";
 import "styles/header/header.scss";
 import Logo from "./Logo";
 import logo from "assets/images/layout/logo.png";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import Cart from "components/header/Cart";
 import Profile from "assets/images/layout/profile.svg";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
