@@ -2,32 +2,36 @@ import React from "react";
 import { useAppSelector } from "store/store";
 import "styles/header/cart.scss";
 import emptyCartImage from "assets/images/layout/empty-cart.png";
+import { TXTAREA_PLACEHOLDER } from "constants/variables";
 
 const Cart: React.FC = () => {
   const cart = useAppSelector((state) => state.cart);
   const restaurantState = useAppSelector((state) => state.restaurants);
   console.log("Cart items:", cart.items);
 
+  const calculateTotalPrice = (): number => {
+    return cart.items.reduce(
+      (total, item) => total + item.quantity * item.dish.price,
+      0
+    );
+  };
+
+  const findRestaurantById = (restaurantId: string | null) => {
+    return restaurantId
+      ? restaurantState.restaurants.find((r) => r._id === restaurantId)
+      : null;
+  };
+
   const uniqueRestaurantId =
     cart.items.length > 0 ? cart.items[0].dish.restaurant?.id : null;
+  console.log("restaurant id:", uniqueRestaurantId);
 
-  const restaurant = uniqueRestaurantId
-    ? restaurantState.restaurants.find((r) => r._id === uniqueRestaurantId)
-    : null;
+  const restaurant = findRestaurantById(uniqueRestaurantId);
+
+  console.log(restaurant);
 
   return (
     <div className="cart-container">
-      {cart.items.length > 0 && (
-        <div className="full-cart-container">
-          <h2>Your Order</h2>
-          {restaurant && (
-            <div>
-              <p>Restaurant: {restaurant.res_name}</p>
-            </div>
-          )}
-        </div>
-      )}
-
       {cart.items.length === 0 ? (
         <div className="empty-cart-container">
           <img
@@ -35,27 +39,49 @@ const Cart: React.FC = () => {
             src={emptyCartImage}
             alt="Your cart is empty"
           />
-          <p>Your cart is empty</p>
-          <button onClick={() => console.log("Order History clicked")}>
-            Order History
-          </button>
+          <p className="cart-empty-text">Your bag is empty</p>
+          <button className="order-history-btn">Order History</button>
         </div>
       ) : (
-        <ul>
-          {cart.items.map((item) => (
-            <li key={item.dish.dish_id}>
-              <img
-                className="cart-dish-image"
-                src={require(`assets/images/food/${item.dish.dish_image}`)}
-                alt={item.dish.dish_name}
-              />
-              <div>
-                <p>{item.dish.dish_name}</p>
-                <p>Quantity: {item.quantity}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <div className="full-cart-container">
+          <h2 className="your-order-text">Your Order</h2>
+          {restaurant && (
+            <div>
+              <p className="cart-rest-name">
+                Restaurant: {restaurant.res_name}
+              </p>
+            </div>
+          )}
+          <ul className="cart-items-container">
+            {cart.items.map((item) => (
+              <li className="cart-item" key={item.dish.dish_id}>
+                <img
+                  className="cart-dish-image"
+                  src={require(`assets/images/food/${item.dish.dish_image}`)}
+                  alt={item.dish.dish_name}
+                />
+                <div className="cart-item-info">
+                  <p className="cart-dish-name">{item.dish.dish_name}</p>
+                  <p className="cart-dish-quantity">{item.quantity}</p>
+                  <div className="cart-dish-price">{item.dish.price} ₪</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className="total-price">
+            <span>₪ {calculateTotalPrice()}</span>
+          </div>
+          <div className="big-comment-container">
+            <div className="add-comment">Add a comment</div>
+            <div className="comment-container">
+              <input placeholder={TXTAREA_PLACEHOLDER} type="text" />
+            </div>
+          </div>
+          <div className="cart-btn-container">
+            <button className="checkout-btn">Checkout</button>
+            <button className="order-history-btn">Order History</button>
+          </div>
+        </div>
       )}
     </div>
   );

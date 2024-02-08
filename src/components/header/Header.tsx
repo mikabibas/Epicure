@@ -2,7 +2,7 @@ import BurgerMenu from "./BurgerMenu";
 import "styles/header/header.scss";
 import Logo from "./Logo";
 import logo from "assets/images/layout/logo.png";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Cart from "components/header/Cart";
 import Profile from "assets/images/layout/profile.svg";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
@@ -17,6 +17,8 @@ import { useAppSelector } from "store/store";
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const cartRef = useRef<HTMLDivElement | null>(null);
   const cart = useAppSelector((state) => state.cart);
 
   const toggleSearch = () => {
@@ -27,28 +29,25 @@ const Header: React.FC = () => {
     setIsCartOpen((prevState) => !prevState);
   };
 
-  const cartContainerRef = useRef<HTMLDivElement | null>(null);
+  const closeCartIfOutsideClick = (event: React.MouseEvent<Document>) => {
+    if (
+      cartRef.current &&
+      event.target instanceof Node &&
+      !cartRef.current.contains(event.target)
+    ) {
+      setIsCartOpen(false);
+    }
+  };
 
   useEffect(() => {
-    const handleDocumentMouseDown = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-
-      // Check if the click is outside the cart container
-      if (
-        isCartOpen &&
-        cartContainerRef.current &&
-        !cartContainerRef.current.contains(target)
-      ) {
-        setIsCartOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleDocumentMouseDown);
+    if (isCartOpen) {
+      document.addEventListener("click", closeCartIfOutsideClick as any);
+    }
 
     return () => {
-      document.removeEventListener("mousedown", handleDocumentMouseDown);
+      document.removeEventListener("click", closeCartIfOutsideClick as any);
     };
-  }, [isCartOpen]);
+  });
 
   const isActiveRoute = (route: EAppRoutes) => {
     return window.location.pathname === route;
@@ -56,7 +55,7 @@ const Header: React.FC = () => {
 
   return (
     <div className="header-navbar-container">
-      <div className="header-container">
+      <div className="header-container" ref={cartRef}>
         <BurgerMenu />
         <div className="logo-container">
           <MediaQuery maxWidth={780}>
@@ -102,16 +101,12 @@ const Header: React.FC = () => {
           </div>
           <img onClick={toggleSearch} src={SearchIcon} alt="search_btn" />
           <img className="profile_btn" src={Profile} alt="profile_btn" />
-          <div
-            className="cart-header-container"
-            id="cart-container"
-            ref={cartContainerRef}
-          >
+          <div className="cart-header-container">
             {cart.items.length > 0 && (
               <div className="cart-badge">{cart.items.length}</div>
             )}
             <div onClick={toggleCart} className="cart-icon">
-              <img src={CartIcon} alt="cart_btn" />
+              <img src={CartIcon} alt="cart_icon" />
             </div>
           </div>
         </div>

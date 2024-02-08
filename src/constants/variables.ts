@@ -107,6 +107,9 @@ const CHANGES = "Changes";
 const CHOOSE_SIDE = "Choose side";
 const STICKY_RICE = "Sticky rice";
 
+const TXTAREA_PLACEHOLDER =
+  "Special requests, allergies, detary restrictions, etc.";
+
 export {
   API_URL,
   CONTACT_US,
@@ -155,4 +158,5 @@ export {
   CHANGES,
   CHOOSE_SIDE,
   STICKY_RICE,
+  TXTAREA_PLACEHOLDER,
 };
