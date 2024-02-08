@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../store";
 import { Dish } from "constants/interfaces";
 
 interface CartItem {
@@ -34,5 +33,4 @@ const cartSlice = createSlice({
 });
 
 export const { addToCart, removeFromCart, clearCart } = cartSlice.actions;
-export const selectCart = (state: RootState) => state.cart;
 export default cartSlice.reducer;

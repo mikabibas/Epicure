@@ -5,7 +5,8 @@ const query = async (filterBy: string): Promise<ICard[]> => {
   try {
     const response = await fetch(`${API_URL}/restaurants?filterBy=${filterBy}`);
     if (!response.ok) {
-      throw new Error(`Error loading restaurants. Status: ${response.status}`);
+      console.error(`Error loading restaurants. Status: ${response.status}`);
+      return [];
     }
     const data = await response.json();
     const restaurants: ICard[] = Array.isArray(data.restaurants)
@@ -15,7 +16,7 @@ const query = async (filterBy: string): Promise<ICard[]> => {
     return restaurants;
   } catch (error) {
     console.error("Error loading restaurants:", error);
-    throw error;
+    return [];
   }
 };
 

@@ -8,6 +8,7 @@
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+  margin-top: 48px;
 
   @include desktop {
     gap: 40px;
@@ -17,6 +18,7 @@
     justify-content: flex-start;
     gap: 21px;
     padding: 10px;
+    margin: 32px 0 24px;
   }
 
   .nav-item {
@@ -41,15 +43,14 @@
       text-underline-position: under;
       box-shadow: 0 2px 0 $HOVER_LINK;
     }
+    &.checked {
+      text-underline-position: under;
+      box-shadow: inset 0 -2px 0 $HOVER_LINK;
+      font-family: "helveticaRoman";
+    }
 
     @include mobile {
       font-size: 18px;
-    }
-
-    &.checked {
-      text-underline-position: under;
-      box-shadow: 0 2px 0 $HOVER_LINK;
-      font-family: "helveticaRoman";
     }
   }
 }

@@ -1,11 +1,13 @@
 import { ICard } from "constants/interfaces";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   card: ICard;
+  linkTo?: string;
 }
 
-const Card: React.FC<CardProps> = ({ card }) => {
-  return (
+const Card: React.FC<CardProps> = ({ card, linkTo }) => {
+  const cardContent = (
     <div className="card">
       <div className="card-image-container">
         <img
@@ -25,6 +27,8 @@ const Card: React.FC<CardProps> = ({ card }) => {
       </div>
     </div>
   );
+
+  return linkTo ? <Link to={linkTo}>{cardContent}</Link> : cardContent;
 };
 
 export default Card;

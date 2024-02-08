@@ -51,71 +51,74 @@ const RestaurantPage: React.FC = () => {
       <div className="rest-container">
         <div className="rest-hero">
           <img
+            className="rest-hero-image"
             src={require(`assets/images/restaurants/${restaurant.res_image}`)}
             alt="Restaurant Hero"
           />
         </div>
-        <h1 className="rest-name">{restaurant.res_name}</h1>
-        <h2 className="rest-chef-name">
-          {chefs.find((chef) => chef._id === restaurant.chef?._id)?.name}
-        </h2>
-        <div className="open-now-container">
-          <img
-            className="clock-icon"
-            src={require("../../assets/images/layout/clock-icon1.png")}
-            alt="clock-icon"
-          />
-          <p className="open-now">{OPEN_NOW}</p>
-        </div>
-        <div className="navigation-menu">
-          {RES_NAV_OPTIONS.map((option: string) => (
-            <div key={option}>
-              <input
-                type="radio"
-                id={option}
-                name="radioGroup"
-                value={option}
-                checked={selectedOption === option}
-                className="nav-item"
-              />
-              <label
-                className={`nav-item rest-page ${getCheckedClass(option)}`}
-                htmlFor={option}
-              >
-                {option === "Most Popular" ? "Most Viewed" : option}
-              </label>
-            </div>
-          ))}
-        </div>
-        <div className="rest-dish-container">
-          {dishes
-            .filter((dish) => dish.restaurant_id === restaurantId)
-            .map((dish) => (
-              <div
-                key={dish.dish_id}
-                className="card-dish-restaurant-page"
-                onClick={() => handleDishClick(dish)}
-              >
-                <div className="card-image-container-dish-restaurant-page">
-                  <img
-                    className="card-image-dish-restaurant-page"
-                    src={require(`../../assets/images/food/${dish.dish_image}`)}
-                    alt={dish.dish_name}
-                  />
-                </div>
-                <div className="card-text-container-dish-restaurant-page">
-                  <h3 className="restaurant-name-restaurant-page">
-                    {dish.dish_name}
-                  </h3>
-                  <p className="card-title-restaurant-page">
-                    {dish.ingredients}
-                  </p>
-                  <p className="dish-price">
-                    <span>₪ {dish.price}</span>
-                  </p>
-                </div>
+        <div className="rest-container">
+          <h1 className="rest-name">{restaurant.res_name}</h1>
+          <h2 className="rest-chef-name">
+            {chefs.find((chef) => chef._id === restaurant.chef?._id)?.name}
+          </h2>
+          <div className="open-now-container">
+            <img
+              className="clock-icon"
+              src={require("../../assets/images/layout/clock-icon1.png")}
+              alt="clock-icon"
+            />
+            <p className="open-now">{OPEN_NOW}</p>
+          </div>
+          <div className="navigation-menu restaurant-nav">
+            {RES_NAV_OPTIONS.map((option: string) => (
+              <div key={option}>
+                <input
+                  type="radio"
+                  id={option}
+                  name="radioGroup"
+                  value={option}
+                  checked={selectedOption === option}
+                  className="nav-item"
+                />
+                <label
+                  className={`nav-item rest-page ${getCheckedClass(option)}`}
+                  htmlFor={option}
+                >
+                  {option === "Most Popular" ? "Most Viewed" : option}
+                </label>
               </div>
             ))}
+          </div>
+          <div className="rest-dish-container">
+            {dishes
+              .filter((dish) => dish.restaurant_id === restaurantId)
+              .map((dish) => (
+                <div
+                  key={dish.dish_id}
+                  className="card-dish-restaurant-page"
+                  onClick={() => handleDishClick(dish)}
+                >
+                  <div className="card-image-container-dish-restaurant-page">
+                    <img
+                      className="card-image-dish-restaurant-page"
+                      src={require(`../../assets/images/food/${dish.dish_image}`)}
+                      alt={dish.dish_name}
+                    />
+                  </div>
+                  <div className="card-text-container-dish-restaurant-page">
+                    <h3 className="restaurant-name-restaurant-page">
+                      {dish.dish_name}
+                    </h3>
+                    <p className="card-title-restaurant-page">
+                      {dish.ingredients}
+                    </p>
+                    <p className="dish-price">
+                      <span>₪ {dish.price}</span>
+                    </p>
+                  </div>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
       {isModalOpen && (

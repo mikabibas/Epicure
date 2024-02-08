@@ -3,14 +3,31 @@ import { CHEFS, RESTAURANTS } from "../../constants/variables";
 import "../../styles/header/restaurantsChefs.scss";
 import { EAppRoutes } from "constants/enum";
 
-const RestaurantsChefs = () => {
+interface RestaurantsChefsProps {
+  closeMenu: () => void;
+}
+
+const RestaurantsChefs: React.FC<RestaurantsChefsProps> = ({ closeMenu }) => {
+  const handleLinkClick = () => {
+    // Close the menu when a link is clicked
+    closeMenu();
+  };
+
   return (
     <div className="text2-container">
-      <Link className="footer-link" to={EAppRoutes.RESTAURANTS}>
+      <Link
+        className="footer-link"
+        to={EAppRoutes.RESTAURANTS}
+        onClick={handleLinkClick}
+      >
         {RESTAURANTS}
       </Link>
 
-      <Link className="footer-link" to={EAppRoutes.CHEFS}>
+      <Link
+        className="footer-link"
+        to={EAppRoutes.CHEFS}
+        onClick={handleLinkClick}
+      >
         {CHEFS}
       </Link>
     </div>

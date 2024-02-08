@@ -97,6 +97,22 @@ const CHEF_FILTERS = [
 const START_DATE = "2020-01-01";
 const END_DATE = "2024-01-01";
 
+// Modal
+const ADD_TO_CART = "Add to Cart";
+const QTY = "Quantity";
+const WHITE_BREAD = "White bread";
+const NO_PNTS = "Without peanuts";
+const LESS_SPICY = "Less spicy";
+const CHANGES = "Changes";
+const CHOOSE_SIDE = "Choose side";
+const STICKY_RICE = "Sticky rice";
+
+const TXTAREA_PLACEHOLDER =
+  "Special requests, allergies, detary restrictions, etc.";
+const CHECKOUT = "Checkout";
+const ORDER_HISTORY = "Order History";
+const YOUR_ORDER = "Your Order";
+
 export {
   API_URL,
   CONTACT_US,
@@ -137,4 +153,16 @@ export {
   NAV_OPTIONS,
   RES_NAV_OPTIONS,
   NO_RESTAURANT_FOUND_TEXT,
+  ADD_TO_CART,
+  QTY,
+  WHITE_BREAD,
+  NO_PNTS,
+  LESS_SPICY,
+  CHANGES,
+  CHOOSE_SIDE,
+  STICKY_RICE,
+  TXTAREA_PLACEHOLDER,
+  CHECKOUT,
+  ORDER_HISTORY,
+  YOUR_ORDER,
 };

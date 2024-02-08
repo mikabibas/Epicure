@@ -1,4 +1,5 @@
 @import "constants/_colors.scss";
+@import "constants/_dimensions.scss";
 
 .modal-overlay {
   position: fixed;
@@ -12,11 +13,16 @@
   align-items: center;
   overflow-y: scroll;
 
+  @include mobile {
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .dish-modal {
-    background-color: #fff;
+    background-color: $PRIMARY_WHITE;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 573px;
     position: absolute;
     top: 60px;
     display: flex;
@@ -24,10 +30,34 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile {
+      top: 0;
+      left: 0;
+      z-index: 102;
+      align-items: flex-start;
+      width: 375px;
+    }
+
     .modal-dish-image {
-      width: 573px;
       height: 292px;
       object-fit: cover;
+      @include desktop {
+        width: 573px;
+      }
+      @include mobile {
+        margin-top: 46px;
+        height: 271px;
+        width: 375px;
+      }
+    }
+    .modal-text-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      @include mobile {
+        align-items: flex-start;
+        padding-left: 20px;
+      }
     }
 
     .modal-dish-info {
@@ -36,21 +66,37 @@
       gap: 14px;
       justify-content: center;
       align-items: center;
+
+      @include mobile {
+        align-items: flex-start;
+      }
+
       .modal-dish-name {
         font-size: 32px;
         font-family: "helveticaRoman";
         margin-top: 40px;
+        @include mobile {
+          font-size: 18px;
+          margin-top: 32px;
+        }
       }
       .modal-ingredients {
         font-family: "helveticaThin";
         font-size: 14px;
         width: 232px;
         margin: 0;
+        @include mobile {
+          text-align: left;
+          font-size: 16px;
+        }
       }
       .modal-icon {
         width: 40px;
         height: 29px;
         object-fit: contain;
+        @include mobile {
+          display: none;
+        }
       }
       .modal-price {
         width: 232px;
@@ -58,6 +104,10 @@
         border-bottom: 0.1px solid $PRIMARY_GREY;
         line-height: 0.01em;
         margin: 10px 0 20px;
+
+        @include mobile {
+          display: none;
+        }
         .shekel-symbol {
           width: 10px;
           height: 10px;
@@ -88,8 +138,15 @@
     .choose-title {
       align-self: center;
       border-bottom: 2px solid $UNDERLINE_ORANGE;
-      margin: 40px auto 24px;
       font-size: 20px;
+
+      @include desktop {
+        margin: 40px auto 24px;
+      }
+      @include mobile {
+        align-self: flex-start;
+        margin: 40px 20px 30px 0;
+      }
     }
 
     .input-label-container {
@@ -119,11 +176,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include mobile {
+        align-items: flex-start;
+      }
 
       .choose-title {
         align-self: center;
         border-bottom: 2px solid $UNDERLINE_ORANGE;
         margin-bottom: 24px;
+        @include mobile {
+          align-self: flex-start;
+        }
       }
 
       .counter-buttons {
@@ -171,7 +234,8 @@
         padding: 0;
       }
     }
-    .modal-close-btn {
+    .modal-close-btn-desktop,
+    .modal-close-btn-mobile {
       position: absolute;
       top: -25px;
       left: 0;
@@ -181,6 +245,21 @@
       font-size: 18px;
       cursor: pointer;
       padding: 0;
+      @include mobile {
+        top: 13px;
+        left: 22px;
+      }
+    }
+
+    .modal-close-btn-desktop {
+      @include mobile {
+        display: none;
+      }
+    }
+    .modal-close-btn-mobile {
+      @include desktop {
+        display: none;
+      }
     }
   }
 }
