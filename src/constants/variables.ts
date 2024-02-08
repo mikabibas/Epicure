@@ -109,6 +109,9 @@ const STICKY_RICE = "Sticky rice";
 
 const TXTAREA_PLACEHOLDER =
   "Special requests, allergies, detary restrictions, etc.";
+const CHECKOUT = "Checkout";
+const ORDER_HISTORY = "Order History";
+const YOUR_ORDER = "Your Order";
 
 export {
   API_URL,
@@ -159,4 +162,7 @@ export {
   CHOOSE_SIDE,
   STICKY_RICE,
   TXTAREA_PLACEHOLDER,
+  CHECKOUT,
+  ORDER_HISTORY,
+  YOUR_ORDER,
 };

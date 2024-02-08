@@ -1,23 +1,23 @@
+import React, { useState, useRef } from "react";
+import useOutsideClick from "hooks/useOutsideClick";
 import BurgerMenu from "./BurgerMenu";
 import "styles/header/header.scss";
 import Logo from "./Logo";
 import logo from "assets/images/layout/logo.png";
-import { useEffect, useRef, useState } from "react";
 import Cart from "components/header/Cart";
-import Profile from "assets/images/layout/profile.svg";
-import SearchIcon from "assets/images/layout/searchIcon.svg";
-import CartIcon from "assets/images/layout/cart.svg";
 import { CHEFS, RESTAURANTS, TEXT_LOGO } from "constants/variables";
 import { Link } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";
 import MediaQuery from "react-responsive";
 import SearchField from "./SearchField";
 import { useAppSelector } from "store/store";
+import Profile from "assets/images/layout/profile.svg";
+import SearchIcon from "assets/images/layout/searchIcon.svg";
+import CartIcon from "assets/images/layout/cart.svg";
 
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
-
   const cartRef = useRef<HTMLDivElement | null>(null);
   const cart = useAppSelector((state) => state.cart);
 
@@ -29,25 +29,11 @@ const Header: React.FC = () => {
     setIsCartOpen((prevState) => !prevState);
   };
 
-  const closeCartIfOutsideClick = (event: React.MouseEvent<Document>) => {
-    if (
-      cartRef.current &&
-      event.target instanceof Node &&
-      !cartRef.current.contains(event.target)
-    ) {
-      setIsCartOpen(false);
-    }
+  const closeCartIfOutsideClick = () => {
+    setIsCartOpen(false);
   };
 
-  useEffect(() => {
-    if (isCartOpen) {
-      document.addEventListener("click", closeCartIfOutsideClick as any);
-    }
-
-    return () => {
-      document.removeEventListener("click", closeCartIfOutsideClick as any);
-    };
-  });
+  useOutsideClick(cartRef, closeCartIfOutsideClick);
 
   const isActiveRoute = (route: EAppRoutes) => {
     return window.location.pathname === route;

@@ -2,12 +2,16 @@ import React from "react";
 import { useAppSelector } from "store/store";
 import "styles/header/cart.scss";
 import emptyCartImage from "assets/images/layout/empty-cart.png";
-import { TXTAREA_PLACEHOLDER } from "constants/variables";
+import {
+  CHECKOUT,
+  ORDER_HISTORY,
+  TXTAREA_PLACEHOLDER,
+  YOUR_ORDER,
+} from "constants/variables";
 
 const Cart: React.FC = () => {
   const cart = useAppSelector((state) => state.cart);
   const restaurantState = useAppSelector((state) => state.restaurants);
-  console.log("Cart items:", cart.items);
 
   const calculateTotalPrice = (): number => {
     return cart.items.reduce(
@@ -24,11 +28,8 @@ const Cart: React.FC = () => {
 
   const uniqueRestaurantId =
     cart.items.length > 0 ? cart.items[0].dish.restaurant?.id : null;
-  console.log("restaurant id:", uniqueRestaurantId);
 
   const restaurant = findRestaurantById(uniqueRestaurantId);
-
-  console.log(restaurant);
 
   return (
     <div className="cart-container">
@@ -44,12 +45,10 @@ const Cart: React.FC = () => {
         </div>
       ) : (
         <div className="full-cart-container">
-          <h2 className="your-order-text">Your Order</h2>
+          <h2 className="your-order-text">{YOUR_ORDER}</h2>
           {restaurant && (
             <div>
-              <p className="cart-rest-name">
-                Restaurant: {restaurant.res_name}
-              </p>
+              <p className="cart-rest-name">{restaurant.res_name}</p>
             </div>
           )}
           <ul className="cart-items-container">
@@ -78,8 +77,8 @@ const Cart: React.FC = () => {
             </div>
           </div>
           <div className="cart-btn-container">
-            <button className="checkout-btn">Checkout</button>
-            <button className="order-history-btn">Order History</button>
+            <button className="checkout-btn">{CHECKOUT}</button>
+            <button className="order-history-btn">{ORDER_HISTORY}</button>
           </div>
         </div>
       )}
