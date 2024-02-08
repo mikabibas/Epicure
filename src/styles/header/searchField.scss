@@ -136,5 +136,8 @@
 
   @include desktop {
     top: 186px;
+    align-items: flex-start;
+    padding-left: 70px;
+    width: 505px;
   }
 }

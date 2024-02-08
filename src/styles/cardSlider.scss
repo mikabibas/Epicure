@@ -113,6 +113,9 @@
 
 .card-image {
   height: 100%;
+  @include mobile {
+    height: 152px;
+  }
 }
 
 .card-text-container,
@@ -198,6 +201,8 @@
   margin: 10px 0 20px;
   position: absolute;
   bottom: 0;
+  font-size: 24px;
+
   span {
     background: $SECONDARY_BEIGE;
     padding: 0 10px;
@@ -205,6 +210,7 @@
   @include mobile {
     border-bottom: none;
     text-align: start;
+    font-size: 16px;
     span {
       padding: 0;
     }

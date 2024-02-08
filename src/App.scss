@@ -1,4 +1,7 @@
 @import "constants/dimensions";
 main {
   min-height: calc(100vh - 64px - 130px);
+  @include mobile {
+    overflow-x: hidden;
+  }
 }

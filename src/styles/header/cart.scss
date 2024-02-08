@@ -14,17 +14,33 @@
   padding: 27px 0 37px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
+  @include mobile {
+    height: 218px;
+    width: 380px;
+    right: 0;
+  }
+
   .full-cart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 780px;
+    background-color: $PRIMARY_WHITE;
+
+    @include mobile {
+      height: 514px;
+      width: 100%;
+    }
 
     .your-order-text {
       font-size: 32px;
       text-transform: uppercase;
       letter-spacing: 1.25px;
       margin-bottom: 57px;
+      @include mobile {
+        font-size: 20px;
+        margin-bottom: 43px;
+      }
     }
     .cart-rest-name {
       font-size: 18px;
@@ -32,15 +48,33 @@
     }
     .cart-items-container {
       width: 342px;
-      height: 300px;
+      height: 250px;
       display: flex;
       flex-direction: column;
       gap: 12px;
       list-style-type: none;
       padding: 0;
-      padding-left: 7px;
+      padding-left: 5px;
       overflow-y: scroll;
       direction: rtl;
+
+      @include mobile {
+        // overflow-y: hidden;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 160px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #97979780;
+        border-radius: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 6px;
+      }
 
       .cart-item {
         width: 100%;
@@ -54,6 +88,7 @@
           width: 96px;
           height: 100%;
         }
+
         .cart-item-info {
           display: flex;
 
@@ -92,10 +127,15 @@
         background: $PRIMARY_WHITE;
         padding: 0 12px;
       }
+      @include mobile {
+      }
     }
 
     .big-comment-container {
       text-align: center;
+      @include mobile {
+        display: none;
+      }
       .add-comment {
         font-size: 18px;
         text-transform: capitalize;
@@ -136,6 +176,10 @@
       color: $PRIMARY_BLACK;
       bottom: 44px;
       left: 145px;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     .empty-cart-image {
@@ -159,19 +203,28 @@
       height: 48px;
       text-transform: uppercase;
       letter-spacing: 2.67px;
-      position: absolute;
+      @include desktop {
+        position: absolute;
+      }
     }
     .order-history-btn {
       background-color: $PRIMARY_WHITE;
       color: $PRIMARY_BLACK;
       bottom: 44px;
       left: 145px;
+
+      @include mobile {
+        display: none;
+      }
     }
     .checkout-btn {
       color: $PRIMARY_WHITE;
       background-color: $PRIMARY_BLACK;
       left: 145px;
       bottom: 105px;
+      @include mobile {
+        margin-bottom: 24px;
+      }
     }
   }
 }

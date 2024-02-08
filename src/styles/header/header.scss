@@ -32,6 +32,10 @@
   align-items: center;
   gap: 20px;
   position: relative;
+  @include mobile {
+    width: 100px;
+    gap: 12px;
+  }
 }
 
 .search-icon {

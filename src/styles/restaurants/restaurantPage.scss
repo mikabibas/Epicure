@@ -89,6 +89,7 @@
       width: 1186px;
 
       @include desktop {
+        margin-bottom: 48px;
         .card-dish-restaurant-page:nth-child(9),
         .card-dish-restaurant-page:nth-child(10) {
           grid-column: span 2;
@@ -108,6 +109,7 @@
         width: 272px;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
 
         @include mobile {
           width: 335px;

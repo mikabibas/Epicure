@@ -5,6 +5,7 @@ import "styles/hero.scss";
 import data from "assets/restaurants.json";
 import { selectSearch } from "store/features/searchSlice";
 import SearchField from "./header/SearchField";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   const search = useSelector(selectSearch);
@@ -20,10 +21,14 @@ const Hero: React.FC = () => {
         <SearchField className={"search-container-desktop"} />
         {search.length > 0 && (
           <ul className="search-list">
-            {filteredRestaurants.length > 0 && <li>Restaurant:</li>}
+            {filteredRestaurants.length > 0 && <li>Restaurants:</li>}
             {filteredRestaurants.length > 0 ? (
               filteredRestaurants.map((restaurant) => (
-                <li key={restaurant._id}>{restaurant.res_name}</li>
+                <li className="search-result-item" key={restaurant._id}>
+                  <Link to={`/restaurants/${restaurant._id}`}>
+                    {restaurant.res_name}
+                  </Link>
+                </li>
               ))
             ) : (
               <li>{NO_RESTAURANT_FOUND_TEXT}</li>
