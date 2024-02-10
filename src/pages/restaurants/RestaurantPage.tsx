@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { useAppSelector } from "store/store";
-import { fetchChefs, IChefState } from "store/features/chefSlice";
+import { AppDispatch, useAppSelector } from "store/store";
+import { IChefState } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
 import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
 import DishModal from "components/Modal/DishModal";
@@ -10,12 +10,13 @@ import "styles/restaurants/restaurantPage.scss";
 import "styles/filterNav.scss";
 
 const RestaurantPage: React.FC = () => {
-  const { restaurantId } = useParams<{ restaurantId: string }>();
-  const dispatch = useDispatch();
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDish, setSelectedDish] = useState(null);
   const [quantity, setQuantity] = useState(1);
+
+  const { restaurantId } = useParams<{ restaurantId: string }>();
+  const dispatch = useDispatch<AppDispatch>();
 
   const getCheckedClass = (option: string) => {
     return selectedOption === option ? "checked" : "";
@@ -31,7 +32,6 @@ const RestaurantPage: React.FC = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchChefs() as any);
     dispatch(fetchDishes() as any);
     window.scrollTo(0, 0);
   }, [dispatch]);

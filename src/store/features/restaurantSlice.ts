@@ -4,18 +4,23 @@ import { ICard } from "constants/interfaces";
 import { restaurantService } from "services/restaurant.service";
 import { RootState } from "store/store";
 
-export const loadRestaurants = createAsyncThunk(
-  "restaurants/loadRestaurants",
-  async (_, { dispatch, getState }) => {
+export const loadMoreRestaurants = createAsyncThunk(
+  "restaurants/loadMoreRestaurants",
+  async (_, { getState }) => {
     try {
-      const filterBy = (getState() as RootState).restaurants.filterBy;
-      const restaurants = await restaurantService.query(filterBy);
+      const state = getState() as RootState;
+      const filterBy = state.restaurants.filterBy;
+      const offset = state.restaurants.restaurants.length;
 
-      dispatch(setRestaurantsAction(restaurants));
+      const moreRestaurants = await restaurantService.query(
+        filterBy,
+        offset,
+        12
+      );
 
-      return restaurants;
+      return moreRestaurants;
     } catch (error) {
-      console.error("Error loading restaurants:", error);
+      console.error("Error loading more restaurants:", error);
       throw error;
     }
   }
@@ -28,7 +33,7 @@ export const updateFilterBy = createAsyncThunk(
     { dispatch }
   ) => {
     dispatch(setFilter(newFilterBy));
-    dispatch(loadRestaurants());
+    dispatch(loadMoreRestaurants());
   }
 );
 
@@ -64,15 +69,15 @@ const restaurantSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(loadRestaurants.pending, (state) => {
+      .addCase(loadMoreRestaurants.pending, (state) => {
         state.status = EFetchStatus.LOADING;
       })
-      .addCase(loadRestaurants.fulfilled, (state, action) => {
+      .addCase(loadMoreRestaurants.fulfilled, (state, action) => {
         state.status = EFetchStatus.SUCCEEDED;
-        state.restaurants = action.payload;
+        state.restaurants = [...state.restaurants, ...action.payload];
         state.error = null;
       })
-      .addCase(loadRestaurants.rejected, (state, action) => {
+      .addCase(loadMoreRestaurants.rejected, (state, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"
