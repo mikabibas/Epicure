@@ -11,16 +11,29 @@ export const loadMoreRestaurants = createAsyncThunk(
       const state = getState() as RootState;
       const filterBy = state.restaurants.filterBy;
       const offset = state.restaurants.restaurants.length;
-
       const moreRestaurants = await restaurantService.query(
         filterBy,
         offset,
         12
       );
-
       return moreRestaurants;
     } catch (error) {
       console.error("Error loading more restaurants:", error);
+      throw error;
+    }
+  }
+);
+
+export const fetchRestaurantById = createAsyncThunk(
+  "restaurants/fetchRestaurantById",
+  async (restaurantId: string) => {
+    try {
+      const restaurant = await restaurantService.getRestaurantById(
+        restaurantId
+      );
+      return restaurant;
+    } catch (error) {
+      console.error("Error loading restaurant:", error);
       throw error;
     }
   }
@@ -33,7 +46,6 @@ export const updateFilterBy = createAsyncThunk(
     { dispatch }
   ) => {
     dispatch(setFilter(newFilterBy));
-    dispatch(loadMoreRestaurants());
   }
 );
 
@@ -55,11 +67,6 @@ const restaurantSlice = createSlice({
   name: "restaurants",
   initialState,
   reducers: {
-    setRestaurantsAction: (state, action: PayloadAction<ICard[]>) => {
-      state.status = EFetchStatus.SUCCEEDED;
-      state.restaurants = action.payload;
-      state.error = null;
-    },
     setFilter: (
       state,
       action: PayloadAction<"all" | "new" | "most-popular" | "open-now">
@@ -87,4 +94,4 @@ const restaurantSlice = createSlice({
 });
 
 export default restaurantSlice.reducer;
-export const { setRestaurantsAction, setFilter } = restaurantSlice.actions;
+export const { setFilter } = restaurantSlice.actions;

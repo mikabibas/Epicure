@@ -2,18 +2,21 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { AppDispatch, useAppSelector } from "store/store";
-import { IChefState } from "store/features/chefSlice";
+import { IChefState, fetchChefs } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
 import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
 import DishModal from "components/Modal/DishModal";
 import "styles/restaurants/restaurantPage.scss";
 import "styles/filterNav.scss";
+import { fetchRestaurantById } from "store/features/restaurantSlice";
 
 const RestaurantPage: React.FC = () => {
   const [selectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDish, setSelectedDish] = useState(null);
   const [quantity, setQuantity] = useState(1);
+  const [selectedSide, setSelectedSide] = useState<string | null>(null);
+  const [selectedChanges, setSelectedChanges] = useState<string[]>([]);
 
   const { restaurantId } = useParams<{ restaurantId: string }>();
   const dispatch = useDispatch<AppDispatch>();
@@ -31,17 +34,28 @@ const RestaurantPage: React.FC = () => {
     setQuantity(newQuantity);
   };
 
+  const handleSideChange = (side: string) => {
+    setSelectedSide(side);
+  };
+
+  const handleChangesChange = (changes: string[]) => {
+    setSelectedChanges(changes);
+  };
+
   useEffect(() => {
+    dispatch(fetchChefs() as any);
     dispatch(fetchDishes() as any);
+    restaurantId && dispatch(fetchRestaurantById(restaurantId));
     window.scrollTo(0, 0);
-  }, [dispatch]);
+  }, [dispatch, restaurantId]);
 
   const restaurant = useAppSelector((state) =>
     state.restaurants.restaurants.find((r) => r._id === restaurantId)
   );
+
   const chefs = useAppSelector((state) => (state.chefs as IChefState).chefs);
   const dishes = useAppSelector((state) => (state.dishes as IDishState).dishes);
-
+  console.log(restaurant);
   if (!restaurant) {
     return <div>Restaurant not found</div>;
   }
@@ -127,6 +141,10 @@ const RestaurantPage: React.FC = () => {
           quantity={quantity}
           onClose={() => setIsModalOpen(false)}
           onQuantityChange={handleQuantityChange}
+          onSideChange={(side) => handleSideChange(side)}
+          onChangesChange={(changes) => handleChangesChange(changes)}
+          selectedSide={selectedSide} // Pass selectedSide
+          changes={selectedChanges}
         />
       )}
     </>

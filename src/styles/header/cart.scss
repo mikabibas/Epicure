@@ -91,26 +91,48 @@
 
         .cart-item-info {
           display: flex;
-
-          .cart-dish-name {
-            font-size: 18px;
-            font-family: "helveticaRoman";
-            margin-top: 12px;
+          flex-direction: column;
+          .quantity-dish-name-container {
+            display: flex;
+            flex-direction: row-reverse;
+            .cart-dish-name {
+              font-size: 18px;
+              font-family: "helveticaRoman";
+              margin-top: 12px;
+              margin-bottom: 0;
+            }
+            .cart-dish-quantity {
+              display: flex;
+              border: 1px solid $PRIMARY_GREY;
+              width: 31px;
+              height: 31px;
+              border-radius: 4px;
+              color: $UNDERLINE_ORANGE;
+              line-height: 18px;
+              padding: 6px 10px;
+              font-size: 18px;
+              margin: 15px 12px 11px 24px;
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+            }
           }
-          .cart-dish-quantity {
-            border: 1px solid $PRIMARY_GREY;
-            width: 31px;
-            height: 31px;
-            border-radius: 4px;
-            color: $UNDERLINE_ORANGE;
-            line-height: 18px;
-            padding: 6px 10px;
-            font-size: 18px;
-            margin: 15px 12px 11px 24px;
+
+          .side-changes-container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+            margin-left: 24px;
+            .cart-dish-side,
+            .cart-dish-changes {
+              font-size: 12px;
+              color: $PRIMARY_GREY;
+              margin-left: 2px;
+            }
           }
           .cart-dish-price {
             position: absolute;
-            bottom: 12px;
+            bottom: 3px;
             right: 12px;
           }
         }

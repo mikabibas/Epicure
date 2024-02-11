@@ -22,7 +22,6 @@ function App() {
           <Route path="/chefs" element={<Chefs />} />
         </Routes>
       </main>
-
       <Footer />
     </div>
   );

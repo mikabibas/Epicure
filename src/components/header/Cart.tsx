@@ -60,8 +60,16 @@ const Cart: React.FC = () => {
                   alt={item.dish.dish_name}
                 />
                 <div className="cart-item-info">
-                  <p className="cart-dish-name">{item.dish.dish_name}</p>
-                  <p className="cart-dish-quantity">{item.quantity}</p>
+                  <div className="quantity-dish-name-container">
+                    <p className="cart-dish-quantity">{item.quantity}</p>
+                    <p className="cart-dish-name">{item.dish.dish_name}</p>
+                  </div>
+                  <div className="side-changes-container">
+                    <p className="cart-dish-side">{item.selectedSide}</p>
+                    <p className="cart-dish-changes">
+                      {item.changes.join(", ")}
+                    </p>
+                  </div>
                   <div className="cart-dish-price">{item.dish.price} ₪</div>
                 </div>
               </li>

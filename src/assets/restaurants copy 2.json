@@ -1,6 +1,6 @@
 [
   {
-    "_id": "65b126fc2b8d5e2c9edb5f3c",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3c" },
     "res_name": "Taizu",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd03" },
     "res_image": "taizu2.jpg",
@@ -12,7 +12,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f3d",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3d" },
     "res_name": "Port Said",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dcfd" },
     "res_image": "portSaid.jpg",
@@ -24,7 +24,7 @@
     "opening_hours": "8:00 - 20:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f3e",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "res_name": "Ouzeria",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd00" },
     "res_image": "Ouzeria.jpg",
@@ -36,7 +36,7 @@
     "opening_hours": "8:00 - 12:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f3f",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3f" },
     "res_name": "Catit",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dcff" },
     "res_image": "Catit2.jpg",
@@ -48,7 +48,7 @@
     "opening_hours": "8:00 - 13:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f40",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f40" },
     "res_name": "Barbarossa",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd01" },
 
@@ -61,7 +61,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f41",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "res_name": "Goocha",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
     "res_image": "goocha.jpg",
@@ -73,7 +73,7 @@
     "opening_hours": "8:00 - 16:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f42",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f42" },
     "res_name": "Benedict",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd05" },
     "res_image": "Benedict.webp",
@@ -85,7 +85,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f43",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f43" },
     "res_name": "Topolopompo",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dcfe" },
     "res_image": "Topolopompo.avif",
@@ -97,7 +97,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f44",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
     "res_name": "Shayna",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd02" },
     "res_image": "Shayna.jpg",
@@ -109,7 +109,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f45",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f45" },
     "res_name": "Café Noir",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd03" },
     "res_image": "guacamole.jpeg",
@@ -121,7 +121,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f46",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "res_name": "Bicicletta",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dcff" },
     "res_image": "shawarma.jpeg",
@@ -133,7 +133,7 @@
     "opening_hours": "13:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f47",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f47" },
     "res_name": "Dalida",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd01" },
     "res_image": "waffles.webp",
@@ -145,7 +145,7 @@
     "opening_hours": "17:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f48",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "res_name": "HaSalon",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
     "res_image": "shakshuka.jpeg",
@@ -157,7 +157,7 @@
     "opening_hours": "20:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f49",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "res_name": "Lumina",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd00" },
     "res_image": "lumina.png",
@@ -169,7 +169,7 @@
     "opening_hours": "8:00 - 00:00"
   },
   {
-    "_id": "65b126fc2b8d5e2c9edb5f4a",
+    "_id": { "$oid": "65b126fc2b8d5e2c9edb5f4a" },
     "res_name": "Kimmel",
     "chef": { "$oid": "65b8fcaf0c76b5630c68dd04" },
     "res_image": "kimmel.jpg",

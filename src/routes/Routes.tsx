@@ -3,6 +3,7 @@ import App from "../App";
 import Homepage from "../pages/homepage/Homepage";
 import Restaurants from "../pages/restaurants/Restaurants";
 import Chefs from "../pages/chefs/Chefs";
+import RestaurantPage from "../pages/restaurants/RestaurantPage";
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +11,8 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <Homepage /> },
-      { path: "restuarants", element: <Restaurants /> },
+      { path: "restaurants", element: <Restaurants /> },
+      { path: "restaurants/:restaurantId", element: <RestaurantPage /> },
       { path: "chefs", element: <Chefs /> },
     ],
   },
