@@ -15,7 +15,9 @@ const ChefList: React.FC = () => {
   }, [dispatch]);
 
   if (status === "loading") {
-    return <div>Loading...</div>;
+    <div className="loader-container">
+      <span className="loader"></span>
+    </div>;
   }
 
   if (status === "failed") {

@@ -9,7 +9,7 @@
       "number": 3
     },
     "opening_date": "2012-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3d" },
@@ -21,7 +21,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 20:00"
+    "opening_hours": "08:00 - 20:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
@@ -33,7 +33,7 @@
       "number": 5
     },
     "opening_date": "2022-05-30",
-    "opening_hours": "8:00 - 12:00"
+    "opening_hours": "08:00 - 12:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f3f" },
@@ -45,7 +45,7 @@
       "number": 2
     },
     "opening_date": "2019-05-30",
-    "opening_hours": "8:00 - 13:00"
+    "opening_hours": "08:00 - 13:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f40" },
@@ -58,7 +58,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
@@ -70,7 +70,7 @@
       "number": 1
     },
     "opening_date": "2020-05-30",
-    "opening_hours": "8:00 - 16:00"
+    "opening_hours": "08:00 - 16:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f42" },
@@ -82,7 +82,7 @@
       "number": 3
     },
     "opening_date": "2021-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f43" },
@@ -94,7 +94,7 @@
       "number": 3
     },
     "opening_date": "2018-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
@@ -106,7 +106,7 @@
       "number": 5
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f45" },
@@ -118,7 +118,7 @@
       "number": 4
     },
     "opening_date": "2017-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
@@ -166,7 +166,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "_id": { "$oid": "65b126fc2b8d5e2c9edb5f4a" },
@@ -189,7 +189,7 @@
       "number": 3
     },
     "opening_date": "2012-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Port Said",
@@ -200,7 +200,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 20:00"
+    "opening_hours": "08:00 - 20:00"
   },
   {
     "res_name": "Ouzeria",
@@ -211,7 +211,7 @@
       "number": 5
     },
     "opening_date": "2022-05-30",
-    "opening_hours": "8:00 - 12:00"
+    "opening_hours": "08:00 - 12:00"
   },
   {
     "res_name": "Catit",
@@ -222,7 +222,7 @@
       "number": 2
     },
     "opening_date": "2019-05-30",
-    "opening_hours": "8:00 - 13:00"
+    "opening_hours": "08:00 - 13:00"
   },
   {
     "res_name": "Barbarossa",
@@ -234,7 +234,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Goocha",
@@ -245,7 +245,7 @@
       "number": 1
     },
     "opening_date": "2020-05-30",
-    "opening_hours": "8:00 - 16:00"
+    "opening_hours": "08:00 - 16:00"
   },
   {
     "res_name": "Benedict",
@@ -256,7 +256,7 @@
       "number": 3
     },
     "opening_date": "2021-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Topolopompo",
@@ -267,7 +267,7 @@
       "number": 3
     },
     "opening_date": "2018-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Shayna",
@@ -278,7 +278,7 @@
       "number": 5
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Café Noir",
@@ -289,7 +289,7 @@
       "number": 4
     },
     "opening_date": "2017-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Bicicletta",
@@ -333,7 +333,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Kimmel",
@@ -355,7 +355,7 @@
       "number": 3
     },
     "opening_date": "2012-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Port Said",
@@ -366,7 +366,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 20:00"
+    "opening_hours": "08:00 - 20:00"
   },
   {
     "res_name": "Ouzeria",
@@ -377,7 +377,7 @@
       "number": 5
     },
     "opening_date": "2022-05-30",
-    "opening_hours": "8:00 - 12:00"
+    "opening_hours": "08:00 - 12:00"
   },
   {
     "res_name": "Catit",
@@ -388,7 +388,7 @@
       "number": 2
     },
     "opening_date": "2019-05-30",
-    "opening_hours": "8:00 - 13:00"
+    "opening_hours": "08:00 - 13:00"
   },
   {
     "res_name": "Barbarossa",
@@ -400,7 +400,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Goocha",
@@ -411,7 +411,7 @@
       "number": 1
     },
     "opening_date": "2020-05-30",
-    "opening_hours": "8:00 - 16:00"
+    "opening_hours": "08:00 - 16:00"
   },
   {
     "res_name": "Benedict",
@@ -422,7 +422,7 @@
       "number": 3
     },
     "opening_date": "2021-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Topolopompo",
@@ -433,7 +433,7 @@
       "number": 3
     },
     "opening_date": "2018-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Shayna",
@@ -444,7 +444,7 @@
       "number": 5
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Café Noir",
@@ -455,7 +455,7 @@
       "number": 4
     },
     "opening_date": "2017-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Bicicletta",
@@ -499,7 +499,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Kimmel",
@@ -521,7 +521,7 @@
       "number": 3
     },
     "opening_date": "2012-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Port Said",
@@ -532,7 +532,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 20:00"
+    "opening_hours": "08:00 - 20:00"
   },
   {
     "res_name": "Ouzeria",
@@ -543,7 +543,7 @@
       "number": 5
     },
     "opening_date": "2022-05-30",
-    "opening_hours": "8:00 - 12:00"
+    "opening_hours": "08:00 - 12:00"
   },
   {
     "res_name": "Catit",
@@ -554,7 +554,7 @@
       "number": 2
     },
     "opening_date": "2019-05-30",
-    "opening_hours": "8:00 - 13:00"
+    "opening_hours": "08:00 - 13:00"
   },
   {
     "res_name": "Barbarossa",
@@ -566,7 +566,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Goocha",
@@ -577,7 +577,7 @@
       "number": 1
     },
     "opening_date": "2020-05-30",
-    "opening_hours": "8:00 - 16:00"
+    "opening_hours": "08:00 - 16:00"
   },
   {
     "res_name": "Benedict",
@@ -588,7 +588,7 @@
       "number": 3
     },
     "opening_date": "2021-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Topolopompo",
@@ -599,7 +599,7 @@
       "number": 3
     },
     "opening_date": "2018-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Shayna",
@@ -610,7 +610,7 @@
       "number": 5
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Café Noir",
@@ -621,7 +621,7 @@
       "number": 4
     },
     "opening_date": "2017-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Bicicletta",
@@ -665,7 +665,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Kimmel",
@@ -687,7 +687,7 @@
       "number": 3
     },
     "opening_date": "2012-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Port Said",
@@ -698,7 +698,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 20:00"
+    "opening_hours": "08:00 - 20:00"
   },
   {
     "res_name": "Ouzeria",
@@ -709,7 +709,7 @@
       "number": 5
     },
     "opening_date": "2022-05-30",
-    "opening_hours": "8:00 - 12:00"
+    "opening_hours": "08:00 - 12:00"
   },
   {
     "res_name": "Catit",
@@ -720,7 +720,7 @@
       "number": 2
     },
     "opening_date": "2019-05-30",
-    "opening_hours": "8:00 - 13:00"
+    "opening_hours": "08:00 - 13:00"
   },
   {
     "res_name": "Barbarossa",
@@ -732,7 +732,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Goocha",
@@ -743,7 +743,7 @@
       "number": 1
     },
     "opening_date": "2020-05-30",
-    "opening_hours": "8:00 - 16:00"
+    "opening_hours": "08:00 - 16:00"
   },
   {
     "res_name": "Benedict",
@@ -754,7 +754,7 @@
       "number": 3
     },
     "opening_date": "2021-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Topolopompo",
@@ -765,7 +765,7 @@
       "number": 3
     },
     "opening_date": "2018-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Shayna",
@@ -776,7 +776,7 @@
       "number": 5
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Café Noir",
@@ -787,7 +787,7 @@
       "number": 4
     },
     "opening_date": "2017-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Bicicletta",
@@ -831,7 +831,7 @@
       "number": 4
     },
     "opening_date": "2023-05-30",
-    "opening_hours": "8:00 - 00:00"
+    "opening_hours": "08:00 - 00:00"
   },
   {
     "res_name": "Kimmel",

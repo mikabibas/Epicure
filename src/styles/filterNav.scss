@@ -7,11 +7,10 @@
   width: 100vw;
   list-style-type: none;
   padding: 0;
-  margin-bottom: 40px;
-  margin-top: 48px;
+  margin: 30px auto 20px;
 
   @include desktop {
-    gap: 40px;
+    gap: 35px;
   }
 
   @include mobile {

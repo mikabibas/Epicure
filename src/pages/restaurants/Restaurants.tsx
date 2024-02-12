@@ -18,6 +18,7 @@ const Restaurants = () => {
   const [hasMore, setHasMore] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     dispatch(loadMoreRestaurants());
   }, [dispatch]);
   const fetchMoreData = async () => {

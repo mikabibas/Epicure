@@ -73,7 +73,7 @@
   },
   {
     "dish_id": 1,
-    "dish_name": "Mediterranean Delight Platter",
+    "dish_name": "Mediterranean Platter",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3c" },
     "ingredients": "Hummus, Falafel, Tzatziki, Pita",
     "price": 24,
@@ -118,7 +118,7 @@
   },
   {
     "dish_id": 14,
-    "dish_name": "Dragon Fruit Salad",
+    "dish_name": "Fruit Salad",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3d" },
     "ingredients": "Dragon Fruit, Mixed Greens, Sesame Dressing",
     "price": 16,
@@ -154,7 +154,7 @@
   },
   {
     "dish_id": 18,
-    "dish_name": "Green Tea Ice Cream",
+    "dish_name": "Green Ice Cream",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3d" },
     "ingredients": "Matcha, Milk, Sugar",
     "price": 10,
@@ -181,7 +181,7 @@
   },
   {
     "dish_id": 21,
-    "dish_name": "Wild Mushroom Risotto",
+    "dish_name": "Mushroom Risotto",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Arborio Rice, Wild Mushrooms, Parmesan",
     "price": 28,
@@ -199,7 +199,7 @@
   },
   {
     "dish_id": 23,
-    "dish_name": "Lemon Herb Grilled Chicken",
+    "dish_name": "Grilled Chicken",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Chicken Breast, Lemon, Herbs",
     "price": 24,
@@ -217,7 +217,7 @@
   },
   {
     "dish_id": 25,
-    "dish_name": "Prosciutto-Wrapped Asparagus",
+    "dish_name": "Prosciutto Asparagus",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Prosciutto, Asparagus, Olive Oil",
     "price": 14,
@@ -235,7 +235,7 @@
   },
   {
     "dish_id": 27,
-    "dish_name": "Artisanal Cheese Board",
+    "dish_name": "Cheese Board",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Assorted Cheeses, Crackers, Grapes",
     "price": 22,
@@ -244,7 +244,7 @@
   },
   {
     "dish_id": 28,
-    "dish_name": "Caramelized Onion Tart",
+    "dish_name": "Caramelized Tart",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Onions, Pastry Dough, Gruyere Cheese",
     "price": 16,
@@ -253,7 +253,7 @@
   },
   {
     "dish_id": 29,
-    "dish_name": "Raspberry Lemon Tart",
+    "dish_name": "Raspberry Tart",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3e" },
     "ingredients": "Raspberries, Lemon Curd, Pastry",
     "price": 18,
@@ -280,7 +280,7 @@
   },
   {
     "dish_id": 32,
-    "dish_name": "Tandoori Lamb Chops",
+    "dish_name": "Lamb Chops",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3f" },
     "ingredients": "Lamb Chops, Yogurt, Spices",
     "price": 30,
@@ -289,7 +289,7 @@
   },
   {
     "dish_id": 33,
-    "dish_name": "Paneer Tikka Masala",
+    "dish_name": "Tikka Masala",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3f" },
     "ingredients": "Paneer, Tomato Sauce, Garam Masala",
     "price": 18,
@@ -307,7 +307,7 @@
   },
   {
     "dish_id": 35,
-    "dish_name": "Naan Bread Basket",
+    "dish_name": "Naan Bread",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f3f" },
     "ingredients": "Assorted Naan Breads, Garlic Butter",
     "price": 14,
@@ -379,7 +379,7 @@
   },
   {
     "dish_id": 43,
-    "dish_name": "Lemon Garlic Butter Lobster",
+    "dish_name": "Garlic Lobster",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f40" },
     "ingredients": "Lobster Tails, Garlic, Lemon, Butter",
     "price": 38,
@@ -451,7 +451,7 @@
   },
   {
     "dish_id": 51,
-    "dish_name": "Quinoa Stuffed Bell Peppers",
+    "dish_name": "Quinoa Stuffed Peppers",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Quinoa, Bell Peppers, Black Beans, Corn",
     "price": 22,
@@ -460,7 +460,7 @@
   },
   {
     "dish_id": 52,
-    "dish_name": "Sweet Potato and Kale Salad",
+    "dish_name": "Potato Kale Salad",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Sweet Potatoes, Kale, Pomegranate Seeds",
     "price": 18,
@@ -478,7 +478,7 @@
   },
   {
     "dish_id": 54,
-    "dish_name": "Farmers' Market Pizza",
+    "dish_name": "Farmers' Pizza",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Tomatoes, Arugula, Goat Cheese",
     "price": 20,
@@ -487,7 +487,7 @@
   },
   {
     "dish_id": 55,
-    "dish_name": "Roasted Beet and Goat Cheese Tart",
+    "dish_name": "Goat Cheese Tart",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Beets, Goat Cheese, Puff Pastry",
     "price": 24,
@@ -496,7 +496,7 @@
   },
   {
     "dish_id": 56,
-    "dish_name": "Farm Fresh Veggie Wrap",
+    "dish_name": "Veggie Wrap",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Assorted Vegetables, Hummus, Whole Grain Wrap",
     "price": 16,
@@ -514,7 +514,7 @@
   },
   {
     "dish_id": 58,
-    "dish_name": "Cucumber Avocado Gazpacho",
+    "dish_name": "Cucumber Gazpacho",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Cucumber, Avocado, Tomatoes",
     "price": 14,
@@ -523,7 +523,7 @@
   },
   {
     "dish_id": 59,
-    "dish_name": "Grilled Portobello Mushroom Burger",
+    "dish_name": "Portobello Burger",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Portobello Mushrooms, Brioche Bun, Chipotle Mayo",
     "price": 22,
@@ -532,7 +532,7 @@
   },
   {
     "dish_id": 60,
-    "dish_name": "Farmers' Market Platter",
+    "dish_name": "Farmers' Platter",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f41" },
     "ingredients": "Assorted Seasonal Vegetables, Dips",
     "price": 30,
@@ -577,7 +577,7 @@
   },
   {
     "dish_id": 65,
-    "dish_name": "Baba Ganoush with Matbucha",
+    "dish_name": "Baba Ganoush",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f42" },
     "ingredients": "Eggplant, Tomatoes, Peppers",
     "price": 20,
@@ -658,7 +658,7 @@
   },
   {
     "dish_id": 74,
-    "dish_name": "Escargot with Garlic Butter",
+    "dish_name": "Escargot Butter",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f43" },
     "ingredients": "Escargot, Garlic Butter, Baguette",
     "price": 36,
@@ -676,7 +676,7 @@
   },
   {
     "dish_id": 76,
-    "dish_name": "Smoked Salmon Tartare",
+    "dish_name": "Salmon Tartare",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f43" },
     "ingredients": "Smoked Salmon, Avocado, Capers",
     "price": 32,
@@ -730,7 +730,7 @@
   },
   {
     "dish_id": 82,
-    "dish_name": "Rainbow Sashimi Platter",
+    "dish_name": "Sashimi Platter",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
     "ingredients": "Assorted Fresh Fish, Ponzu Sauce",
     "price": 42,
@@ -766,7 +766,7 @@
   },
   {
     "dish_id": 86,
-    "dish_name": "Crispy Rice with Spicy Tuna",
+    "dish_name": "Crispy Rice Tuna",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
     "ingredients": "Crispy Rice, Spicy Tuna, Jalapeño",
     "price": 22,
@@ -775,7 +775,7 @@
   },
   {
     "dish_id": 87,
-    "dish_name": "Green Tea Mochi Ice Cream",
+    "dish_name": "Mochi Ice Cream",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
     "ingredients": "Green Tea Mochi, Matcha Ice Cream",
     "price": 14,
@@ -802,7 +802,7 @@
   },
   {
     "dish_id": 90,
-    "dish_name": "Mango Passion Fruit Bubble Tea",
+    "dish_name": "Mango Bubble Tea",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f44" },
     "ingredients": "Mango, Passion Fruit, Boba Pearls",
     "price": 10,
@@ -847,7 +847,7 @@
   },
   {
     "dish_id": 95,
-    "dish_name": "Guajillo Chili Enchiladas",
+    "dish_name": "Guajillo Enchiladas",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f45" },
     "ingredients": "Guajillo Sauce, Cheese, Tortillas",
     "price": 26,
@@ -874,7 +874,7 @@
   },
   {
     "dish_id": 98,
-    "dish_name": "Mexican Street Corn Salad",
+    "dish_name": "Mexican Corn Salad",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f45" },
     "ingredients": "Corn, Cotija Cheese, Lime Crema",
     "price": 20,
@@ -883,7 +883,7 @@
   },
   {
     "dish_id": 99,
-    "dish_name": "Churros with Chocolate Dipping Sauce",
+    "dish_name": "Chocolate Churros",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f45" },
     "ingredients": "Churro Dough, Chocolate Sauce",
     "price": 12,
@@ -901,7 +901,7 @@
   },
   {
     "dish_id": 101,
-    "dish_name": "Smoked Pork Belly Sliders",
+    "dish_name": "Pork Belly Sliders",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Smoked Pork Belly, Slider Buns, BBQ Sauce",
     "price": 22,
@@ -910,7 +910,7 @@
   },
   {
     "dish_id": 102,
-    "dish_name": "Grilled Pineapple Habanero Wings",
+    "dish_name": "Grilled Wings",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Chicken Wings, Pineapple Habanero Glaze",
     "price": 18,
@@ -919,7 +919,7 @@
   },
   {
     "dish_id": 103,
-    "dish_name": "Bison and Black Bean Chili",
+    "dish_name": "Bison Chili",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Bison Meat, Black Beans, Chili Spices",
     "price": 26,
@@ -928,7 +928,7 @@
   },
   {
     "dish_id": 104,
-    "dish_name": "Lemongrass Beef Skewers",
+    "dish_name": "Beef Skewers",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Beef, Lemongrass Marinade, Peanut Sauce",
     "price": 24,
@@ -937,7 +937,7 @@
   },
   {
     "dish_id": 105,
-    "dish_name": "Pulled Chicken Quesadillas",
+    "dish_name": "Chicken Quesadillas",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Pulled Chicken, Cheese, Tortillas",
     "price": 20,
@@ -946,7 +946,7 @@
   },
   {
     "dish_id": 106,
-    "dish_name": "Sesame Ginger Glazed Salmon",
+    "dish_name": "Glazed Salmon",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Salmon, Sesame Ginger Glaze, Steamed Rice",
     "price": 32,
@@ -964,7 +964,7 @@
   },
   {
     "dish_id": 108,
-    "dish_name": "Mango Sriracha Shrimp",
+    "dish_name": "Mango Shrimp",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Shrimp, Mango Sriracha Sauce",
     "price": 26,
@@ -973,7 +973,7 @@
   },
   {
     "dish_id": 109,
-    "dish_name": "Jerk Chicken Burrito Bowl",
+    "dish_name": "Burrito Bowl",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Jerk Chicken, Rice, Black Beans, Salsa",
     "price": 30,
@@ -982,7 +982,7 @@
   },
   {
     "dish_id": 110,
-    "dish_name": "Thai Basil Beef Stir-Fry",
+    "dish_name": "Beef Stir-Fry",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f46" },
     "ingredients": "Beef, Thai Basil, Vegetables",
     "price": 24,
@@ -1018,7 +1018,7 @@
   },
   {
     "dish_id": 114,
-    "dish_name": "Pain Perdu (French Toast)",
+    "dish_name": "Pain Perdu",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f47" },
     "ingredients": "Bread, Eggs, Milk, Cinnamon",
     "price": 14,
@@ -1090,7 +1090,7 @@
   },
   {
     "dish_id": 122,
-    "dish_name": "Kale and Quinoa Stuffed Peppers",
+    "dish_name": "Stuffed Peppers",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "ingredients": "Kale, Quinoa, Bell Peppers",
     "price": 18,
@@ -1117,7 +1117,7 @@
   },
   {
     "dish_id": 125,
-    "dish_name": "Vegan Chocolate Avocado Mousse",
+    "dish_name": "Chocolate Mousse",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "ingredients": "Avocado, Cocoa Powder, Maple Syrup",
     "price": 14,
@@ -1126,7 +1126,7 @@
   },
   {
     "dish_id": 126,
-    "dish_name": "Quinoa and Black Bean Burger",
+    "dish_name": "Black Bean Burger",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "ingredients": "Quinoa, Black Beans, Burger Bun",
     "price": 16,
@@ -1144,7 +1144,7 @@
   },
   {
     "dish_id": 128,
-    "dish_name": "Sweet Potato and Lentil Curry",
+    "dish_name": "Lentil Curry",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "ingredients": "Sweet Potatoes, Lentils, Coconut Milk",
     "price": 20,
@@ -1153,7 +1153,7 @@
   },
   {
     "dish_id": 129,
-    "dish_name": "Vegan Chocolate Chip Cookies",
+    "dish_name": "Chocolate Chip Cookies",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f48" },
     "ingredients": "Flour, Coconut Oil, Chocolate Chips",
     "price": 12,
@@ -1180,7 +1180,7 @@
   },
   {
     "dish_id": 132,
-    "dish_name": "Garlic Butter Shrimp Scampi",
+    "dish_name": "Shrimp Scampi",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Shrimp, Garlic, Butter, White Wine",
     "price": 38,
@@ -1189,7 +1189,7 @@
   },
   {
     "dish_id": 133,
-    "dish_name": "Filet Mignon with Red Wine Reduction",
+    "dish_name": "Filet Mignon",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Filet Mignon, Red Wine, Shallots",
     "price": 50,
@@ -1198,7 +1198,7 @@
   },
   {
     "dish_id": 134,
-    "dish_name": "Grilled Porterhouse Steak",
+    "dish_name": "Grilled Steak",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Porterhouse Steak, Salt, Pepper",
     "price": 48,
@@ -1207,7 +1207,7 @@
   },
   {
     "dish_id": 135,
-    "dish_name": "Mushroom and Blue Cheese Stuffed Tenderloin",
+    "dish_name": "Stuffed Tenderloin",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Beef Tenderloin, Mushrooms, Blue Cheese",
     "price": 42,
@@ -1216,7 +1216,7 @@
   },
   {
     "dish_id": 136,
-    "dish_name": "Peppercorn Crusted New York Strip",
+    "dish_name": "Peppercorn Strip",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "New York Strip Steak, Peppercorns",
     "price": 46,
@@ -1234,7 +1234,7 @@
   },
   {
     "dish_id": 138,
-    "dish_name": "Ribeye Steak with Chimichurri Sauce",
+    "dish_name": "Ribeye Steak",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Ribeye Steak, Chimichurri Sauce",
     "price": 42,
@@ -1243,7 +1243,7 @@
   },
   {
     "dish_id": 139,
-    "dish_name": "Classic Beef Wellington",
+    "dish_name": "Beef Wellington",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Beef Tenderloin, Mushroom Duxelles, Puff Pastry",
     "price": 55,
@@ -1252,7 +1252,7 @@
   },
   {
     "dish_id": 140,
-    "dish_name": "Port Wine Reduction Sirloin",
+    "dish_name": "Sirloin",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f49" },
     "ingredients": "Sirloin Steak, Port Wine Reduction",
     "price": 40,
@@ -1279,7 +1279,7 @@
   },
   {
     "dish_id": 143,
-    "dish_name": "Lemon Butter Shrimp Pasta",
+    "dish_name": "Shrimp Pasta",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f4a" },
     "ingredients": "Shrimp, Pasta, Lemon Butter Sauce",
     "price": 34,
@@ -1306,7 +1306,7 @@
   },
   {
     "dish_id": 146,
-    "dish_name": "Coconut Lime Mahi Mahi",
+    "dish_name": "Mahi Mahi",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f4a" },
     "ingredients": "Mahi Mahi, Coconut Milk, Lime",
     "price": 38,
@@ -1315,7 +1315,7 @@
   },
   {
     "dish_id": 147,
-    "dish_name": "Grilled Lobster Tail",
+    "dish_name": "Lobster Tail",
     "restaurant_id": { "$oid": "65b126fc2b8d5e2c9edb5f4a" },
     "ingredients": "Lobster Tail, Garlic Butter",
     "price": 48,
