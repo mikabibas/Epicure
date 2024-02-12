@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { CHEFS, RESTAURANTS } from "../../constants/variables";
-import "../../styles/header/restaurantsChefs.scss";
+import { CHEFS, RESTAURANTS } from "constants/variables";
+import "styles/header/restaurantsChefs.scss";
 import { EAppRoutes } from "constants/enum";
 
 interface RestaurantsChefsProps {
@@ -9,7 +9,6 @@ interface RestaurantsChefsProps {
 
 const RestaurantsChefs: React.FC<RestaurantsChefsProps> = ({ closeMenu }) => {
   const handleLinkClick = () => {
-    // Close the menu when a link is clicked
     closeMenu();
   };
 

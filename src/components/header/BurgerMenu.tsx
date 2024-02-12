@@ -26,8 +26,8 @@ const BurgerMenu: React.FC = () => {
             ref={checkboxRef}
             className="checkbox"
             type="checkbox"
-            name=""
-            id=""
+            name="burger"
+            id="burger"
           />
           <div className="hamburger-lines">
             <span className="line line1"></span>

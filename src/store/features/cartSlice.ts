@@ -4,6 +4,8 @@ import { Dish } from "constants/interfaces";
 interface CartItem {
   dish: Dish;
   quantity: number;
+  selectedSide: string | null;
+  changes: string[];
 }
 
 interface CartState {
@@ -19,7 +21,15 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<CartItem>) => {
-      state.items.push(action.payload);
+      const existingCartItemIndex = state.items.findIndex(
+        (item) => item.dish.dish_id === action.payload.dish.dish_id
+      );
+
+      if (existingCartItemIndex !== -1) {
+        state.items[existingCartItemIndex].quantity += action.payload.quantity;
+      } else {
+        state.items.push(action.payload);
+      }
     },
     removeFromCart: (state, action: PayloadAction<string>) => {
       state.items = state.items.filter(

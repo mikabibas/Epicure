@@ -4,18 +4,37 @@ import { ICard } from "constants/interfaces";
 import { restaurantService } from "services/restaurant.service";
 import { RootState } from "store/store";
 
-export const loadRestaurants = createAsyncThunk(
-  "restaurants/loadRestaurants",
-  async (_, { dispatch, getState }) => {
+export const loadMoreRestaurants = createAsyncThunk(
+  "restaurants/loadMoreRestaurants",
+  async (_, { getState }) => {
     try {
-      const filterBy = (getState() as RootState).restaurants.filterBy;
-      const restaurants = await restaurantService.query(filterBy);
-
-      dispatch(setRestaurantsAction(restaurants));
-
-      return restaurants;
+      const state = getState() as RootState;
+      const filterBy = state.restaurants.filterBy;
+      const offset = state.restaurants.restaurants.length;
+      const moreRestaurants = await restaurantService.query(
+        filterBy,
+        offset,
+        12
+      );
+      console.log("moreRestaurants", moreRestaurants.length);
+      return moreRestaurants;
     } catch (error) {
-      console.error("Error loading restaurants:", error);
+      console.error("Error loading more restaurants:", error);
+      throw error;
+    }
+  }
+);
+
+export const fetchRestaurantById = createAsyncThunk(
+  "restaurants/fetchRestaurantById",
+  async (restaurantId: string) => {
+    try {
+      const restaurant = await restaurantService.getRestaurantById(
+        restaurantId
+      );
+      return restaurant;
+    } catch (error) {
+      console.error("Error loading restaurant:", error);
       throw error;
     }
   }
@@ -27,12 +46,15 @@ export const updateFilterBy = createAsyncThunk(
     newFilterBy: "all" | "new" | "most-popular" | "open-now",
     { dispatch }
   ) => {
+    console.log(newFilterBy);
     dispatch(setFilter(newFilterBy));
-    dispatch(loadRestaurants());
+    dispatch(loadMoreRestaurants());
+    dispatch(resetRestaurants());
   }
 );
 
 interface IRestaurantState {
+  singleRestaurant: ICard | null;
   restaurants: ICard[];
   status: EFetchStatus;
   error: string | null;
@@ -40,6 +62,7 @@ interface IRestaurantState {
 }
 
 const initialState: IRestaurantState = {
+  singleRestaurant: null,
   restaurants: [],
   status: EFetchStatus.IDLE,
   error: null,
@@ -50,36 +73,67 @@ const restaurantSlice = createSlice({
   name: "restaurants",
   initialState,
   reducers: {
-    setRestaurantsAction: (state, action: PayloadAction<ICard[]>) => {
-      state.status = EFetchStatus.SUCCEEDED;
-      state.restaurants = action.payload;
-      state.error = null;
-    },
     setFilter: (
       state,
       action: PayloadAction<"all" | "new" | "most-popular" | "open-now">
     ) => {
       state.filterBy = action.payload;
     },
+    setRestaurants: (state, action: PayloadAction<ICard[] | []>) => {
+      state.restaurants = [...state.restaurants, ...action.payload];
+    },
+    resetRestaurants: (state) => {
+      state.restaurants = [];
+    },
   },
   extraReducers: (builder) => {
+    let filterActionDispatched = false;
+
     builder
-      .addCase(loadRestaurants.pending, (state) => {
+      .addCase(updateFilterBy.fulfilled, (state) => {
+        filterActionDispatched = true;
+      })
+      .addCase(loadMoreRestaurants.pending, (state) => {
         state.status = EFetchStatus.LOADING;
       })
-      .addCase(loadRestaurants.fulfilled, (state, action) => {
+      .addCase(loadMoreRestaurants.fulfilled, (state, action) => {
         state.status = EFetchStatus.SUCCEEDED;
-        state.restaurants = action.payload;
+
+        if (filterActionDispatched) {
+          const newRestaurants = action.payload.slice(0, 15);
+          state.restaurants = newRestaurants;
+          filterActionDispatched = false;
+        } else {
+          state.restaurants = [...state.restaurants, ...action.payload];
+        }
         state.error = null;
       })
-      .addCase(loadRestaurants.rejected, (state, action) => {
+      .addCase(loadMoreRestaurants.rejected, (state, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"
           : "Unknown error";
+      })
+      .addCase(fetchRestaurantById.pending, (state) => {
+        state.status = EFetchStatus.LOADING;
+      })
+      .addCase(fetchRestaurantById.fulfilled, (state, action) => {
+        state.status = EFetchStatus.SUCCEEDED;
+        state.singleRestaurant = action.payload;
+        state.error = null;
+      })
+      .addCase(fetchRestaurantById.rejected, (state, action) => {
+        state.status = EFetchStatus.FAILED;
+        state.error = action.error
+          ? action.error.message || "Unknown error"
+          : "Unknown error";
+      })
+      .addCase(resetRestaurants, (state) => {
+        state.restaurants = [];
       });
   },
 });
 
 export default restaurantSlice.reducer;
-export const { setRestaurantsAction, setFilter } = restaurantSlice.actions;
+export const { setFilter, setRestaurants, resetRestaurants } =
+  restaurantSlice.actions;

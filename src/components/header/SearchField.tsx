@@ -29,6 +29,7 @@ const SearchField: React.FC<SearchFieldProps> = ({ iconSize, className }) => {
           className="hero-input-field"
           type="text"
           placeholder={PLACEHOLDER_SERACH_INPUT}
+          id="hero-input"
         />
       </div>
     </>

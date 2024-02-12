@@ -1,3 +1,4 @@
+import { DishModalProps } from "constants/interfaces";
 import {
   CHOOSE_SIDE,
   CHANGES,
@@ -13,38 +14,24 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "store/features/cartSlice";
 import "styles/dishModal.scss";
 
-interface RestaurantArrDish {
-  id: string;
-  name: string;
-}
-
-export interface DishModalProps {
-  selectedDish: {
-    dish_id: string;
-    dish_image: string;
-    dish_name: string;
-    ingredients: string;
-    price: number;
-    icon: string;
-    restaurant: RestaurantArrDish;
-  } | null;
-  quantity: number;
-  onClose: () => void;
-  onQuantityChange: (value: number) => void;
-}
-
 const DishModal: React.FC<DishModalProps> = ({
   selectedDish,
   quantity,
   onClose,
   onQuantityChange,
+  onSideChange,
+  onChangesChange,
+  selectedSide,
+  changes,
 }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
     if (selectedDish) {
-      const cartItem = { dish: selectedDish, quantity };
+      const cartItem = { dish: selectedDish, quantity, selectedSide, changes };
       dispatch(addToCart(cartItem));
+      onSideChange("");
+      onChangesChange([]);
       onClose();
     }
   };
@@ -76,23 +63,43 @@ const DishModal: React.FC<DishModalProps> = ({
                 <div className="choose-side">
                   <div className="choose-title">{CHOOSE_SIDE}</div>
                   <div className="input-label-container">
-                    <input type="radio" name="side" id="" />
-                    <label htmlFor="name">{WHITE_BREAD}</label>
+                    <input
+                      type="radio"
+                      name="side"
+                      id="white-bread"
+                      onChange={() => onSideChange(WHITE_BREAD)}
+                    />
+                    <label htmlFor="white-bread">{WHITE_BREAD}</label>
                   </div>
                   <div className="input-label-container">
-                    <input type="radio" name="side" id="" />
-                    <label htmlFor="name">{STICKY_RICE}</label>
+                    <input
+                      type="radio"
+                      name="side"
+                      id="sticky-rice"
+                      onChange={() => onSideChange(STICKY_RICE)}
+                    />
+                    <label htmlFor="sticky-rice">{STICKY_RICE}</label>
                   </div>
                 </div>
                 <div className="dish-changes">
                   <div className="choose-title">{CHANGES}</div>
                   <div className="input-label-container checkbox">
-                    <input type="checkbox" name="dish-changes" id="" />
-                    <label htmlFor="dish-changes">{NO_PNTS}</label>
+                    <input
+                      type="checkbox"
+                      name="dish-changes"
+                      id="no-peanuts"
+                      onChange={() => onChangesChange(["Without peanuts"])}
+                    />
+                    <label htmlFor="no-peanuts">{NO_PNTS}</label>
                   </div>
                   <div className="input-label-container checkbox">
-                    <input type="checkbox" name="dish-changes" id="" />
-                    <label htmlFor="dish-changes">{LESS_SPICY}</label>
+                    <input
+                      type="checkbox"
+                      name="dish-changes"
+                      id="less-spicy"
+                      onChange={() => onChangesChange(["Less spicy"])}
+                    />
+                    <label htmlFor="less-spicy">{LESS_SPICY}</label>
                   </div>
                 </div>
                 <div className="quantity">
@@ -114,6 +121,8 @@ const DishModal: React.FC<DishModalProps> = ({
                           const cartItem = {
                             dish: selectedDish,
                             quantity: newQuantity,
+                            selectedSide: selectedSide,
+                            changes: changes,
                           };
                           dispatch(addToCart(cartItem));
                         }

@@ -37,8 +37,6 @@ export interface ChefComponentProps {
   restaurants: ICard[];
 }
 
-
-
 export interface Dish {
   dish_id: string;
   dish_name: string;
@@ -50,4 +48,41 @@ export interface Dish {
     id: string;
     name: string;
   };
+}
+
+interface RestaurantArrDish {
+  id: string;
+  name: string;
+}
+
+export interface CartItem {
+  dish: {
+    dish_id: string;
+    dish_image: string;
+    dish_name: string;
+    ingredients: string;
+    price: number;
+    icon: string;
+    restaurant: RestaurantArrDish;
+  };
+  quantity: number;
+}
+
+export interface DishModalProps {
+  selectedDish: {
+    dish_id: string;
+    dish_image: string;
+    dish_name: string;
+    ingredients: string;
+    price: number;
+    icon: string;
+    restaurant: RestaurantArrDish;
+  } | null;
+  quantity: number;
+  onClose: () => void;
+  onQuantityChange: (value: number) => void;
+  onSideChange: (value: string) => void;
+  onChangesChange: (values: string[]) => void;
+  selectedSide: string | null;
+  changes: string[];
 }

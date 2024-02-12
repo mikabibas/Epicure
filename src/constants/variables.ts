@@ -112,6 +112,7 @@ const TXTAREA_PLACEHOLDER =
 const CHECKOUT = "Checkout";
 const ORDER_HISTORY = "Order History";
 const YOUR_ORDER = "Your Order";
+const NO_RESTAURANT_DISPLAY = "No restaurants to display";
 
 export {
   API_URL,
@@ -165,4 +166,5 @@ export {
   CHECKOUT,
   ORDER_HISTORY,
   YOUR_ORDER,
+  NO_RESTAURANT_DISPLAY,
 };
