@@ -20,11 +20,8 @@ const FilterNav = () => {
       | "new"
       | "most-popular"
       | "open-now";
-    console.log("Selected Filter:", selectedFilter);
-
     if (selectedFilter !== currentFilter) {
       setSelectedOption(selectedFilter);
-      console.log("Dispatching updateFilterBy action");
       dispatch(setFilter(selectedFilter));
     }
   };

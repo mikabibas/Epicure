@@ -13,6 +13,20 @@ export const fetchDishes = createAsyncThunk("dishes/fetchDishes", async () => {
   }
 });
 
+export const fetchDishesByRestaurantId = createAsyncThunk(
+  "dishes/fetchDishesByRestaurantId",
+  async (restaurantId: string) => {
+    try {
+      const response = await axios.get(
+        `${API_URL}/dishes/${restaurantId}/dishes`
+      );
+      return response.data.dishes as ICard[];
+    } catch (error) {
+      throw error;
+    }
+  }
+);
+
 export interface IDishState {
   dishes: ICard[];
   status: string;
@@ -40,6 +54,20 @@ const dishSlice = createSlice({
         state.error = null;
       })
       .addCase(fetchDishes.rejected, (state, action) => {
+        state.status = EFetchStatus.FAILED;
+        state.error = action.error
+          ? action.error.message || "Unknown error"
+          : "Unknown error";
+      })
+      .addCase(fetchDishesByRestaurantId.pending, (state) => {
+        state.status = EFetchStatus.LOADING;
+      })
+      .addCase(fetchDishesByRestaurantId.fulfilled, (state, action) => {
+        state.status = EFetchStatus.SUCCEEDED;
+        state.dishes = action.payload;
+        state.error = null;
+      })
+      .addCase(fetchDishesByRestaurantId.rejected, (state, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"

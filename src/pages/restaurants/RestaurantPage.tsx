@@ -5,10 +5,11 @@ import { AppDispatch, useAppSelector } from "store/store";
 import { IChefState, fetchChefs } from "store/features/chefSlice";
 import { fetchDishes, IDishState } from "store/features/dishSlice";
 import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
-import DishModal from "components/Modal/DishModal";
+import DishModal from "components/modal/DishModal";
 import "styles/restaurants/restaurantPage.scss";
 import "styles/filterNav.scss";
 import { fetchRestaurantById } from "store/features/restaurantSlice";
+import Loader from "components/loader/Loader";
 
 const RestaurantPage: React.FC = () => {
   const [selectedOption] = useState(null);
@@ -17,8 +18,9 @@ const RestaurantPage: React.FC = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedSide, setSelectedSide] = useState<string | null>(null);
   const [selectedChanges, setSelectedChanges] = useState<string[]>([]);
-
   const { restaurantId } = useParams<{ restaurantId: string }>();
+  const [loading, setLoading] = useState(true); // Add loading state
+
   const dispatch = useDispatch<AppDispatch>();
 
   const getCheckedClass = (option: string) => {
@@ -43,25 +45,44 @@ const RestaurantPage: React.FC = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchChefs() as any);
-    dispatch(fetchDishes() as any);
-    restaurantId && dispatch(fetchRestaurantById(restaurantId));
-    window.scrollTo(0, 0);
+    const fetchData = async () => {
+      try {
+        await dispatch(fetchChefs() as any);
+        await dispatch(fetchDishes() as any);
+        if (restaurantId) {
+          await dispatch(fetchRestaurantById(restaurantId));
+          setLoading(false);
+        }
+        window.scrollTo(0, 0);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, [dispatch, restaurantId]);
 
-  const restaurant = useAppSelector((state) =>
+  const restaurantChef = useAppSelector((state) =>
     state.restaurants.restaurants.find((r) => r._id === restaurantId)
+  );
+  const restaurant = useAppSelector(
+    (state) => state.restaurants.singleRestaurant
   );
 
   const chefs = useAppSelector((state) => (state.chefs as IChefState).chefs);
   const dishes = useAppSelector((state) => (state.dishes as IDishState).dishes);
-  console.log(restaurant);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   if (!restaurant) {
     return <div>Restaurant not found</div>;
   }
-
   return (
     <>
+      <Loader sliceName="restaurants" />
       <div className="rest-container">
         <div className="rest-hero">
           <img
@@ -73,7 +94,7 @@ const RestaurantPage: React.FC = () => {
         <div className="rest-container">
           <h1 className="rest-name">{restaurant.res_name}</h1>
           <h2 className="rest-chef-name">
-            {chefs.find((chef) => chef._id === restaurant.chef?._id)?.name}
+            {chefs.find((chef) => chef._id === restaurantChef?.chef?._id)?.name}
           </h2>
           <div className="open-now-container">
             <img
@@ -143,7 +164,7 @@ const RestaurantPage: React.FC = () => {
           onQuantityChange={handleQuantityChange}
           onSideChange={(side) => handleSideChange(side)}
           onChangesChange={(changes) => handleChangesChange(changes)}
-          selectedSide={selectedSide} // Pass selectedSide
+          selectedSide={selectedSide}
           changes={selectedChanges}
         />
       )}

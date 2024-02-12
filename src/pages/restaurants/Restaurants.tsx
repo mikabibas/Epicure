@@ -6,6 +6,7 @@ import { loadMoreRestaurants } from "store/features/restaurantSlice";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { ICard } from "constants/interfaces";
 import { PayloadAction } from "@reduxjs/toolkit";
+import Loader from "components/loader/Loader";
 
 const Restaurants = () => {
   const dispatch = useAppDispatch();
@@ -18,30 +19,30 @@ const Restaurants = () => {
   useEffect(() => {
     dispatch(loadMoreRestaurants());
   }, [dispatch]);
+  const fetchMoreData = async () => {
+    try {
+      const action = await dispatch(loadMoreRestaurants());
+      const moreRestaurants = (
+        action as PayloadAction<
+          ICard[],
+          string,
+          { requestId: string; requestStatus: "fulfilled" }
+        >
+      ).payload;
 
-  const fetchMoreData = () => {
-    dispatch(loadMoreRestaurants())
-      .then((action) => {
-        const moreRestaurants = (
-          action as PayloadAction<
-            ICard[],
-            string,
-            { requestId: string; requestStatus: "fulfilled" }
-          >
-        ).payload;
-        if (moreRestaurants.length > 0) {
-          setHasMore(true);
-        } else {
-          setHasMore(false);
-        }
-      })
-      .catch((error) => {
-        console.error("Error loading more restaurants:", error);
-      });
+      if (moreRestaurants.length > 0) {
+        setHasMore(true);
+      } else {
+        setHasMore(false);
+      }
+    } catch (error) {
+      console.error("Error loading more restaurants:", error);
+    }
   };
 
   return (
     <div>
+      <Loader sliceName="restaurants" />
       <FilterNav />
       <InfiniteScroll
         dataLength={restaurants.length}

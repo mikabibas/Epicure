@@ -67,7 +67,7 @@ const Cart: React.FC = () => {
                   <div className="side-changes-container">
                     <p className="cart-dish-side">{item.selectedSide}</p>
                     <p className="cart-dish-changes">
-                      {item.changes.join(", ")}
+                      {item.changes.join(", ")} |
                     </p>
                   </div>
                   <div className="cart-dish-price">{item.dish.price} ₪</div>

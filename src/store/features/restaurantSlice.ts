@@ -50,6 +50,7 @@ export const updateFilterBy = createAsyncThunk(
 );
 
 interface IRestaurantState {
+  singleRestaurant: ICard | null;
   restaurants: ICard[];
   status: EFetchStatus;
   error: string | null;
@@ -57,6 +58,7 @@ interface IRestaurantState {
 }
 
 const initialState: IRestaurantState = {
+  singleRestaurant: null,
   restaurants: [],
   status: EFetchStatus.IDLE,
   error: null,
@@ -85,6 +87,20 @@ const restaurantSlice = createSlice({
         state.error = null;
       })
       .addCase(loadMoreRestaurants.rejected, (state, action) => {
+        state.status = EFetchStatus.FAILED;
+        state.error = action.error
+          ? action.error.message || "Unknown error"
+          : "Unknown error";
+      })
+      .addCase(fetchRestaurantById.pending, (state) => {
+        state.status = EFetchStatus.LOADING;
+      })
+      .addCase(fetchRestaurantById.fulfilled, (state, action) => {
+        state.status = EFetchStatus.SUCCEEDED;
+        state.singleRestaurant = action.payload;
+        state.error = null;
+      })
+      .addCase(fetchRestaurantById.rejected, (state, action) => {
         state.status = EFetchStatus.FAILED;
         state.error = action.error
           ? action.error.message || "Unknown error"

@@ -4,8 +4,8 @@ import { Dish } from "constants/interfaces";
 interface CartItem {
   dish: Dish;
   quantity: number;
-  selectedSide: string | null; // Include selected side
-  changes: string[]; // Include selected changes
+  selectedSide: string | null;
+  changes: string[];
 }
 
 interface CartState {

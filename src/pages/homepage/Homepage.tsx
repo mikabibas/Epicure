@@ -6,10 +6,12 @@ import AboutUs from "components/AboutUs";
 import { CHEF_NAME } from "constants/variables";
 import CardDishSlider from "components/CardDishSlider";
 import CardRestSlider from "components/CardRestSlider";
+import Loader from "components/loader/Loader";
 
 const Homepage = () => {
   return (
     <div>
+      <Loader />
       <Hero />
       <CardRestSlider />
       <CardDishSlider />
