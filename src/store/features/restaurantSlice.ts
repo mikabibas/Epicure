@@ -16,6 +16,7 @@ export const loadMoreRestaurants = createAsyncThunk(
         offset,
         12
       );
+      console.log("moreRestaurants", moreRestaurants.length);
       return moreRestaurants;
     } catch (error) {
       console.error("Error loading more restaurants:", error);
@@ -45,7 +46,10 @@ export const updateFilterBy = createAsyncThunk(
     newFilterBy: "all" | "new" | "most-popular" | "open-now",
     { dispatch }
   ) => {
+    console.log(newFilterBy);
     dispatch(setFilter(newFilterBy));
+    dispatch(loadMoreRestaurants());
+    dispatch(resetRestaurants());
   }
 );
 
@@ -75,15 +79,33 @@ const restaurantSlice = createSlice({
     ) => {
       state.filterBy = action.payload;
     },
+    setRestaurants: (state, action: PayloadAction<ICard[] | []>) => {
+      state.restaurants = [...state.restaurants, ...action.payload];
+    },
+    resetRestaurants: (state) => {
+      state.restaurants = [];
+    },
   },
   extraReducers: (builder) => {
+    let filterActionDispatched = false;
+
     builder
+      .addCase(updateFilterBy.fulfilled, (state) => {
+        filterActionDispatched = true;
+      })
       .addCase(loadMoreRestaurants.pending, (state) => {
         state.status = EFetchStatus.LOADING;
       })
       .addCase(loadMoreRestaurants.fulfilled, (state, action) => {
         state.status = EFetchStatus.SUCCEEDED;
-        state.restaurants = [...state.restaurants, ...action.payload];
+
+        if (filterActionDispatched) {
+          const newRestaurants = action.payload.slice(0, 15);
+          state.restaurants = newRestaurants;
+          filterActionDispatched = false;
+        } else {
+          state.restaurants = [...state.restaurants, ...action.payload];
+        }
         state.error = null;
       })
       .addCase(loadMoreRestaurants.rejected, (state, action) => {
@@ -105,9 +127,13 @@ const restaurantSlice = createSlice({
         state.error = action.error
           ? action.error.message || "Unknown error"
           : "Unknown error";
+      })
+      .addCase(resetRestaurants, (state) => {
+        state.restaurants = [];
       });
   },
 });
 
 export default restaurantSlice.reducer;
-export const { setFilter } = restaurantSlice.actions;
+export const { setFilter, setRestaurants, resetRestaurants } =
+  restaurantSlice.actions;

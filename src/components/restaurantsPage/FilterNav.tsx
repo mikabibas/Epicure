@@ -2,7 +2,7 @@ import { NAV_OPTIONS } from "constants/variables";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { setFilter } from "store/features/restaurantSlice";
+import { updateFilterBy } from "store/features/restaurantSlice";
 import { RootState, useAppSelector } from "store/store";
 import "styles/filterNav.scss";
 
@@ -22,7 +22,7 @@ const FilterNav = () => {
       | "open-now";
     if (selectedFilter !== currentFilter) {
       setSelectedOption(selectedFilter);
-      dispatch(setFilter(selectedFilter));
+      dispatch(updateFilterBy(selectedFilter) as any);
     }
   };
 

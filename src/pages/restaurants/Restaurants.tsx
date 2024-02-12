@@ -7,6 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { ICard } from "constants/interfaces";
 import { PayloadAction } from "@reduxjs/toolkit";
 import Loader from "components/loader/Loader";
+import { NO_RESTAURANT_DISPLAY } from "constants/variables";
 
 const Restaurants = () => {
   const dispatch = useAppDispatch();
@@ -48,10 +49,10 @@ const Restaurants = () => {
         dataLength={restaurants.length}
         next={fetchMoreData}
         hasMore={hasMore}
-        loader={<h4>Loading...</h4>}
+        loader={<Loader />}
         endMessage={
           <p style={{ textAlign: "center" }}>
-            <b>Yay! You have seen it all</b>
+            <b>{NO_RESTAURANT_DISPLAY}</b>
           </p>
         }
       >
