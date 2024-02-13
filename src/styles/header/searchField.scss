@@ -133,10 +133,11 @@
   top: 130px;
   position: absolute;
   width: 315px;
+  align-items: flex-start;
+  padding-left: 58px;
 
   @include desktop {
     top: 186px;
-    align-items: flex-start;
     padding-left: 70px;
     width: 505px;
   }

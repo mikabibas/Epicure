@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FilterNav from "components/restaurantsPage/FilterNav";
 import MappedCards from "components/restaurantsPage/MappedCards";
 import { useAppSelector, useAppDispatch } from "store/store";

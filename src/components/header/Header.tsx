@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import logo from "assets/images/layout/logo.png";
 import Cart from "components/header/Cart";
 import { CHEFS, RESTAURANTS, TEXT_LOGO } from "constants/variables";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { EAppRoutes } from "constants/enum";
 import MediaQuery from "react-responsive";
 import SearchField from "./SearchField";
@@ -20,6 +20,7 @@ const Header: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const cartRef = useRef<HTMLDivElement | null>(null);
   const cart = useAppSelector((state) => state.cart);
+  const pathname = useLocation().pathname;
 
   const toggleSearch = () => {
     setIsSearchOpen((prevState) => !prevState);
@@ -34,10 +35,6 @@ const Header: React.FC = () => {
   };
 
   useOutsideClick(cartRef, closeCartIfOutsideClick);
-
-  const isActiveRoute = (route: EAppRoutes) => {
-    return window.location.pathname === route;
-  };
 
   return (
     <div className="header-navbar-container">
@@ -56,7 +53,7 @@ const Header: React.FC = () => {
           <div className="restaurants-chefs-container">
             <Link
               className={`link ${
-                isActiveRoute(EAppRoutes.RESTAURANTS) ? "active" : ""
+                pathname === EAppRoutes.RESTAURANTS ? "active" : ""
               }`}
               to={EAppRoutes.RESTAURANTS}
             >
@@ -64,7 +61,7 @@ const Header: React.FC = () => {
             </Link>
             <Link
               className={`link ${
-                isActiveRoute(EAppRoutes.CHEFS) ? "active" : ""
+                pathname === EAppRoutes.CHEFS ? "active" : ""
               }`}
               to={EAppRoutes.CHEFS}
             >

@@ -33,7 +33,7 @@
 
 .restaurants-slider-title {
   text-transform: uppercase;
-  margin: 80px 20px 40px;
+  margin: 90px 20px 40px;
   text-align: center;
   font-size: 30px;
   letter-spacing: 1.25px;
@@ -42,15 +42,15 @@
   @include mobile {
     text-align: start;
     font-size: 18px;
-    margin: 48px 0 8px;
+    margin: 20px 0 8px;
   }
 }
 
-.card-slider {
+.card-slider-restaurant,
+.card-slider-dishes {
   display: flex;
   flex-direction: column;
   margin: 40px auto;
-  position: relative;
 
   @include desktop {
     width: 80%;
@@ -61,6 +61,34 @@
   }
 }
 
+.card-slider-restaurant {
+  position: relative;
+  .slider-link {
+    position: absolute;
+    right: 5px;
+    bottom: -70px;
+    text-decoration: none;
+    color: $PRIMARY_BLACK;
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: "helveticaRoman";
+    @include mobile {
+      bottom: -50px;
+      left: 0;
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.card-slider-dishes {
+  @include mobile {
+    margin-top: 90px;
+  }
+}
+
 .card,
 .card-dish {
   display: flex;
@@ -68,6 +96,7 @@
   text-align: center;
   height: 405px;
   border: none;
+  cursor: pointer;
 
   @include mobile {
     height: 233px;
@@ -149,7 +178,7 @@
   position: relative;
 
   @include mobile {
-    height: 213px;
+    height: 230px;
     padding: 16px;
   }
 
@@ -173,6 +202,7 @@
   max-width: 295px;
   font-family: "helveticaThin";
   color: $PRIMARY_BLACK;
+  margin: 8px 0;
   &:hover {
     text-decoration: none;
   }
@@ -238,23 +268,6 @@
   display: none !important;
   &::before {
     color: $SECONDARY_YELLOW;
-  }
-}
-
-.slider-link {
-  position: absolute;
-  right: 0;
-  bottom: -50px;
-  text-decoration: none;
-  color: $PRIMARY_BLACK;
-  font-weight: 400;
-  letter-spacing: 2px;
-  line-height: 35px;
-  margin-left: 10px;
-  @include mobile {
-    bottom: -50px;
-    left: 0;
-    margin: 0;
   }
 }
 

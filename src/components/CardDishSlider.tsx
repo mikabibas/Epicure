@@ -20,7 +20,7 @@ const CardDishSlider: React.FC = () => {
   }, [status, dispatch]);
 
   return (
-    <div className="card-slider">
+    <div className="card-slider-dishes">
       <h1 className="restaurants-slider-title">{SIGNATURE_DISH}</h1>
       {status === "loading" && <p>Loading...</p>}
       {status === "failed" && <p>Error loading dishes</p>}

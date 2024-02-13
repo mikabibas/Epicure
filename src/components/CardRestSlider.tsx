@@ -30,7 +30,7 @@ const CardRestSlider: React.FC = () => {
   }, [status, dispatch]);
 
   return (
-    <div className="card-slider">
+    <div className="card-slider-restaurant">
       <h1 className="restaurants-slider-title">{POPULAR_RESTAURANTS}</h1>
       {status === "loading" && <p>Loading...</p>}
       {status === "failed" && <p>Error loading restaurants</p>}
