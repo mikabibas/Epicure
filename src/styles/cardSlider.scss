@@ -50,10 +50,10 @@
 .card-slider-dishes {
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
+  margin: 80px auto;
 
   @include desktop {
-    width: 80%;
+    width: 1186px;
   }
 
   @include mobile {

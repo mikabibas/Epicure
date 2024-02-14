@@ -1,9 +1,10 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import SearchIcon from "assets/images/layout/searchIcon.svg";
 import { PLACEHOLDER_SERACH_INPUT } from "constants/variables";
 import "styles/header/searchField.scss";
 import { selectSearch, setSearch } from "store/features/searchSlice";
+import { useAppSelector } from "store/store";
 
 interface SearchFieldProps {
   iconSize?: number;
@@ -12,7 +13,7 @@ interface SearchFieldProps {
 
 const SearchField: React.FC<SearchFieldProps> = ({ iconSize, className }) => {
   const dispatch = useDispatch();
-  const search = useSelector(selectSearch);
+  const search = useAppSelector(selectSearch);
 
   return (
     <>

@@ -7,8 +7,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 24px;
   margin: 50px auto;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   a {
     text-decoration: none;
@@ -39,7 +39,6 @@
 .chefs-container {
   @include desktop {
     width: 1184px;
-    height: 1156px;
   }
   .image-title-container {
     display: flex;

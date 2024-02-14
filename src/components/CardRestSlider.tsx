@@ -15,6 +15,7 @@ import {
   POPULAR_RESTAURANTS,
   SLIDER_SETTINGS,
 } from "constants/variables";
+import Loader from "./loader/Loader";
 
 const CardRestSlider: React.FC = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const CardRestSlider: React.FC = () => {
   return (
     <div className="card-slider-restaurant">
       <h1 className="restaurants-slider-title">{POPULAR_RESTAURANTS}</h1>
-      {status === "loading" && <p>Loading...</p>}
+      {status === "loading" && <Loader sliceName="restaurants" />}
       {status === "failed" && <p>Error loading restaurants</p>}
       {status === "succeeded" && (
         <Slider {...SLIDER_SETTINGS}>

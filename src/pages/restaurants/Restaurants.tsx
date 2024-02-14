@@ -14,7 +14,7 @@ const Restaurants = () => {
   const restaurants = useAppSelector(
     (state: any) => state.restaurants.restaurants
   );
-
+  console.log(restaurants);
   const [hasMore, setHasMore] = useState(true);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Restaurants = () => {
   return (
     <div>
       <Loader sliceName="restaurants" />
-      <FilterNav />
+      <FilterNav context="restaurant" />
       <InfiniteScroll
         dataLength={restaurants.length}
         next={fetchMoreData}

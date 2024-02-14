@@ -1,4 +1,4 @@
-import { ChefInfo } from "constants/interfaces";
+import { IChef } from "constants/interfaces";
 import { useEffect } from "react";
 import { fetchChefs } from "store/features/chefSlice";
 import { useAppDispatch, useAppSelector } from "store/store";
@@ -28,7 +28,7 @@ const ChefList: React.FC = () => {
 
   return (
     <div className="chefs-container">
-      {chefs.map((chef: ChefInfo) => {
+      {chefs.map((chef: IChef) => {
         if (!uniqueChefNames.has(chef.name)) {
           uniqueChefNames.add(chef.name);
           return (

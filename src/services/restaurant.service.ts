@@ -3,9 +3,9 @@ import { API_URL } from "constants/variables";
 import { ICard } from "constants/interfaces";
 
 const query = async (
-  filterBy: string,
-  offset: number,
-  limit: number
+  filterBy: string = "",
+  offset: number = 0,
+  limit: number = 12
 ): Promise<ICard[]> => {
   try {
     const response = await axios.get(

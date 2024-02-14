@@ -7,6 +7,7 @@ import "styles/cardSlider.scss";
 import { ICard } from "constants/interfaces";
 import { SIGNATURE_DISH, SLIDER_SETTINGS } from "constants/variables";
 import { fetchDishes } from "store/features/dishSlice";
+import Loader from "./loader/Loader";
 
 const CardDishSlider: React.FC = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const CardDishSlider: React.FC = () => {
   return (
     <div className="card-slider-dishes">
       <h1 className="restaurants-slider-title">{SIGNATURE_DISH}</h1>
-      {status === "loading" && <p>Loading...</p>}
+      {status === "loading" && <Loader sliceName="dishes" />}
       {status === "failed" && <p>Error loading dishes</p>}
       {status === "succeeded" && (
         <Slider {...SLIDER_SETTINGS}>
