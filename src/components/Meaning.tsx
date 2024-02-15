@@ -1,4 +1,4 @@
-import { MEANING_ICONS, SPICY, VEGAN, VEGETERIAN } from "constants/variables";
+import { MEANING_ICONS, SPICY, VEGAN, VEGETARIAN } from "constants/variables";
 import "styles/meaning.scss";
 
 const Meaning = () => {
@@ -19,7 +19,7 @@ const Meaning = () => {
               src={require("assets/images/layout/leaves_icon.png")}
               alt="leaves_icon"
             />
-            <div className="icon-title">{VEGETERIAN}</div>
+            <div className="icon-title">{VEGETARIAN}</div>
           </div>
           <div className="image-text-container">
             <img

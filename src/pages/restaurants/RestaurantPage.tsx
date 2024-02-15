@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { AppDispatch, useAppSelector } from "store/store";
-import { IChefState, fetchChefs } from "store/features/chefSlice";
+import { fetchChefs } from "store/features/chefSlice";
 import { fetchDishesByRestaurantId } from "store/features/dishSlice";
 import { OPEN_NOW, RES_NAV_OPTIONS } from "constants/variables";
 import DishModal from "components/modal/DishModal";
@@ -24,14 +24,9 @@ const RestaurantPage: React.FC = () => {
   const [localDishes, setLocalDishes] = useState<ICard[]>([]);
 
   const dispatch = useDispatch<AppDispatch>();
-  const restaurantChef = useAppSelector((state) =>
-    state.restaurants.restaurants.find((r) => r._id === restaurantId)
-  );
   const restaurant = useAppSelector(
     (state) => state.restaurants.singleRestaurant
   );
-
-  const chefs = useAppSelector((state) => (state.chefs as IChefState).chefs);
 
   const getCheckedClass = (option: string) => {
     return selectedOption === option ? "checked" : "";
@@ -90,6 +85,7 @@ const RestaurantPage: React.FC = () => {
       </div>
     );
   }
+
   return (
     <>
       <div className="rest-container">
@@ -102,9 +98,7 @@ const RestaurantPage: React.FC = () => {
         </div>
         <div className="rest-container">
           <h1 className="rest-name">{restaurant.res_name}</h1>
-          <h2 className="rest-chef-name">
-            {chefs.find((chef) => chef._id === restaurantChef?.chef?._id)?.name}
-          </h2>
+          <h2 className="rest-chef-name">{restaurant.chef.name}</h2>
           <div className="open-now-container">
             <img
               className="clock-icon"

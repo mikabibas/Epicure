@@ -12,7 +12,7 @@ const POPULAR_RESTAURANTS = "Popular restaurants in epicure:";
 const SIGNATURE_DISH = "signature dish of:";
 const MEANING_ICONS = "the meaning of our icons:";
 const SPICY = "spicy";
-const VEGETERIAN = "Vegeterian";
+const VEGETARIAN = "Vegetarian";
 const VEGAN = "vegan";
 const NO_RESTAURANT_FOUND_TEXT = "No restaurants found";
 
@@ -129,7 +129,7 @@ export {
   MEANING_ICONS,
   SPICY,
   VEGAN,
-  VEGETERIAN,
+  VEGETARIAN,
   SLIDER_SETTINGS,
   CHEF_PARAGRAPH,
   CHEF_NAME,

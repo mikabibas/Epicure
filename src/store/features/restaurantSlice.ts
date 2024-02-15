@@ -16,7 +16,6 @@ export const loadMoreRestaurants = createAsyncThunk(
         offset,
         12
       );
-      console.log("moreRestaurants", moreRestaurants.length);
       return moreRestaurants;
     } catch (error) {
       console.error("Error loading more restaurants:", error);

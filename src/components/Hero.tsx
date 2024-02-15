@@ -1,17 +1,19 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { HERO_TEXT, NO_RESTAURANT_FOUND_TEXT } from "constants/variables";
 import "styles/hero.scss";
-import data from "assets/restaurants.json";
 import { selectSearch } from "store/features/searchSlice";
 import SearchField from "./header/SearchField";
 import { Link } from "react-router-dom";
+import { useAppSelector } from "store/store";
 
 const Hero: React.FC = () => {
-  const search = useSelector(selectSearch);
+  const search = useAppSelector(selectSearch);
+  const restaurants = useAppSelector((state) => state.restaurants.restaurants);
 
-  const filteredRestaurants = data.filter((restaurant) =>
-    restaurant.res_name.toLowerCase().includes(search.toLowerCase())
+  const filteredRestaurants = restaurants.filter(
+    (restaurant) =>
+      restaurant.res_name &&
+      restaurant.res_name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (

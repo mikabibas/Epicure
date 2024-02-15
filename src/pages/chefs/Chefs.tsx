@@ -6,7 +6,7 @@ const Chefs = () => {
   return (
     <div>
       <Loader sliceName="chefs" />
-      <FilterNav />
+      <FilterNav context="chef" />
       <ChefList />
     </div>
   );
