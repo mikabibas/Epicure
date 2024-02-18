@@ -53,10 +53,10 @@ const SLIDER_SETTINGS = {
 
 // chef
 const CHEF_PARAGRAPH =
-  "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas diam. In eget consequat elit. Nunc et facilisis leo, quis placerat nisi. Donec imperdiet rutrum tortor eget pharetra. Donec nec ipsum mattis, ornare erat eu, sagittis lacus. Aenean egestas quam magna, sed consequat ipsum suscipit in. Nam blandit varius neque.";
 const CHEF_NAME = "Yossi Shitrit";
 const CHEF_WEEK = "chef of the week:";
-const CHEF_RESTAURANTS = "Yossi's Restaurants";
+const CHEF_RESTAURANTS = "'s Restaurants";
 
 // about-us
 const ABOUT_TITLE = "About Us:";
@@ -72,19 +72,12 @@ const GT_ON = "Get it on";
 const GOOGLE_PLAY = "Google Play";
 
 // restaurants page navigation
-const ALL = "all";
-const NEW = "new";
-const MOST_POP = "most popular";
-const OPEN_NOW = "Open now";
-const MAP_VIEW = "map view";
+const ALL = "All";
+const NEW = "New";
+const MOST_POP = "Most Popular";
+const OPEN_NOW = "Open Now";
+const MAP_VIEW = "Map View";
 const MOST_VIEWED = "Most Viewed";
-const RES_FILTERS = [
-  { path: "/restaurants/all", label: ALL },
-  { path: "/restaurants/new", label: NEW },
-  { path: "/restaurants/most-popular", label: MOST_POP },
-  { path: "/restaurants/open-now", label: OPEN_NOW },
-  { path: "/restaurants/map-view", label: MAP_VIEW },
-];
 const NAV_OPTIONS = ["All", "New", "Most Popular", "Open Now"];
 const RES_NAV_OPTIONS = ["Breakfast", "Lunch", "Dinner"];
 
@@ -147,7 +140,6 @@ export {
   MOST_POP,
   MAP_VIEW,
   OPEN_NOW,
-  RES_FILTERS,
   CHEF_FILTERS,
   START_DATE,
   END_DATE,

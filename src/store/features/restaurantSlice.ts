@@ -42,13 +42,12 @@ export const fetchRestaurantById = createAsyncThunk(
 export const updateFilterBy = createAsyncThunk(
   "filterBy/updateFilterBy",
   async (
-    newFilterBy: "all" | "new" | "most-popular" | "open-now",
+    newFilterBy: "All" | "New" | "Most-Popular" | "Open-Now",
     { dispatch }
   ) => {
-    console.log(newFilterBy);
+    dispatch(resetRestaurants());
     dispatch(setFilter(newFilterBy));
     dispatch(loadMoreRestaurants());
-    dispatch(resetRestaurants());
   }
 );
 
@@ -57,7 +56,7 @@ interface IRestaurantState {
   restaurants: ICard[];
   status: EFetchStatus;
   error: string | null;
-  filterBy: "all" | "new" | "most-popular" | "open-now";
+  filterBy: "All" | "New" | "Most-Popular" | "Open-Now";
 }
 
 const initialState: IRestaurantState = {
@@ -65,7 +64,7 @@ const initialState: IRestaurantState = {
   restaurants: [],
   status: EFetchStatus.IDLE,
   error: null,
-  filterBy: "all",
+  filterBy: "All",
 };
 
 const restaurantSlice = createSlice({
@@ -74,7 +73,7 @@ const restaurantSlice = createSlice({
   reducers: {
     setFilter: (
       state,
-      action: PayloadAction<"all" | "new" | "most-popular" | "open-now">
+      action: PayloadAction<"All" | "New" | "Most-Popular" | "Open-Now">
     ) => {
       state.filterBy = action.payload;
     },

@@ -42,7 +42,7 @@
   @include mobile {
     text-align: start;
     font-size: 18px;
-    margin: 20px 0 8px;
+    margin: 0 0 8px;
   }
 }
 
@@ -57,7 +57,7 @@
   }
 
   @include mobile {
-    margin-left: 20px;
+    margin: 48px 0 0 20px;
   }
 }
 

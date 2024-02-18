@@ -3,12 +3,17 @@ import restaurantsData from "assets/restaurants.json";
 import Meaning from "components/Meaning";
 import ChefSection from "components/ChefSection";
 import AboutUs from "components/AboutUs";
-import { CHEF_NAME } from "constants/variables";
 import CardDishSlider from "components/CardDishSlider";
 import CardRestSlider from "components/CardRestSlider";
 import Loader from "components/loader/Loader";
+import { IChef } from "constants/interfaces";
 
 const Homepage = () => {
+  const chefData: IChef = {
+    name: "Yossi Shitrit",
+    image: "yossiShitrit.png",
+  };
+
   return (
     <div>
       <Loader />
@@ -16,10 +21,7 @@ const Homepage = () => {
       <CardRestSlider />
       <CardDishSlider />
       <Meaning />
-      <ChefSection
-        chef={{ name: CHEF_NAME, image: "chef_yossi.png" }}
-        restaurants={restaurantsData}
-      />
+      <ChefSection chef={chefData} restaurants={restaurantsData} />
       <AboutUs />
     </div>
   );

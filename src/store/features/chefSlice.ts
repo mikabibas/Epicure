@@ -22,12 +22,11 @@ export const fetchChefs = createAsyncThunk(
 export const updateFilterByChef = createAsyncThunk(
   "filterBy/updateFilterByChef",
   async (
-    newFilterBy: "all" | "new" | "most-popular" | "open-now",
+    newFilterBy: "All" | "New" | "Most-Popular" | "Open-Now",
     { dispatch }
   ) => {
     dispatch(setFilter(newFilterBy));
     dispatch(fetchChefs());
-    dispatch(resetFilter());
   }
 );
 
@@ -35,14 +34,14 @@ export interface IChefState {
   chefs: IChef[];
   status: string;
   error: string | null;
-  filterBy: "all" | "new" | "most-popular" | "open-now";
+  filterBy: "All" | "New" | "Most-Popular" | "Open-Now";
 }
 
 const initialState: IChefState = {
   chefs: [],
   status: EFetchStatus.IDLE,
   error: null,
-  filterBy: "all",
+  filterBy: "All",
 };
 
 const chefSlice = createSlice({
@@ -51,12 +50,12 @@ const chefSlice = createSlice({
   reducers: {
     setFilter: (
       state,
-      action: PayloadAction<"all" | "new" | "most-popular" | "open-now">
+      action: PayloadAction<"All" | "New" | "Most-Popular" | "Open-Now">
     ) => {
       state.filterBy = action.payload;
     },
     resetFilter: (state) => {
-      state.filterBy = "all";
+      state.filterBy = "All";
     },
   },
   extraReducers: (builder) => {

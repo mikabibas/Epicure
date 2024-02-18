@@ -13,9 +13,10 @@ interface FilterNavProps {
 
 const FilterNav: React.FC<FilterNavProps> = ({ context }) => {
   const dispatch = useDispatch();
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [selectedOption, setSelectedOption] = useState<
+    "All" | "New" | "Most-Popular" | "Open-Now"
+  >("All");
   const location = useLocation();
-  const filterBy = useAppSelector((state) => state.chefs.filterBy);
 
   const currentFilter = useAppSelector((state: RootState) =>
     context === "restaurant" ? state.restaurants.filterBy : state.chefs.filterBy
@@ -23,28 +24,31 @@ const FilterNav: React.FC<FilterNavProps> = ({ context }) => {
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFilter = event.target.value as
-      | "all"
-      | "new"
-      | "most-popular"
-      | "open-now";
+      | "All"
+      | "New"
+      | "Most-Popular"
+      | "Open-Now";
 
     if (selectedFilter !== currentFilter) {
       setSelectedOption(selectedFilter);
 
       if (context === "restaurant") {
+        console.log(selectedFilter);
         dispatch(updateFilterBy(selectedFilter) as any);
       } else if (context === "chef") {
+        console.log(selectedFilter);
         dispatch(updateFilterByChef(selectedFilter) as any);
       }
     }
   };
 
   const getCheckedClass = (option: string) => {
-    return filterBy === option ? "checked" : "";
+    return selectedOption === option ? "checked" : "";
   };
 
   const shouldRenderOpenNowOption = location.pathname !== "/chefs";
-  const shouldRenderMostViewedOption = context === "chef";
+  const shouldRenderMostViewedOption =
+    context === "chef" || context === "restaurant";
 
   return (
     <>

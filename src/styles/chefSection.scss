@@ -94,18 +94,22 @@
     }
     .restaurants-container {
       display: flex;
+
       @include mobile {
-        flex-direction: column;
-        width: 100%;
+        overflow-x: auto;
+        flex-direction: row;
+        width: fit-content;
       }
       .restaurant-card {
         width: 230px;
         height: 357px;
         margin-right: 16px;
         background-color: $SECONDARY_BEIGE;
+        cursor: pointer;
 
         @include mobile {
           height: 233px;
+          width: 245px;
         }
 
         .restaurant-image {
@@ -117,7 +121,7 @@
         .restaurant-name-chef {
           font-size: 30px;
           text-align: center;
-          padding: 20px 50px;
+          padding-top: 20px;
           font-family: "helveticaRoman";
 
           @include mobile {

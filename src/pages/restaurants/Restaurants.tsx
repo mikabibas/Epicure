@@ -7,20 +7,21 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { ICard } from "constants/interfaces";
 import { PayloadAction } from "@reduxjs/toolkit";
 import Loader from "components/loader/Loader";
-import { NO_RESTAURANT_DISPLAY } from "constants/variables";
+import { NO_RESTAURANT_DISPLAY, RESTAURANTS } from "constants/variables";
+import "styles/restaurants/restaurantPage.scss";
 
 const Restaurants = () => {
   const dispatch = useAppDispatch();
   const restaurants = useAppSelector(
     (state: any) => state.restaurants.restaurants
   );
-  console.log(restaurants);
   const [hasMore, setHasMore] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(loadMoreRestaurants());
   }, [dispatch]);
+
   const fetchMoreData = async () => {
     try {
       const action = await dispatch(loadMoreRestaurants());
@@ -45,6 +46,7 @@ const Restaurants = () => {
   return (
     <div>
       <Loader sliceName="restaurants" />
+      <h1 className="page-title">{RESTAURANTS}</h1>
       <FilterNav context="restaurant" />
       <InfiniteScroll
         dataLength={restaurants.length}

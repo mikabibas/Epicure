@@ -1,21 +1,38 @@
 import { useEffect, useState } from "react";
 import {
-  CHEF_NAME,
   CHEF_PARAGRAPH,
   CHEF_RESTAURANTS,
   CHEF_WEEK,
-  SLIDER_SETTINGS,
 } from "constants/variables";
-import { ChefComponentProps, ICard } from "constants/interfaces";
+import { ICard, IChef } from "constants/interfaces";
 import "styles/chefSection.scss";
-import MediaQuery from "react-responsive";
-import Slider from "react-slick";
+import { fetchRestaurantById } from "store/features/restaurantSlice";
+import { useAppDispatch } from "store/store";
+import { useNavigate } from "react-router";
 
-const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
+const ChefSection: React.FC<{ chef: IChef; restaurants: ICard[] }> = ({
+  chef,
+  restaurants,
+}) => {
   const [filteredRestaurants, setFilteredRestaurants] = useState<ICard[]>([]);
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
+  const handleCardClick = async (restaurantId: string) => {
+    try {
+      await dispatch(fetchRestaurantById(restaurantId) as any);
+      navigate(`/restaurants/${restaurantId}`);
+    } catch (error) {
+      console.error("Error fetching restaurant details:", error);
+    }
+  };
 
   const filteredRestaurantsMapped = filteredRestaurants.map((restaurant) => (
-    <div className="restaurant-card" key={restaurant._id}>
+    <div
+      className="restaurant-card"
+      key={restaurant._id}
+      onClick={() => handleCardClick(restaurant._id)}
+    >
       <img
         className="restaurant-image"
         src={require(`assets/images/restaurants/${restaurant.res_image}`)}
@@ -24,7 +41,7 @@ const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
       <h1 className="restaurant-name-chef">{restaurant.res_name}</h1>
     </div>
   ));
-
+  console.log(chef.info);
   useEffect(() => {
     const filtered = restaurants.filter(
       (restaurant) => restaurant.chef?.name === chef.name
@@ -40,20 +57,20 @@ const ChefSection: React.FC<ChefComponentProps> = ({ chef, restaurants }) => {
           <div className="image-title-container">
             <img
               className="chef-image"
-              src={require("assets/images/layout/chef-yossi.png")}
-              alt="yossi_shitrit"
+              src={require(`assets/images/chefs/${
+                chef.image || "default_chef_image.png"
+              }`)}
+              alt={chef.name}
             />
-            <h1 className="chef-name">{CHEF_NAME}</h1>
+            <h1 className="chef-name">{chef.name}</h1>
           </div>
           <p className="chef-paragraph">{CHEF_PARAGRAPH}</p>
         </div>
-        <h1 className="restaurant-title">{CHEF_RESTAURANTS}</h1>
-        <div className="restaurants-container">
-          <MediaQuery minWidth={780}>{filteredRestaurantsMapped}</MediaQuery>
-          <MediaQuery maxWidth={780}>
-            <Slider {...SLIDER_SETTINGS}>{filteredRestaurantsMapped}</Slider>
-          </MediaQuery>
-        </div>
+        <h1 className="restaurant-title">
+          {chef.name}
+          {CHEF_RESTAURANTS}
+        </h1>
+        <div className="restaurants-container">{filteredRestaurantsMapped}</div>
       </div>
     </div>
   );

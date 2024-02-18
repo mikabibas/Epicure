@@ -1,14 +1,14 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Card from "components/Card";
 import { CardSliderProps } from "constants/interfaces";
 import { fetchRestaurantById } from "store/features/restaurantSlice";
 import "styles/mappedCards.scss";
 import Loader from "components/loader/Loader";
+import { useAppDispatch } from "store/store";
 
 const MappedCards: React.FC<CardSliderProps> = ({ cards }) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
   const handleCardClick = async (restaurantId: string) => {

@@ -1,0 +1,20 @@
+@import "constants/_dimensions.scss";
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  margin: 330px auto;
+  @include mobile {
+    margin: 180px auto;
+  }
+  .error-message {
+    font-size: 42px;
+    line-height: 3;
+    @include mobile {
+      line-height: 1.5;
+    }
+  }
+}
