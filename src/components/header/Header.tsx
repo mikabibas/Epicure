@@ -82,7 +82,12 @@ const Header: React.FC = () => {
               />
             )}
           </div>
-          <img onClick={toggleSearch} src={SearchIcon} alt="search_btn" />
+          <img
+            className="search-icon"
+            onClick={toggleSearch}
+            src={SearchIcon}
+            alt="search_btn"
+          />
           <img className="profile_btn" src={Profile} alt="profile_btn" />
           <div className="cart-header-container">
             {cart.items.length > 0 && (

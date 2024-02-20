@@ -63,7 +63,7 @@
     .modal-dish-info {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
       justify-content: center;
       align-items: center;
 
@@ -141,7 +141,7 @@
       font-size: 20px;
 
       @include desktop {
-        margin: 40px auto 24px;
+        margin: 20px auto;
       }
       @include mobile {
         align-self: flex-start;
@@ -230,7 +230,7 @@
         letter-spacing: 2.67px;
         text-transform: uppercase;
         align-self: center;
-        margin: 40px auto 28px;
+        margin: 20px auto 28px;
         padding: 0;
       }
     }

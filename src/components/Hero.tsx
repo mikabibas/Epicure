@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HERO_TEXT, NO_RESTAURANT_FOUND_TEXT } from "constants/variables";
 import "styles/hero.scss";
 import { selectSearch } from "store/features/searchSlice";
 import SearchField from "./header/SearchField";
 import { Link } from "react-router-dom";
-import { useAppSelector } from "store/store";
+import { useAppDispatch, useAppSelector } from "store/store";
+import { resetRestaurants } from "store/features/restaurantSlice";
 
 const Hero: React.FC = () => {
+  const dispatch = useAppDispatch();
   const search = useAppSelector(selectSearch);
   const restaurants = useAppSelector((state) => state.restaurants.restaurants);
 
@@ -15,6 +17,12 @@ const Hero: React.FC = () => {
       restaurant.res_name &&
       restaurant.res_name.toLowerCase().includes(search.toLowerCase())
   );
+
+  useEffect(() => {
+    return () => {
+      dispatch(resetRestaurants());
+    };
+  }, [dispatch]);
 
   return (
     <div className="hero-container">

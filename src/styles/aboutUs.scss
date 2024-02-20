@@ -20,8 +20,7 @@
     @include mobile {
       flex-direction: column-reverse;
       align-items: flex-start;
-      padding: 20px;
-      height: 790px;
+      padding: 40px 20px;
       width: 375px;
       justify-content: space-evenly;
     }
@@ -47,6 +46,7 @@
 
         @include mobile {
           font-size: 18px;
+          margin-top: 40px;
         }
       }
 
@@ -75,9 +75,6 @@
 .market-btn {
   display: inline-block;
   padding-left: 2.8125rem;
-  -webkit-transition: border-color 0.25s ease-in-out,
-    background-color 0.25s ease-in-out;
-  transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   border: 1px solid $PRIMARY_GREY;
   border-radius: 10px;
   background-position: center left 0.75rem;
@@ -114,25 +111,13 @@
   background-image: url(https://www.freepnglogos.com/uploads/google-play-png-logo/store-app-store-google-google-play-logo-play-png-logo-symbol-17.png);
 }
 
-.market-btn-light {
-  border-color: rgba(255, 255, 255, 0.14);
-  background-color: rgba(0, 0, 0, 0);
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-  }
-}
-.market-btn-light .market-button-title {
-  color: $PRIMARY_WHITE;
-}
-
 .button-container {
   display: flex;
   width: 380px;
   justify-content: space-between;
   @include mobile {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 10px;
-    margin: 10px 0;
+    margin-top: 30px;
   }
 }

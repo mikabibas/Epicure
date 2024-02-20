@@ -2,6 +2,18 @@
 @import "constants/_colors.scss";
 @import "constants/_typography.scss";
 
+.page-title {
+  display: none;
+  @include mobile {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1.92px;
+    margin: 14px 0 20px 20px;
+    font-family: "helveticaThin";
+    text-transform: uppercase;
+  }
+}
+
 .rest-container {
   display: flex;
   flex-direction: column;
@@ -59,7 +71,7 @@
       gap: 8px;
 
       @include mobile {
-        margin-top: 16px;
+        margin: 16px 0 20px;
       }
 
       .open-now {
@@ -77,9 +89,10 @@
       }
     }
     .restaurant-nav {
+      display: none;
       @include mobile {
-        padding: 0;
         width: 375px;
+        margin: 32px 0 24px;
       }
     }
     .rest-dish-container {
